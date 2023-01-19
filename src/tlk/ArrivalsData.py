@@ -6,7 +6,7 @@ TSV_FILE_PATH = "data/sri_lanka.tourism.arrivals.by_month.tsv"
 
 
 @dataclass
-class TourismArrivalsData:
+class ArrivalsData:
     ut: int
     arrivals: int
 
@@ -17,7 +17,7 @@ class TourismArrivalsData:
     @staticmethod
     def from_dict(d):
         ut = TimeFormat('%Y-%m-%d').parse(d['month']).ut
-        return TourismArrivalsData(
+        return ArrivalsData(
             ut=ut,
             arrivals=(int)(d["arrivals"]),
         )
@@ -25,10 +25,10 @@ class TourismArrivalsData:
     @staticmethod
     def from_file():
         return [
-            TourismArrivalsData.from_dict(data)
+            ArrivalsData.from_dict(data)
             for data in TSVFile(TSV_FILE_PATH).read()
         ]
 
 
 if __name__ == '__main__':
-    print(TourismArrivalsData.from_file())
+    print(ArrivalsData.from_file())

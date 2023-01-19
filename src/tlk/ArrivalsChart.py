@@ -1,15 +1,15 @@
 import matplotlib.pyplot as plt
 from utils import Log, TimeFormat
 
-from tlk.TourismArrivalsData import TourismArrivalsData
+from tlk.ArrivalsData import ArrivalsData
 
-log = Log('TourismArrivalsChart')
+log = Log('ArrivalsChart')
 
 
-class TourismArrivalsChart:
+class ArrivalsChart:
     def save(self):
         png_file_name = 'charts/sri_lanka.tourism.arrivals.by_month.png'
-        data_list = TourismArrivalsData.from_file()
+        data_list = ArrivalsData.from_file()
         x = [TimeFormat('%Y-%m').stringify(data.t) for data in data_list]
         y = [data.arrivals for data in data_list]
         plt.plot(x, y)
@@ -22,4 +22,4 @@ class TourismArrivalsChart:
 
 
 if __name__ == '__main__':
-    TourismArrivalsChart().save()
+    ArrivalsChart().save()
