@@ -14,6 +14,10 @@ class ArrivalsData:
     def t(self):
         return Time(self.ut)
 
+    @property
+    def date(self):
+        return TimeFormat('%Y-%m').stringify(self.t)
+
     @staticmethod
     def from_dict(d):
         ut = TimeFormat('%Y-%m-%d').parse(d['month']).ut
