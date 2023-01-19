@@ -2,3 +2,4 @@ utils-nuuuwan
 matplotlib
 pandas
 numpy
+scipy
