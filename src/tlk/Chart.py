@@ -70,7 +70,10 @@ class GenericChart:
 
     @property
     def png_file_path(self):
-        return self.__class__.__name__ + '.png'
+        return os.path.join(
+            'charts',
+            self.__class__.__name__  + '.png'
+        )
 
     def save(self):
         
@@ -227,7 +230,10 @@ class Model(GenericChart):
 class Predict2023(GenericChart):
     @property
     def png_file_path(self):
-        return self.__class__.__name__ + '.' + str(self.compare) + '.png'
+        return os.path.join(
+            'charts',
+            self.__class__.__name__ + '.' + str(self.compare) + '.png'
+        )
 
     def __init__(self, data, compare = True):
         GenericChart.__init__(self, data)
