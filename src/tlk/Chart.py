@@ -1,8 +1,8 @@
 import os
 
-from matplotlib import rcParams
 import matplotlib.pyplot as plt
 import matplotlib.ticker as tk
+from matplotlib import rcParams
 from utils import Log
 
 log = Log('Predictor')
@@ -17,6 +17,7 @@ ANNOTATIONS = {
 }
 
 rcParams['font.family'] = 'PT Sans'
+
 
 class GenericChart:
     def __init__(self, data):
@@ -51,7 +52,7 @@ class GenericChart:
         for i in range(n):
             xi = x[i]
             yi = y[i]
-            
+
             for xi_a, label in ANNOTATIONS.items():
                 if xi == xi_a:
                     plt.gca().annotate(
@@ -59,27 +60,21 @@ class GenericChart:
                         xy=(i, yi),
                         xycoords='data',
                         xytext=(i, yi),
-
                         color="#f80",
-                        
                         textcoords='data',
                         horizontalalignment='center',
                         verticalalignment='top',
-
-                )
+                    )
 
     @property
     def png_file_path(self):
-        return os.path.join(
-            'charts',
-            self.__class__.__name__  + '.png'
-        )
+        return os.path.join('charts', self.__class__.__name__ + '.png')
 
     def save(self):
-        
+
         plt.figure(figsize=DEFAULT_FIGSIZE)
         self.draw()
- 
+
         plt.title(self.title)
         plt.xlabel(self.xlabel)
         plt.ylabel(self.ylabel)
@@ -131,14 +126,13 @@ class ActualAndPrediction(GenericChart):
     def title(self):
         return 'Actual & Predicted'
 
-    
     @property
     def ylabel(self):
         return 'Tourist Arrivals'
 
     def draw(self):
         (plt_x, y, yhat) = self.filtered_data
-        
+
         plt.gca().get_yaxis().set_major_formatter(
             tk.FuncFormatter(lambda x, p: f'{x / 1000.0 : .0f}K'),
         )
@@ -146,6 +140,7 @@ class ActualAndPrediction(GenericChart):
         plt.plot(plt_x, y, 'b', label='Actual')
         plt.plot(plt_x, yhat, 'g', label='Prediction')
         GenericChart.annotate(plt_x, y)
+
 
 class Error(GenericChart):
     BASE = 2
@@ -156,7 +151,6 @@ class Error(GenericChart):
         return 'Model Error Ratio (Actual / Predicted)'
 
     @property
-
     def ylabel(self):
         return 'Model Error Ratio (Actual / Predicted)'
 
@@ -209,12 +203,12 @@ class Model(GenericChart):
 
     @property
     def xlabel(self):
-        return 'Months Ago'   
+        return 'Months Ago'
 
     @property
     def ylabel(self):
-        return 'Model Weight'   
-    
+        return 'Model Weight'
+
     @property
     def xticks(self):
         (_, M) = self.data
@@ -232,10 +226,10 @@ class Predict2023(GenericChart):
     def png_file_path(self):
         return os.path.join(
             'charts',
-            self.__class__.__name__ + '.' + str(self.compare) + '.png'
+            self.__class__.__name__ + '.' + str(self.compare) + '.png',
         )
 
-    def __init__(self, data, compare = True):
+    def __init__(self, data, compare=True):
         GenericChart.__init__(self, data)
         self.compare = compare
 
@@ -251,25 +245,23 @@ class Predict2023(GenericChart):
     def ylabel(self):
         return 'Predicted Tourist Arrivals'
 
-
     def draw(self):
         x = self.xticks
         y_list = self.filtered_data
 
         plt.plot(x, y_list[0], 'g', label='2023 (Prediction)')
-        
+
         if self.compare:
-            colors = ['blue', 'orange', 'red', 'brown']        
+            colors = ['blue', 'orange', 'red', 'brown', 'black']
             for i in range(len(y_list) - 1):
-                plt.plot(x, y_list[i+1], colors[i], label=str(2023 - i - 1))
-            
+                plt.plot(x, y_list[i + 1], colors[i], label=str(2023 - i - 1))
+
             plt.gca().get_yaxis().set_major_formatter(
                 tk.FuncFormatter(lambda x, p: f'{x / 1000.0 : .0f}K'),
             )
 
 
 class Predict2023Cumulative(Predict2023):
-
     @property
     def title(self):
         return 'Predicted Cumulative Tourists Arrivals in 2023'
@@ -285,9 +277,8 @@ class Predict2023Cumulative(Predict2023):
         for y in y_list:
             cum = []
             cum_yi = 0
-            for yi  in y:
-                cum_yi  += yi
+            for yi in y:
+                cum_yi += yi
                 cum.append(cum_yi)
             cum_list.append(cum)
         return cum_list
-

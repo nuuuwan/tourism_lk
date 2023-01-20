@@ -55,20 +55,18 @@ class Predictor:
             xi = np.array(xi[1:].tolist() + [yhati])
             month = i + 2
             date = f'{month:02d}'
-            
+
             x_2023.append(date)
             y_2023.append(yhati)
 
         y_list = [y_2023]
-        for i in range(1, 5):
-            y_his = y[-12*i - 1: -12 *(i - 1) - 1]
+        for i in range(1, 5 + 1):
+            y_his = y[-12 * i - 1: -12 * (i - 1) - 1]
             print(i, y_his)
             y_list.append(y_his)
 
-        
-
         Chart.Predict2023(y_list, compare=False).save()
-        
+
         Chart.Predict2023(y_list).save()
         Chart.Predict2023Cumulative(y_list).save()
 
@@ -88,4 +86,3 @@ if __name__ == '__main__':
 
     Chart.LastDecadeActualAndPrediction(prediction_data).save()
     Chart.LastDecadeError(prediction_data).save()
-
