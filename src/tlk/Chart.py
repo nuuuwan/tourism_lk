@@ -71,7 +71,6 @@ class GenericChart:
         return os.path.join('charts', self.__class__.__name__ + '.png')
 
     def save(self):
-
         plt.figure(figsize=DEFAULT_FIGSIZE)
         self.draw()
 
@@ -249,6 +248,10 @@ class Predict2023(GenericChart):
         x = self.xticks
         y_list = self.filtered_data
 
+        plt.gca().get_yaxis().set_major_formatter(
+            tk.FuncFormatter(lambda x, p: f'{x / 1000.0 : .0f}K'),
+        )
+
         plt.plot(x, y_list[0], 'g', label='2023 (Prediction)')
 
         if self.compare:
@@ -282,3 +285,45 @@ class Predict2023Cumulative(Predict2023):
                 cum.append(cum_yi)
             cum_list.append(cum)
         return cum_list
+
+
+class Predict2023Hardcoded(GenericChart):
+    @property
+    def png_file_path(self):
+        return os.path.join(
+            'charts',
+            self.__class__.__name__ + '.' + '.png',
+        )
+
+    def __init__(self, data, compare=True):
+        GenericChart.__init__(self, data)
+        self.compare = compare
+
+    @property
+    def title(self):
+        return 'Predicted Tourists Arrivals in 2023'
+
+    @property
+    def xticks(self):
+        return [f'{month:02d}' for month in range(1, 12 + 1)]
+
+    @property
+    def ylabel(self):
+        return 'Predicted Tourist Arrivals'
+
+    def draw(self):
+        x = self.xticks
+        y_list = self.filtered_data
+
+        plt.gca().get_yaxis().set_major_formatter(
+            tk.FuncFormatter(lambda x, p: f'{x / 1000.0 : .0f}K'),
+        )
+
+        colors = ['red', 'orange', 'green']
+        labels = ['1M', '1.5M', '2M']
+        for i in range(len(y_list)):
+            plt.plot(x, y_list[i], colors[i], label=labels[i])
+
+        plt.gca().get_yaxis().set_major_formatter(
+            tk.FuncFormatter(lambda x, p: f'{x / 1000.0 : .0f}K'),
+        )
