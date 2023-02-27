@@ -7,7 +7,7 @@ from utils import Log
 
 log = Log('Predictor')
 
-DEFAULT_FIGSIZE = (16, 9)
+DEFAULT_FIGSIZE = (8, 4.5)
 
 ANNOTATIONS = {
     '1983-08': 'Black July (1983)',
@@ -17,6 +17,9 @@ ANNOTATIONS = {
 }
 
 rcParams['font.family'] = 'PT Sans'
+
+
+LEGEND_LOC = 'upper left'
 
 
 class GenericChart:
@@ -29,7 +32,7 @@ class GenericChart:
 
     @property
     def xlabel(self):
-        return 'Month'
+        return 'Month (End)'
 
     @property
     def ylabel(self):
@@ -77,7 +80,7 @@ class GenericChart:
         plt.title(self.title)
         plt.xlabel(self.xlabel)
         plt.ylabel(self.ylabel)
-        plt.legend()
+        plt.legend(loc=LEGEND_LOC)
         plt.xticks(self.xticks)
 
         plt.grid(b=True, which='major', color='#888')

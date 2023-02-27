@@ -2,10 +2,10 @@ from functools import cached_property
 
 import numpy as np
 from sklearn.linear_model import LinearRegression
+from tlk.ArrivalsData import ArrivalsData
 from utils import Log
 
 from tlk import Chart
-from tlk.ArrivalsData import ArrivalsData
 
 log = Log('Predictor')
 
@@ -101,18 +101,18 @@ class Predictor:
 
 if __name__ == '__main__':
     predictor = Predictor()
-    hardcoded_next_month_list = [120_000, 187_000, 255_000]
-    ylist_by_scenario = (
-        predictor.get_future_prediction_with_hardcoded_next_months(
-            hardcoded_next_month_list
-        )
-    )
-    Chart.Predict2023Hardcoded(ylist_by_scenario).save()
+    # hardcoded_next_month_list = [120_000, 187_000, 255_000]
+    # ylist_by_scenario = (
+    #     predictor.get_future_prediction_with_hardcoded_next_months(
+    #         hardcoded_next_month_list
+    #     )
+    # )
+    # Chart.Predict2023Hardcoded(ylist_by_scenario).save()
 
-    # [x, y] = predictor.training_data
+    [x, y] = predictor.training_data
 
-    # model = predictor.model
-    # Chart.Model((model.coef_, M)).save()
+    model = predictor.model
+    Chart.Model((model.coef_, M)).save()
 
     # plt_x = predictor.plt_x
     # yhat = predictor.prediction
@@ -127,8 +127,8 @@ if __name__ == '__main__':
 
     # Future
     ylist_by_year = predictor.get_future_projection_and_history()
-    # Chart.Predict2023((ylist_by_year), compare=False).save()
-    Chart.Predict2023((ylist_by_year), compare=True).save()
+    Chart.Predict2023((ylist_by_year), compare=False).save()
+    # Chart.Predict2023((ylist_by_year), compare=True).save()
 
-    # Chart.Predict2023Cumulative((ylist_by_year), compare=False).save()
-    # Chart.Predict2023Cumulative((ylist_by_year), compare=True).save()
+    Chart.Predict2023Cumulative((ylist_by_year), compare=False).save()
+    Chart.Predict2023Cumulative((ylist_by_year), compare=True).save()

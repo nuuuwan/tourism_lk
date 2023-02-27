@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
-from utils import Log, TimeFormat
-
 from tlk.ArrivalsData import ArrivalsData
+from utils import Log, TimeFormat
 
 log = Log('ArrivalsChart')
 
