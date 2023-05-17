@@ -33,11 +33,25 @@ class TimeSeries:
         model.fit(x, y)
         return model
 
-    def evaluate(self, x_evaluate: np.array):
-        assert x_evaluate.shape == (
+    def eval(self, x_eval: np.array):
+        assert x_eval.shape == (
             1,
             self.window,
-        ), f'{x_evaluate.shape} != {(self.window,)}'
+        ), f'{x_eval.shape} != {(self.window,)}'
         model = self.model
-        yhat = model.predict(x_evaluate)
+        yhat = model.predict(x_eval)[0]
         return yhat
+
+    def project(self, n_steps: int):
+        n_data = len(self.y)
+        y_copy = np.array(self.y)
+        for i in range(n_steps):
+            x_eval = y_copy[-self.window:].reshape(1, self.window)
+            yhat = self.eval(x_eval)
+            y_copy = np.append(y_copy, yhat)
+            assert y_copy.shape == (
+                n_data + i + 1,
+            ), f'{y_copy.shape} != {(n_data + i + 1,)}'
+        y_next = y_copy[-n_steps:]
+        assert y_next.shape == (n_steps,), f'{y_next.shape} != {(n_steps,)}'
+        return y_next
