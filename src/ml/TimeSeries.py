@@ -1,6 +1,10 @@
 from functools import cached_property
-from sklearn.linear_model import LinearRegression
+
 import numpy as np
+from numpy.lib.stride_tricks import sliding_window_view
+from sklearn.linear_model import LinearRegression
+
+
 class TimeSeries:
     def __init__(self, y: np.array, window: int):
         self.y = y
@@ -10,14 +14,19 @@ class TimeSeries:
     def train_data(self):
         n_data = len(self.y)
         n_train = n_data - self.window
-        x_train = []
+
+        x_train = sliding_window_view(self.y[:-1], self.window)
+        assert x_train.shape == (
+            n_train,
+            self.window,
+        ), f'{x_train.shape} != {(n_train, self.window)}'
+
         y_train = self.y[self.window:]
-        for i in range(n_train):
-            x_train.append(self.y[i:i+self.window])
-        return np.array(x_train), np.array(y_train)
+        assert y_train.shape == (n_train,), f'{y_train.shape} != {(n_train)}'
 
+        return x_train, y_train
 
-    @cached_property 
+    @cached_property
     def model(self):
         x, y = self.train_data
         model = LinearRegression()
@@ -25,11 +34,10 @@ class TimeSeries:
         return model
 
     def evaluate(self, x_evaluate: np.array):
-        assert len(x_evaluate) == self.window
+        assert x_evaluate.shape == (
+            1,
+            self.window,
+        ), f'{x_evaluate.shape} != {(self.window,)}'
         model = self.model
         yhat = model.predict(x_evaluate)
-        return yhat    
-
-
-
-    
+        return yhat
