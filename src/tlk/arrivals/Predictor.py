@@ -29,8 +29,6 @@ class Predictor:
 
         x = np.array(x)
         y = np.array(y)
-        N = len(y)
-        M = len(x[0])
         return [x, y]
 
     @cached_property
