@@ -2,10 +2,10 @@ from functools import cached_property
 
 import numpy as np
 from sklearn.linear_model import LinearRegression
-from tlk.ArrivalsData import ArrivalsData
 from utils import Log
 
-from tlk import Chart
+from tlk.arrivals import Chart
+from tlk.arrivals.ArrivalsData import ArrivalsData
 
 log = Log('Predictor')
 
@@ -29,6 +29,8 @@ class Predictor:
 
         x = np.array(x)
         y = np.array(y)
+        N = len(y)
+        M = len(x[0])
         return [x, y]
 
     @cached_property
@@ -58,12 +60,13 @@ class Predictor:
     def get_future_projection(self, hardcoded_next_month=None):
         [x, y] = self.training_data
         model = self.model
+        KNOWN_MONTHS = 5
 
-        xi = np.array(x[-1][1:].tolist() + [y[-1]])
-        plt_x_projection = ['01']
-        y_projection = [y[-1]]
+        xi = np.array(x[-1].tolist())
+        plt_x_projection = [f'{(month + 1):02d}' for month in range(0, KNOWN_MONTHS)]
+        y_projection = y[-KNOWN_MONTHS:].tolist()
 
-        for i in range(11):
+        for i in range(12-KNOWN_MONTHS):
             yhati = max(0, model.predict([xi])[0])
             if i == 0 and hardcoded_next_month:
                 yhati = hardcoded_next_month

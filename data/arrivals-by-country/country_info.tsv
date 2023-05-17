@@ -1,0 +1,250 @@
+region	sub_region	country	alpha2	alpha3
+Africa	Northern Africa	Algeria	DZ	DZA
+Africa	Northern Africa	Egypt	EG	EGY
+Africa	Northern Africa	Libya	LY	LBY
+Africa	Northern Africa	Morocco	MA	MAR
+Africa	Northern Africa	Sudan	SD	SDN
+Africa	Northern Africa	Tunisia	TN	TUN
+Africa	Northern Africa	Western Sahara	EH	ESH
+Africa	Sub-Saharan Africa	British Indian Ocean Territory	IO	IOT
+Africa	Sub-Saharan Africa	Burundi	BI	BDI
+Africa	Sub-Saharan Africa	Comoros	KM	COM
+Africa	Sub-Saharan Africa	Djibouti	DJ	DJI
+Africa	Sub-Saharan Africa	Eritrea	ER	ERI
+Africa	Sub-Saharan Africa	Ethiopia	ET	ETH
+Africa	Sub-Saharan Africa	French Southern Territories	TF	ATF
+Africa	Sub-Saharan Africa	Kenya	KE	KEN
+Africa	Sub-Saharan Africa	Madagascar	MG	MDG
+Africa	Sub-Saharan Africa	Malawi	MW	MWI
+Africa	Sub-Saharan Africa	Mauritius	MU	MUS
+Africa	Sub-Saharan Africa	Mayotte	YT	MYT
+Africa	Sub-Saharan Africa	Mozambique	MZ	MOZ
+Africa	Sub-Saharan Africa	R�union	RE	REU
+Africa	Sub-Saharan Africa	Rwanda	RW	RWA
+Africa	Sub-Saharan Africa	Seychelles	SC	SYC
+Africa	Sub-Saharan Africa	Somalia	SO	SOM
+Africa	Sub-Saharan Africa	South Sudan	SS	SSD
+Africa	Sub-Saharan Africa	Uganda	UG	UGA
+Africa	Sub-Saharan Africa	United Republic of Tanzania	TZ	TZA
+Africa	Sub-Saharan Africa	Zambia	ZM	ZMB
+Africa	Sub-Saharan Africa	Zimbabwe	ZW	ZWE
+Africa	Sub-Saharan Africa	Angola	AO	AGO
+Africa	Sub-Saharan Africa	Cameroon	CM	CMR
+Africa	Sub-Saharan Africa	Central African Republic	CF	CAF
+Africa	Sub-Saharan Africa	Chad	TD	TCD
+Africa	Sub-Saharan Africa	Congo	CG	COG
+Africa	Sub-Saharan Africa	Democratic Republic of the Congo	CD	COD
+Africa	Sub-Saharan Africa	Equatorial Guinea	GQ	GNQ
+Africa	Sub-Saharan Africa	Gabon	GA	GAB
+Africa	Sub-Saharan Africa	Sao Tome and Principe	ST	STP
+Africa	Sub-Saharan Africa	Botswana	BW	BWA
+Africa	Sub-Saharan Africa	Eswatini	SZ	SWZ
+Africa	Sub-Saharan Africa	Lesotho	LS	LSO
+Africa	Sub-Saharan Africa	Namibia	NA	NAM
+Africa	Sub-Saharan Africa	South Africa	ZA	ZAF
+Africa	Sub-Saharan Africa	Benin	BJ	BEN
+Africa	Sub-Saharan Africa	Burkina Faso	BF	BFA
+Africa	Sub-Saharan Africa	Cabo Verde	CV	CPV
+Africa	Sub-Saharan Africa	C�te d�Ivoire	CI	CIV
+Africa	Sub-Saharan Africa	Gambia	GM	GMB
+Africa	Sub-Saharan Africa	Ghana	GH	GHA
+Africa	Sub-Saharan Africa	Guinea	GN	GIN
+Africa	Sub-Saharan Africa	Guinea-Bissau	GW	GNB
+Africa	Sub-Saharan Africa	Liberia	LR	LBR
+Africa	Sub-Saharan Africa	Mali	ML	MLI
+Africa	Sub-Saharan Africa	Mauritania	MR	MRT
+Africa	Sub-Saharan Africa	Niger	NE	NER
+Africa	Sub-Saharan Africa	Nigeria	NG	NGA
+Africa	Sub-Saharan Africa	Saint Helena	SH	SHN
+Africa	Sub-Saharan Africa	Senegal	SN	SEN
+Africa	Sub-Saharan Africa	Sierra Leone	SL	SLE
+Africa	Sub-Saharan Africa	Togo	TG	TGO
+Americas	Latin America and the Caribbean	Anguilla	AI	AIA
+Americas	Latin America and the Caribbean	Antigua and Barbuda	AG	ATG
+Americas	Latin America and the Caribbean	Aruba	AW	ABW
+Americas	Latin America and the Caribbean	Bahamas	BS	BHS
+Americas	Latin America and the Caribbean	Barbados	BB	BRB
+Americas	Latin America and the Caribbean	Bonaire		
+Americas	Latin America and the Caribbean	British Virgin Islands	VG	VGB
+Americas	Latin America and the Caribbean	Cayman Islands	KY	CYM
+Americas	Latin America and the Caribbean	Cuba	CU	CUB
+Americas	Latin America and the Caribbean	Cura�ao	CW	CUW
+Americas	Latin America and the Caribbean	Dominica	DM	DMA
+Americas	Latin America and the Caribbean	Dominican Republic	DO	DOM
+Americas	Latin America and the Caribbean	Grenada	GD	GRD
+Americas	Latin America and the Caribbean	Guadeloupe	GP	GLP
+Americas	Latin America and the Caribbean	Haiti	HT	HTI
+Americas	Latin America and the Caribbean	Jamaica	JM	JAM
+Americas	Latin America and the Caribbean	Martinique	MQ	MTQ
+Americas	Latin America and the Caribbean	Montserrat	MS	MSR
+Americas	Latin America and the Caribbean	Puerto Rico	PR	PRI
+Americas	Latin America and the Caribbean	Saint Barth�lemy	BL	BLM
+Americas	Latin America and the Caribbean	Saint Kitts and Nevis	KN	KNA
+Americas	Latin America and the Caribbean	Saint Lucia	LC	LCA
+Americas	Latin America and the Caribbean	Saint Martin (French Part)	MF	MAF
+Americas	Latin America and the Caribbean	Saint Vincent and the Grenadines	VC	VCT
+Americas	Latin America and the Caribbean	Sint Maarten (Dutch part)	SX	SXM
+Americas	Latin America and the Caribbean	Trinidad and Tobago	TT	TTO
+Americas	Latin America and the Caribbean	Turks and Caicos Islands	TC	TCA
+Americas	Latin America and the Caribbean	United States Virgin Islands	VI	VIR
+Americas	Latin America and the Caribbean	Belize	BZ	BLZ
+Americas	Latin America and the Caribbean	Costa Rica	CR	CRI
+Americas	Latin America and the Caribbean	El Salvador	SV	SLV
+Americas	Latin America and the Caribbean	Guatemala	GT	GTM
+Americas	Latin America and the Caribbean	Honduras	HN	HND
+Americas	Latin America and the Caribbean	Mexico	MX	MEX
+Americas	Latin America and the Caribbean	Nicaragua	NI	NIC
+Americas	Latin America and the Caribbean	Panama	PA	PAN
+Americas	Latin America and the Caribbean	Argentina	AR	ARG
+Americas	Latin America and the Caribbean	Bolivia (Plurinational State of)	BO	BOL
+Americas	Latin America and the Caribbean	Bouvet Island	BV	BVT
+Americas	Latin America and the Caribbean	Brazil	BR	BRA
+Americas	Latin America and the Caribbean	Chile	CL	CHL
+Americas	Latin America and the Caribbean	Colombia	CO	COL
+Americas	Latin America and the Caribbean	Ecuador	EC	ECU
+Americas	Latin America and the Caribbean	Falkland Islands (Malvinas)	FK	FLK
+Americas	Latin America and the Caribbean	French Guiana	GF	GUF
+Americas	Latin America and the Caribbean	Guyana	GY	GUY
+Americas	Latin America and the Caribbean	Paraguay	PY	PRY
+Americas	Latin America and the Caribbean	Peru	PE	PER
+Americas	Latin America and the Caribbean	South Georgia and the South Sandwich Islands	GS	SGS
+Americas	Latin America and the Caribbean	Suriname	SR	SUR
+Americas	Latin America and the Caribbean	Uruguay	UY	URY
+Americas	Latin America and the Caribbean	Venezuela (Bolivarian Republic of)	VE	VEN
+Americas	Northern America	Bermuda	BM	BMU
+Americas	Northern America	Canada	CA	CAN
+Americas	Northern America	Greenland	GL	GRL
+Americas	Northern America	Saint Pierre and Miquelon	PM	SPM
+Americas	Northern America	United States of America	US	USA
+		Antarctica	AQ	ATA
+Asia	Central Asia	Kazakhstan	KZ	KAZ
+Asia	Central Asia	Kyrgyzstan	KG	KGZ
+Asia	Central Asia	Tajikistan	TJ	TJK
+Asia	Central Asia	Turkmenistan	TM	TKM
+Asia	Central Asia	Uzbekistan	UZ	UZB
+Asia	Eastern Asia	China	CN	CHN
+Asia	Eastern Asia	China		
+Asia	Eastern Asia	China		
+Asia	Eastern Asia	Democratic People's Republic of Korea	KP	PRK
+Asia	Eastern Asia	Japan	JP	JPN
+Asia	Eastern Asia	Mongolia	MN	MNG
+Asia	Eastern Asia	Republic of Korea	KR	KOR
+Asia	South-eastern Asia	Brunei Darussalam	BN	BRN
+Asia	South-eastern Asia	Cambodia	KH	KHM
+Asia	South-eastern Asia	Indonesia	ID	IDN
+Asia	South-eastern Asia	Lao People's Democratic Republic	LA	LAO
+Asia	South-eastern Asia	Malaysia	MY	MYS
+Asia	South-eastern Asia	Myanmar	MM	MMR
+Asia	South-eastern Asia	Philippines	PH	PHL
+Asia	South-eastern Asia	Singapore	SG	SGP
+Asia	South-eastern Asia	Thailand	TH	THA
+Asia	South-eastern Asia	Timor-Leste	TL	TLS
+Asia	South-eastern Asia	Viet Nam	VN	VNM
+Asia	Southern Asia	Afghanistan	AF	AFG
+Asia	Southern Asia	Bangladesh	BD	BGD
+Asia	Southern Asia	Bhutan	BT	BTN
+Asia	Southern Asia	India	IN	IND
+Asia	Southern Asia	Iran (Islamic Republic of)	IR	IRN
+Asia	Southern Asia	Maldives	MV	MDV
+Asia	Southern Asia	Nepal	NP	NPL
+Asia	Southern Asia	Pakistan	PK	PAK
+Asia	Southern Asia	Sri Lanka	LK	LKA
+Asia	Western Asia	Armenia	AM	ARM
+Asia	Western Asia	Azerbaijan	AZ	AZE
+Asia	Western Asia	Bahrain	BH	BHR
+Asia	Western Asia	Cyprus	CY	CYP
+Asia	Western Asia	Georgia	GE	GEO
+Asia	Western Asia	Iraq	IQ	IRQ
+Asia	Western Asia	Israel	IL	ISR
+Asia	Western Asia	Jordan	JO	JOR
+Asia	Western Asia	Kuwait	KW	KWT
+Asia	Western Asia	Lebanon	LB	LBN
+Asia	Western Asia	Oman	OM	OMN
+Asia	Western Asia	Qatar	QA	QAT
+Asia	Western Asia	Saudi Arabia	SA	SAU
+Asia	Western Asia	State of Palestine	PS	PSE
+Asia	Western Asia	Syrian Arab Republic	SY	SYR
+Asia	Western Asia	T�rkiye	TR	TUR
+Asia	Western Asia	United Arab Emirates	AE	ARE
+Asia	Western Asia	Yemen	YE	YEM
+Europe	Eastern Europe	Belarus	BY	BLR
+Europe	Eastern Europe	Bulgaria	BG	BGR
+Europe	Eastern Europe	Czechia	CZ	CZE
+Europe	Eastern Europe	Hungary	HU	HUN
+Europe	Eastern Europe	Poland	PL	POL
+Europe	Eastern Europe	Republic of Moldova	MD	MDA
+Europe	Eastern Europe	Romania	RO	ROU
+Europe	Eastern Europe	Russian Federation	RU	RUS
+Europe	Eastern Europe	Slovakia	SK	SVK
+Europe	Eastern Europe	Ukraine	UA	UKR
+Europe	Northern Europe	�land Islands	AX	ALA
+Europe	Northern Europe	Guernsey	GG	GGY
+Europe	Northern Europe	Jersey	JE	JEY
+Europe	Northern Europe	Sark		
+Europe	Northern Europe	Denmark	DK	DNK
+Europe	Northern Europe	Estonia	EE	EST
+Europe	Northern Europe	Faroe Islands	FO	FRO
+Europe	Northern Europe	Finland	FI	FIN
+Europe	Northern Europe	Iceland	IS	ISL
+Europe	Northern Europe	Ireland	IE	IRL
+Europe	Northern Europe	Isle of Man	IM	IMN
+Europe	Northern Europe	Latvia	LV	LVA
+Europe	Northern Europe	Lithuania	LT	LTU
+Europe	Northern Europe	Norway	NO	NOR
+Europe	Northern Europe	Svalbard and Jan Mayen Islands	SJ	SJM
+Europe	Northern Europe	Sweden	SE	SWE
+Europe	Northern Europe	United Kingdom of Great Britain and Northern Ireland	GB	GBR
+Europe	Southern Europe	Albania	AL	ALB
+Europe	Southern Europe	Andorra	AD	AND
+Europe	Southern Europe	Bosnia and Herzegovina	BA	BIH
+Europe	Southern Europe	Croatia	HR	HRV
+Europe	Southern Europe	Gibraltar	GI	GIB
+Europe	Southern Europe	Greece	GR	GRC
+Europe	Southern Europe	Holy See	VA	VAT
+Europe	Southern Europe	Italy	IT	ITA
+Europe	Southern Europe	Malta	MT	MLT
+Europe	Southern Europe	Montenegro	ME	MNE
+Europe	Southern Europe	North Macedonia	MK	MKD
+Europe	Southern Europe	Portugal	PT	PRT
+Europe	Southern Europe	San Marino	SM	SMR
+Europe	Southern Europe	Serbia	RS	SRB
+Europe	Southern Europe	Slovenia	SI	SVN
+Europe	Southern Europe	Spain	ES	ESP
+Europe	Western Europe	Austria	AT	AUT
+Europe	Western Europe	Belgium	BE	BEL
+Europe	Western Europe	France	FR	FRA
+Europe	Western Europe	Germany	DE	DEU
+Europe	Western Europe	Liechtenstein	LI	LIE
+Europe	Western Europe	Luxembourg	LU	LUX
+Europe	Western Europe	Monaco	MC	MCO
+Europe	Western Europe	Netherlands	NL	NLD
+Europe	Western Europe	Switzerland	CH	CHE
+Oceania	Australia and New Zealand	Australia	AU	AUS
+Oceania	Australia and New Zealand	Christmas Island	CX	CXR
+Oceania	Australia and New Zealand	Cocos (Keeling) Islands	CC	CCK
+Oceania	Australia and New Zealand	Heard Island and McDonald Islands	HM	HMD
+Oceania	Australia and New Zealand	New Zealand	NZ	NZL
+Oceania	Australia and New Zealand	Norfolk Island	NF	NFK
+Oceania	Melanesia	Fiji	FJ	FJI
+Oceania	Melanesia	New Caledonia	NC	NCL
+Oceania	Melanesia	Papua New Guinea	PG	PNG
+Oceania	Melanesia	Solomon Islands	SB	SLB
+Oceania	Melanesia	Vanuatu	VU	VUT
+Oceania	Micronesia	Guam	GU	GUM
+Oceania	Micronesia	Kiribati	KI	KIR
+Oceania	Micronesia	Marshall Islands	MH	MHL
+Oceania	Micronesia	Micronesia (Federated States of)	FM	FSM
+Oceania	Micronesia	Nauru	NR	NRU
+Oceania	Micronesia	Northern Mariana Islands	MP	MNP
+Oceania	Micronesia	Palau	PW	PLW
+Oceania	Micronesia	United States Minor Outlying Islands	UM	UMI
+Oceania	Polynesia	American Samoa	AS	ASM
+Oceania	Polynesia	Cook Islands	CK	COK
+Oceania	Polynesia	French Polynesia	PF	PYF
+Oceania	Polynesia	Niue	NU	NIU
+Oceania	Polynesia	Pitcairn	PN	PCN
+Oceania	Polynesia	Samoa	WS	WSM
+Oceania	Polynesia	Tokelau	TK	TKL
+Oceania	Polynesia	Tonga	TO	TON
+Oceania	Polynesia	Tuvalu	TV	TUV
+Oceania	Polynesia	Wallis and Futuna Islands	WF	WLF

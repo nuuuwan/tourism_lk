@@ -83,8 +83,8 @@ class GenericChart:
         plt.legend(loc=LEGEND_LOC)
         plt.xticks(self.xticks)
 
-        plt.grid(b=True, which='major', color='#888')
-        plt.grid(b=True, which='minor', color='#eee')
+        plt.grid(which='major', color='#888')
+        plt.grid(which='minor', color='#eee')
         plt.minorticks_on()
 
         png_file_path = self.png_file_path
