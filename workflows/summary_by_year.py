@@ -2,7 +2,7 @@ import os
 
 import matplotlib.pyplot as plt
 
-from workflows.predict_future_arrivals import get_proj_data
+from workflows.predict_future_arrivals import format_number, get_proj_data
 
 
 def summary_by_year(y, y_next, n_actual):
@@ -19,7 +19,7 @@ def summary_by_year(y, y_next, n_actual):
         ys_year.append(y_year)
         years.append(year)
 
-        print(year, y_year)
+        print(year, format_number(y_year))
 
         year += 1
 
