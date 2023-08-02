@@ -63,13 +63,14 @@ def build_monthly_chart(y, y_next, n_actual):
 
     total_for_year = format_number(sum(y_with_proj))
     end_actual = t_with_proj[n_actual - 1]
+    end_arrivals = format_number(y_actual[-1])
     cum_arrivals = format_number(sum(y_actual))
     next_arrivals = format_number(y_next[0])
     next_month = t_with_proj[n_actual]
     print(
         f'''
-As of the end of {end_actual} 2023,
-#SriLanka has seen {cum_arrivals} #tourist arrivals.
+In {end_actual} 2023, {end_arrivals} #tourists arrived in #SriLanka, 
+brining the 2023 total to  {cum_arrivals}.
 
 Our model predicts {next_arrivals} arrivals in {next_month} 2023,
 and {total_for_year} total arrivals in 2023.
