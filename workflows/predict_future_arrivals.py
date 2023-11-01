@@ -69,10 +69,10 @@ def build_monthly_chart(y, y_next, n_actual):
     next_month = t_with_proj[n_actual]
     print(
         f'''
-In {end_actual} 2023, {end_arrivals} #tourists arrived in #SriLanka, 
-brining the 2023 total to  {cum_arrivals}.
+In {end_actual} 2023, {end_arrivals} #tourists arrived in 🇱🇰 #SriLanka, 
+bringing the 2023 total to {cum_arrivals}.
 
-Our model predicts {next_arrivals} arrivals in {next_month} 2023,
+🤖 Our model predicts {next_arrivals} arrivals in {next_month} 2023,
 and {total_for_year} total arrivals in 2023.
 
 data: https://www.sltda.gov.lk/en/statistics (@sltda_srilanka)
