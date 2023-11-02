@@ -35,7 +35,12 @@ class WebPageUtils:
 
     @staticmethod
     def scrape_link_urls(browser, url) -> list[str]:
-        browser = WebPageUtils.browser_open(browser, url)
+        try:
+            browser = WebPageUtils.browser_open(browser, url)
+        except Exception as e:
+            log.error(f'browser_open({url}) -> {e}')
+            return []
+        
         link_urls = []
         for a in browser.find_elements(By.TAG_NAME, 'a'):
             href = a.get_attribute('href')
