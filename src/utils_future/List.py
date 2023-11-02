@@ -11,4 +11,4 @@ class List:
         return list(filter(func, self.arr))
 
     def unique(self):
-        return list(set(self.arr))
+        return sorted(list(set(self.arr)))
