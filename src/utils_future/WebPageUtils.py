@@ -13,30 +13,34 @@ log = Log('StatisticsPageUtils')
 
 class WebPageUtils:
     @staticmethod
-    def browser_open(url):
+    def browser_start():
         options = Options()
         options.add_argument('--headless')
         browser = webdriver.Firefox(options=options)
+        browser.implicitly_wait(2)
+        log.info('🟢browser_start()')
+        return browser
+
+    @staticmethod
+    def browser_open(browser, url):
         browser.get(url)
         browser.implicitly_wait(2)
-        log.debug(f'browser_open({url})')
+        log.info(f'🔵browser_open({url})')
         return browser
 
     @staticmethod
     def browser_quit(browser):
         browser.quit()
-        log.debug('browser_quit')
+        log.info('🔴browser_quit()')
 
     @staticmethod
-    def scrape_link_urls(url) -> list[str]:
-        browser = WebPageUtils.browser_open(url)
-
+    def scrape_link_urls(browser, url) -> list[str]:
+        browser = WebPageUtils.browser_open(browser, url)
         link_urls = []
         for a in browser.find_elements(By.TAG_NAME, 'a'):
             href = a.get_attribute('href')
             link_urls.append(href)
 
-        WebPageUtils.browser_quit(browser)
         link_urls = List(link_urls).unique()
 
         log.debug(f'scrape_link_urls({url}) -> {len(link_urls)} links')
@@ -48,13 +52,6 @@ class WebPageUtils:
         pdf_urls = List(pdf_urls).unique()
         log.debug(f'filter_pdf_urls(...) -> {len(pdf_urls)} pdfs')
         return pdf_urls
-
-    # @staticmethod
-    # def scrape_pdf_urls(url: str) -> list[str]:
-    #     link_urls = WebPageUtils.scrape_link_urls(url)
-    #     pdf_urls = WebPageUtils.filter_pdf_urls(link_urls)
-    #     log.debug(f'scrape_pdf_urls({url}) -> {len(pdf_urls)} pdfs')
-    #     return pdf_urls
 
     @staticmethod
     def is_url_valid(url):
@@ -85,9 +82,9 @@ class WebPageUtils:
         return cleaned_urls
 
     @staticmethod
-    def visit_url(url: str, root_domain: str):
+    def visit_url(browser, url: str, root_domain: str):
         log.warn(f'visit_url({url})')
-        page_urls = WebPageUtils.scrape_link_urls(url)
+        page_urls = WebPageUtils.scrape_link_urls(browser, url)
         pdf_urls = WebPageUtils.filter_pdf_urls(page_urls)
 
         cleaned_page_urls = WebPageUtils.clean_urls(page_urls, root_domain)
@@ -100,11 +97,10 @@ class WebPageUtils:
 
     @staticmethod
     def scrape_pdf_links_recursive(
-        url_root: str, limit: int
+        browser, url_root: str, limit: int
     ) -> dict[str, str]:
         log.info(f'Recursively Scraping PDFs from {url_root} (limit={limit})')
         root_domain = url_root.split('/')[2]
-        log.debug(f'{root_domain=}')
         page_url_queue = queue.Queue()
         page_url_queue.put(url_root)
 
@@ -119,7 +115,7 @@ class WebPageUtils:
             (
                 pdf_urls_from_child,
                 cleaned_page_urls_from_child,
-            ) = WebPageUtils.visit_url(current_page_url, root_domain)
+            ) = WebPageUtils.visit_url(browser, current_page_url, root_domain)
             visited_url_set.add(current_page_url)
 
             for pdf_url in pdf_urls_from_child:
@@ -151,15 +147,19 @@ class WebPageUtils:
 
         file_name = pdf_url_path_items[-1]
         file_path = os.path.join(dir_path, file_name)
-
-        WWW.download_binary(pdf_url, file_path)
-        log.debug(f'Downloaded {pdf_url} to {file_path}')
+        if os.path.exists(file_path):
+            log.warn(f'Already downloaded {pdf_url} to {file_path}')
+        else:
+            WWW.download_binary(pdf_url, file_path)
+            log.debug(f'Downloaded {pdf_url} to {file_path}')
 
     @staticmethod
     def scrape_and_download(url_root: str, limit: int, dir_root: str):
+        browser = WebPageUtils.browser_start()
         pdf_info_idx = WebPageUtils.scrape_pdf_links_recursive(
-            url_root, limit
+            browser, url_root, limit
         )
         List(list(pdf_info_idx.items())).map(
             lambda x: WebPageUtils.download(x[0], x[1], dir_root)
         )
+        WebPageUtils.browser_quit(browser)
