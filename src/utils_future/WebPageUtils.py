@@ -49,7 +49,7 @@ class WebPageUtils:
         pdf_urls = List(pdf_urls).unique()
         log.debug(f'Found {len(pdf_urls)} PDFs on {url}')
         return pdf_urls
-    
+
     @staticmethod
     def clean_urls(urls: list[str], root_domain: str) -> list[str]:
         cleaned_urls = []
@@ -89,7 +89,8 @@ class WebPageUtils:
 
             log.debug(
                 f'Found {len(pdf_urls_from_child)} PDFs,'
-                + f' and {len(cleaned_page_urls_from_child)}'+f' links on {page_url}'
+                + f' and {len(cleaned_page_urls_from_child)}'
+                + f' links on {page_url}'
                 + f' ({len(pdf_url_set)} PDFs found, '
                 + f'and {len(visited_urls)} pages visited in total)'
             )
@@ -104,7 +105,7 @@ class WebPageUtils:
             f'Found {len(pdf_url_set)} PDFs in total'
             + f' from {url_root} ({len(visited_urls)} pages visited)'
         )
-        return list(pdf_url_set)[:limit]
+        return List(list(pdf_url_set)).unique()[:limit]
 
     @staticmethod
     def url_to_file_path_items(url: str) -> str:
