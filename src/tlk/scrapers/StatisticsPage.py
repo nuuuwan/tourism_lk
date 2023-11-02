@@ -7,7 +7,7 @@ from utils_future import WebPageUtils
 log = Log('StatisticsPage')
 
 URL_ROOT = 'https://www.sltda.gov.lk/statistics'
-LIMIT = 100
+LIMIT = 60
 DIR_ROOT = os.path.join('data_source')
 
 
