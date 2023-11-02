@@ -73,7 +73,7 @@ class WebPageUtils:
         for keyword in KEYWORD_BLACK_LIST:
             if keyword in url_lower:
                 return False
-        KEYWORD_WHITE_LIST = ['statistics', 'research', 'report']
+        KEYWORD_WHITE_LIST = ['report']
         for keyword in KEYWORD_WHITE_LIST:
             if keyword in url_lower:
                 return True
