@@ -40,7 +40,7 @@ class WebPageUtils:
         except Exception as e:
             log.error(f'browser_open({url}) -> {e}')
             return []
-        
+
         link_urls = []
         for a in browser.find_elements(By.TAG_NAME, 'a'):
             href = a.get_attribute('href')
@@ -61,7 +61,14 @@ class WebPageUtils:
     @staticmethod
     def is_url_valid(url):
         url_lower = url.lower()
-        KEYWORD_BLACK_LIST = ['careers', 'download', 'about-us', 'contact']
+        KEYWORD_BLACK_LIST = [
+            'careers',
+            'download',
+            'about-us',
+            'contact',
+            '.pdf',
+            'page=',
+        ]
         for keyword in KEYWORD_BLACK_LIST:
             if keyword in url_lower:
                 return False
