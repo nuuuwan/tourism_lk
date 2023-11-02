@@ -39,7 +39,7 @@ class WebPageUtils:
         WebPageUtils.browser_quit(browser)
         link_urls = List(link_urls).unique()
 
-        log.debug(f'Found {len(link_urls)} links on {url}')
+        log.debug(f'scrape_link_urls({url}) -> {len(link_urls)} urls')
         return link_urls
 
     @staticmethod
@@ -47,8 +47,16 @@ class WebPageUtils:
         links = WebPageUtils.scrape_link_urls(url)
         pdf_urls = List(links).filter(lambda link: link.endswith('.pdf'))
         pdf_urls = List(pdf_urls).unique()
-        log.debug(f'Found {len(pdf_urls)} PDFs on {url}')
+        log.debug(f'scrape_pdf_urls({url}) -> {len(pdf_urls)} urls')
         return pdf_urls
+
+    @staticmethod
+    def is_url_blacklisted(url):
+        KEYWORD_BLACK_LIST = ['careers', 'download', 'about-us']
+        for keyword in KEYWORD_BLACK_LIST:
+            if keyword in url:
+                return True
+        return False
 
     @staticmethod
     def clean_urls(urls: list[str], root_domain: str) -> list[str]:
@@ -56,6 +64,10 @@ class WebPageUtils:
         for page_url_from_child in urls:
             if root_domain not in page_url_from_child:
                 continue
+
+            if WebPageUtils.is_url_blacklisted(page_url_from_child):
+                continue
+
             if page_url_from_child.endswith('#'):
                 page_url_from_child = page_url_from_child[:-1]
             cleaned_urls.append(page_url_from_child)
@@ -70,7 +82,7 @@ class WebPageUtils:
             page_urls_from_child, root_domain
         )
         log.debug(
-            f'visit_url({url=}) {len(pdf_urls_from_child)} pdfs, '
+            f'visit_url({url}) -> {len(pdf_urls_from_child)} pdfs, '
             + f'{len(cleaned_page_urls_from_child)} links'
         )
 
