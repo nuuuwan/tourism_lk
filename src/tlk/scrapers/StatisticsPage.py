@@ -8,7 +8,7 @@ log = Log('StatisticsPage')
 
 URL_ROOT = 'https://www.sltda.gov.lk/statistics'
 LIMIT = 60
-DIR_ROOT = os.path.join('data', 'sltda')
+DIR_ROOT = os.path.join('data', 'sltda', 'pdf')
 
 
 class StatisticsPage:

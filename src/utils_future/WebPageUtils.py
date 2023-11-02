@@ -181,6 +181,7 @@ class WebPageUtils:
         else:
             path_items = WebPageUtils.url_to_file_path_items(pdf_url)
             file_name = path_items[-1]
+            file_name = file_name.replace('%20', '-')
 
         file_path = os.path.join(dir_path, file_name)
         if os.path.exists(file_path):
