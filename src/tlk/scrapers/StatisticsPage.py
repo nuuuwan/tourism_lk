@@ -14,7 +14,7 @@ class StatisticsPage:
 
     @property
     def limit(self) -> int:
-        return 30
+        return 100
 
     @property
     def dir_root(self) -> str:
