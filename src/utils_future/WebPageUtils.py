@@ -181,7 +181,11 @@ class WebPageUtils:
         if os.path.exists(file_path):
             log.warn(f'Already downloaded {pdf_url} to {file_path}')
         else:
-            WWW.download_binary(pdf_url, file_path)
+            try:
+                WWW.download_binary(pdf_url, file_path)
+            except Exception as e:
+                log.error(f'WWW.download_binary({pdf_url}) -> {e}')
+                return
             log.debug(f'Downloaded {pdf_url} to {file_path}')
 
     @staticmethod
@@ -202,6 +206,6 @@ class WebPageUtils:
             lambda pdf_url_info: WebPageUtils.download(
                 pdf_url_info, dir_root
             ),
-            max_threads=3,
+            max_threads=5,
         )
         WebPageUtils.browser_quit(browser)
