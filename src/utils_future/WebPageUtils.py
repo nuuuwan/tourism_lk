@@ -43,18 +43,29 @@ class WebPageUtils:
         return link_urls
 
     @staticmethod
-    def scrape_pdf_urls(url: str) -> list[str]:
-        links = WebPageUtils.scrape_link_urls(url)
-        pdf_urls = List(links).filter(lambda link: link.endswith('.pdf'))
+    def filter_pdf_urls(urls: list[str]) -> list[str]:
+        pdf_urls = List(urls).filter(lambda url: url.endswith('.pdf'))
         pdf_urls = List(pdf_urls).unique()
-        log.debug(f'scrape_pdf_urls({url}) -> {len(pdf_urls)} pdfs')
+        log.debug(f'filter_pdf_urls(...) -> {len(pdf_urls)} pdfs')
         return pdf_urls
 
+    # @staticmethod
+    # def scrape_pdf_urls(url: str) -> list[str]:
+    #     link_urls = WebPageUtils.scrape_link_urls(url)
+    #     pdf_urls = WebPageUtils.filter_pdf_urls(link_urls)
+    #     log.debug(f'scrape_pdf_urls({url}) -> {len(pdf_urls)} pdfs')
+    #     return pdf_urls
+
     @staticmethod
-    def is_url_blacklisted(url):
+    def is_url_valid(url):
+        url_lower = url.lower()
         KEYWORD_BLACK_LIST = ['careers', 'download', 'about-us', 'contact']
         for keyword in KEYWORD_BLACK_LIST:
-            if keyword in url:
+            if keyword in url_lower:
+                return False
+        KEYWORD_WHITE_LIST = ['statistics', 'research', 'report']
+        for keyword in KEYWORD_WHITE_LIST:
+            if keyword in url_lower:
                 return True
         return False
 
@@ -65,7 +76,7 @@ class WebPageUtils:
             if root_domain not in page_url_from_child:
                 continue
 
-            if WebPageUtils.is_url_blacklisted(page_url_from_child):
+            if not WebPageUtils.is_url_valid(page_url_from_child):
                 continue
 
             if page_url_from_child.endswith('#'):
@@ -75,18 +86,17 @@ class WebPageUtils:
 
     @staticmethod
     def visit_url(url: str, root_domain: str):
-        pdf_urls_from_child = WebPageUtils.scrape_pdf_urls(url)
-        page_urls_from_child = WebPageUtils.scrape_link_urls(url)
+        log.warn(f'visit_url({url})')
+        page_urls = WebPageUtils.scrape_link_urls(url)
+        pdf_urls = WebPageUtils.filter_pdf_urls(page_urls)
 
-        cleaned_page_urls_from_child = WebPageUtils.clean_urls(
-            page_urls_from_child, root_domain
-        )
+        cleaned_page_urls = WebPageUtils.clean_urls(page_urls, root_domain)
         log.debug(
-            f'visit_url({url}) -> {len(pdf_urls_from_child)} pdfs, '
-            + f'{len(cleaned_page_urls_from_child)} links'
+            f'visit_url({url}) -> {len(pdf_urls)} pdfs, '
+            + f'{len(cleaned_page_urls)} links'
         )
 
-        return pdf_urls_from_child, cleaned_page_urls_from_child
+        return pdf_urls, cleaned_page_urls
 
     @staticmethod
     def scrape_pdf_links_recursive(
@@ -99,17 +109,18 @@ class WebPageUtils:
         page_url_queue.put(url_root)
 
         pdf_info_idx = {}
-        visited_urls = set()
+        visited_url_set = set()
         while page_url_queue.not_empty and len(pdf_info_idx.keys()) < limit:
             current_page_url = page_url_queue.get()
-            if current_page_url in visited_urls:
+            if current_page_url in visited_url_set:
                 continue
+
             log.debug(f'len(pdf_info_idx)={len(pdf_info_idx.keys())}')
-            visited_urls.add(current_page_url)
             (
                 pdf_urls_from_child,
                 cleaned_page_urls_from_child,
             ) = WebPageUtils.visit_url(current_page_url, root_domain)
+            visited_url_set.add(current_page_url)
 
             for pdf_url in pdf_urls_from_child:
                 pdf_info_idx[pdf_url] = current_page_url
@@ -119,7 +130,7 @@ class WebPageUtils:
 
         log.info(
             f'Found {len(pdf_info_idx.keys())} PDFs in total'
-            + f' from {url_root} ({len(visited_urls)} pages visited)'
+            + f' from {url_root} ({len(visited_url_set)} pages visited)'
         )
         return pdf_info_idx
 
