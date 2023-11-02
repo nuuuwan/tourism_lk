@@ -169,11 +169,6 @@ class WebPageUtils:
     def scrape_and_download(url_root: str, limit: int, dir_root: str):
         browser = WebPageUtils.browser_start()
 
-        if os.path.exists(dir_root):
-            log.warn(f'Removing {dir_root}')
-            shutil.rmtree(dir_root)
-        os.makedirs(dir_root, exist_ok=True)
-
         pdf_info_idx = WebPageUtils.scrape_pdf_links_recursive(
             browser, url_root, limit
         )
