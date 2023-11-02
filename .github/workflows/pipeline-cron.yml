@@ -1,12 +1,12 @@
+name: pipeline - Cron
 
-name: Scrape - Cron (Once a day at midnight UTC) 
-
+# on: workflow_dispatch
 on:
   schedule:
     - cron: '0 0 * * *'
 
 jobs:
-  scrape:
+  pipeline:
 
     runs-on: ubuntu-latest
 
@@ -36,10 +36,10 @@ jobs:
         ref: 'main'
         token: "${{ secrets.REPO_DATA_TOKEN }}"
 
-    - name: Run workflow
+    - name: Run python workflow
       run: |
         export PYTHONPATH="$PYTHONPATH:./src"
-        python workflows/scrape.py
+        python workflows/pipeline.py
 
     - name: Push to github repo
       run: |
@@ -47,5 +47,5 @@ jobs:
         git config --global user.name "${{ secrets.GIT_USER_NAME }}"
         git pull origin main
         git add .
-        git commit -m "scrape $(date)"
+        git commit -m "pipeline $(date)"
         git push origin main
