@@ -57,7 +57,7 @@ class WebPageUtils:
         page_url_queue = queue.Queue()
         page_url_queue.put(url_root)
 
-        pdf_urls = []
+        pdf_url_set = set()
         visited_urls = set()
         while True:
             if page_url_queue.empty():
@@ -84,21 +84,21 @@ class WebPageUtils:
             log.debug(
                 f'Found {len(pdf_urls_from_child)} PDFs,'
                 + f' and {len(cleaned_page_urls_from_child)} links on {page_url}'
-                + f' ({len(pdf_urls)} PDFs found, '
+                + f' ({len(pdf_url_set)} PDFs found, '
                 + f'and {len(visited_urls)} pages visited in total)'
             )
 
-            pdf_urls.extend(pdf_urls_from_child)
-            if len(pdf_urls) >= limit:
+            pdf_url_set.update(pdf_urls_from_child)
+            if len(pdf_url_set) >= limit:
                 break
             for page_url_from_child in cleaned_page_urls_from_child:
                 page_url_queue.put(page_url_from_child)
 
         log.info(
-            f'Found {len(pdf_urls)} PDFs in total'
+            f'Found {len(pdf_url_set)} PDFs in total'
             + f' from {url_root} ({len(visited_urls)} pages visited)'
         )
-        return pdf_urls[:limit]
+        return pdf_url_set[:limit]
 
     @staticmethod
     def url_to_file_path_items(url: str) -> str:
