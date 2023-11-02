@@ -98,7 +98,7 @@ class WebPageUtils:
             f'Found {len(pdf_url_set)} PDFs in total'
             + f' from {url_root} ({len(visited_urls)} pages visited)'
         )
-        return pdf_url_set[:limit]
+        return list(pdf_url_set)[:limit]
 
     @staticmethod
     def url_to_file_path_items(url: str) -> str:
