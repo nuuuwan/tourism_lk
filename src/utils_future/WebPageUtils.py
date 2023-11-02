@@ -161,7 +161,8 @@ class WebPageUtils:
 
     @staticmethod
     def url_to_file_path_items(url: str) -> str:
-        return url.split('/')[3:]
+        BLACKLIST = ['en', 'statistics']
+        return List(url.split('/')[3:]).filter(lambda x: x not in BLACKLIST)
 
     @staticmethod
     def download(pdf_url_info, dir_root):
