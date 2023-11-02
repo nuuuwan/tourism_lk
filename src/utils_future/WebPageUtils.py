@@ -1,6 +1,7 @@
 import os
 import queue
 import shutil
+import time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -25,7 +26,7 @@ class WebPageUtils:
     @staticmethod
     def browser_open(browser, url):
         browser.get(url)
-        browser.implicitly_wait(2)
+        time.sleep(2)
         log.debug(f'🔵browser_open({url})')
         return browser
 
@@ -33,6 +34,19 @@ class WebPageUtils:
     def browser_quit(browser):
         browser.quit()
         log.debug('🔴browser_quit()')
+
+    @staticmethod
+    def get_text(element):
+        current_element = element
+        while True:
+            text = current_element.text
+            if len(text) > 128:
+                return ''
+            if text and len(text) > 5:
+                return text
+            current_element = current_element.find_element(By.XPATH, '..')
+            if current_element.tag_name == 'html':
+                return ''
 
     @staticmethod
     def scrape_link_url_info_list(browser, url) -> list[str]:
@@ -45,9 +59,18 @@ class WebPageUtils:
         link_url_info_list = []
         for a in browser.find_elements(By.TAG_NAME, 'a'):
             href = a.get_attribute('href')
+            text = None
+            if href.endswith('.pdf'):
+                text = WebPageUtils.get_text(a)
+                if len(text) < 5:
+                    path_items = WebPageUtils.url_to_file_path_items(href)
+                    text = path_items[-1].split('.')[0]
+                    text = text.replace('%20', '-')
+                    log.warning(f'Using {text}')
+
             url_info = dict(
                 href=href,
-                text=a.text,
+                text=text,
                 url=url,
             )
             link_url_info_list.append(url_info)
@@ -176,12 +199,7 @@ class WebPageUtils:
         # the specified directory already exists and value is set to False
         # an OSError is raised, else not.
         os.makedirs(dir_path, exist_ok=True)
-        if len(pdf_url_info['text']) > 5:
-            file_name = String(pdf_url_info['text']).kebab + '.pdf'
-        else:
-            path_items = WebPageUtils.url_to_file_path_items(pdf_url)
-            file_name = path_items[-1]
-            file_name = file_name.replace('%20', '-')
+        file_name = String(pdf_url_info['text']).kebab + '.pdf'
 
         file_path = os.path.join(dir_path, file_name)
         if os.path.exists(file_path):
