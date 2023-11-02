@@ -18,20 +18,20 @@ class WebPageUtils:
         options.add_argument('--headless')
         browser = webdriver.Firefox(options=options)
         browser.implicitly_wait(2)
-        log.info('🟢browser_start()')
+        log.debug('🟢browser_start()')
         return browser
 
     @staticmethod
     def browser_open(browser, url):
         browser.get(url)
         browser.implicitly_wait(2)
-        log.info(f'🔵browser_open({url})')
+        log.debug(f'🔵browser_open({url})')
         return browser
 
     @staticmethod
     def browser_quit(browser):
         browser.quit()
-        log.info('🔴browser_quit()')
+        log.debug('🔴browser_quit()')
 
     @staticmethod
     def scrape_link_urls(browser, url) -> list[str]:
