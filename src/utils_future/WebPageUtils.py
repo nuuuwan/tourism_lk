@@ -88,7 +88,6 @@ class WebPageUtils:
 
     @staticmethod
     def visit_url(browser, url: str, root_domain: str):
-        log.warn(f'visit_url({url})')
         page_urls = WebPageUtils.scrape_link_urls(browser, url)
         pdf_urls = WebPageUtils.filter_pdf_urls(page_urls)
 
