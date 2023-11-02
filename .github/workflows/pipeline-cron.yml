@@ -1,9 +1,0 @@
-name: pipeline - Cron
-
-on:
-  schedule:
-    - cron: '0 0 * * *'
-
-jobs:
-  use-shared-logic:
-    uses: ./.github/workflows/pipeline-common.yml

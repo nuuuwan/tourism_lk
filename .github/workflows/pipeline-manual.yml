@@ -1,7 +1,0 @@
-name: pipeline - Manual
-
-on: workflow_dispatch
-
-jobs:
-  use-shared-logic:
-    uses: ./.github/workflows/pipeline-common.yml
