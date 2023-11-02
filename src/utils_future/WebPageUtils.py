@@ -62,26 +62,32 @@ class WebPageUtils:
         return cleaned_urls
 
     @staticmethod
-    def scrape_pdf_links_recursive(url_root: str, limit: int) -> list[str]:
+    def scrape_pdf_links_recursive(
+        url_root: str, limit: int
+    ) -> dict[str, str]:
         log.info(f'Recursively Scraping PDFs from {url_root} (limit={limit})')
         root_domain = url_root.split('/')[2]
         log.debug(f'{root_domain=}')
         page_url_queue = queue.Queue()
         page_url_queue.put(url_root)
 
-        pdf_url_set = set()
+        pdf_info_idx = {}
         visited_urls = set()
         while True:
             if page_url_queue.empty():
                 break
-            page_url = page_url_queue.get()
-            if page_url in visited_urls:
+            current_page_url = page_url_queue.get()
+            if current_page_url in visited_urls:
                 continue
 
-            log.debug(f'Visiting {page_url}')
-            visited_urls.add(page_url)
-            pdf_urls_from_child = WebPageUtils.scrape_pdf_urls(page_url)
-            page_urls_from_child = WebPageUtils.scrape_link_urls(page_url)
+            log.debug(f'Visiting {current_page_url}')
+            visited_urls.add(current_page_url)
+            pdf_urls_from_child = WebPageUtils.scrape_pdf_urls(
+                current_page_url
+            )
+            page_urls_from_child = WebPageUtils.scrape_link_urls(
+                current_page_url
+            )
 
             cleaned_page_urls_from_child = WebPageUtils.clean_urls(
                 page_urls_from_child, root_domain
@@ -90,44 +96,54 @@ class WebPageUtils:
             log.debug(
                 f'Found {len(pdf_urls_from_child)} PDFs,'
                 + f' and {len(cleaned_page_urls_from_child)}'
-                + f' links on {page_url}'
-                + f' ({len(pdf_url_set)} PDFs found, '
+                + f' links on {current_page_url}'
+                + f' ({len(pdf_info_idx.keys())} PDFs found, '
                 + f'and {len(visited_urls)} pages visited in total)'
             )
 
-            pdf_url_set.update(pdf_urls_from_child)
-            if len(pdf_url_set) >= limit:
+            for pdf_url in pdf_urls_from_child:
+                pdf_info_idx[pdf_url] = current_page_url
+            if len(pdf_info_idx.keys()) >= limit:
                 break
             for page_url_from_child in cleaned_page_urls_from_child:
                 page_url_queue.put(page_url_from_child)
 
         log.info(
-            f'Found {len(pdf_url_set)} PDFs in total'
+            f'Found {len(pdf_info_idx.keys())} PDFs in total'
             + f' from {url_root} ({len(visited_urls)} pages visited)'
         )
-        return List(list(pdf_url_set)).unique()[:limit]
+        return pdf_info_idx
 
     @staticmethod
     def url_to_file_path_items(url: str) -> str:
         return url.split('/')[3:]
 
     @staticmethod
+    def download(pdf_url, page_url, dir_root):
+        pdf_url_path_items = WebPageUtils.url_to_file_path_items(pdf_url)
+        page_url_path_items = WebPageUtils.url_to_file_path_items(page_url)
+
+        dir_path = os.path.join(dir_root, *page_url_path_items)
+        # exists_ok: Optional. Default value of this parameter is False. If
+        # the specified directory already exists and value is set to False
+        # an OSError is raised, else not.
+        log.debug(f'{dir_path=}')
+        os.makedirs(dir_path, exist_ok=True)
+
+        file_name = pdf_url_path_items[-1]
+        file_path = os.path.join(dir_path, file_name)
+        log.debug(f'{file_path=}')
+
+        WWW.download_binary(pdf_url, file_path)
+        log.debug(f'Downloaded {pdf_url} to {file_path}')
+
+    @staticmethod
     def scrape_and_download(url_root: str, limit: int, dir_root: str):
         log.info(
             f'Scraping and Downloading PDFs from {url_root} (limit={limit})'
         )
-        pdf_urls = WebPageUtils.scrape_pdf_links_recursive(url_root, limit)
-        for pdf_url in pdf_urls:
-            file_path_items = [
-                dir_root
-            ] + WebPageUtils.url_to_file_path_items(pdf_url)
-
-            dir_path = os.path.join(*file_path_items[:-1])
-            # exists_ok: Optional. Default value of this parameter is False. If
-            # the specified directory already exists and value is set to False
-            # an OSError is raised, else not.
-            os.makedirs(dir_path, exist_ok=True)
-
-            file_path = os.path.join(*file_path_items)
-            WWW.download_binary(pdf_url, file_path)
-            log.debug(f'Downloaded {pdf_url} to {file_path}')
+        pdf_info_idx = WebPageUtils.scrape_pdf_links_recursive(
+            url_root, limit
+        )
+        for pdf_url, page_url in pdf_info_idx.items():
+            WebPageUtils.download(pdf_url, page_url, dir_root)
