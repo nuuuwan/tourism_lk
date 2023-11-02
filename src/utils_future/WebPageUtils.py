@@ -19,13 +19,13 @@ class WebPageUtils:
         browser = webdriver.Firefox(options=options)
         browser.get(url)
         browser.implicitly_wait(2)
-        log.debug(f'Opened {url}')
+        log.debug(f'browser_open({url})')
         return browser
 
     @staticmethod
     def browser_quit(browser):
         browser.quit()
-        log.debug('Closed browser')
+        log.debug('browser_quit')
 
     @staticmethod
     def scrape_link_urls(url) -> list[str]:
@@ -39,7 +39,7 @@ class WebPageUtils:
         WebPageUtils.browser_quit(browser)
         link_urls = List(link_urls).unique()
 
-        log.debug(f'scrape_link_urls({url}) -> {len(link_urls)} urls')
+        log.debug(f'scrape_link_urls({url}) -> {len(link_urls)} links')
         return link_urls
 
     @staticmethod
@@ -47,12 +47,12 @@ class WebPageUtils:
         links = WebPageUtils.scrape_link_urls(url)
         pdf_urls = List(links).filter(lambda link: link.endswith('.pdf'))
         pdf_urls = List(pdf_urls).unique()
-        log.debug(f'scrape_pdf_urls({url}) -> {len(pdf_urls)} urls')
+        log.debug(f'scrape_pdf_urls({url}) -> {len(pdf_urls)} pdfs')
         return pdf_urls
 
     @staticmethod
     def is_url_blacklisted(url):
-        KEYWORD_BLACK_LIST = ['careers', 'download', 'about-us']
+        KEYWORD_BLACK_LIST = ['careers', 'download', 'about-us', 'contact']
         for keyword in KEYWORD_BLACK_LIST:
             if keyword in url:
                 return True
@@ -104,7 +104,7 @@ class WebPageUtils:
             current_page_url = page_url_queue.get()
             if current_page_url in visited_urls:
                 continue
-
+            log.debug(f'len(pdf_info_idx)={len(pdf_info_idx.keys())}')
             visited_urls.add(current_page_url)
             (
                 pdf_urls_from_child,
