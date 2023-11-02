@@ -176,12 +176,11 @@ class WebPageUtils:
         # an OSError is raised, else not.
         os.makedirs(dir_path, exist_ok=True)
         if len(pdf_url_info['text']) > 5:
-            file_name_only = String(pdf_url_info['text']).kebab + '.pdf'
+            file_name = String(pdf_url_info['text']).kebab + '.pdf'
         else:
             path_items = WebPageUtils.url_to_file_path_items(pdf_url)
-            file_name_only = path_items[-1]
+            file_name = path_items[-1]
 
-        file_name = file_name_only + '.pdf'
         file_path = os.path.join(dir_path, file_name)
         if os.path.exists(file_path):
             log.warn(f'Already downloaded {pdf_url} to {file_path}')
