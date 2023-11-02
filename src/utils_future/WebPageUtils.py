@@ -149,5 +149,6 @@ class WebPageUtils:
         pdf_info_idx = WebPageUtils.scrape_pdf_links_recursive(
             url_root, limit
         )
-        for pdf_url, page_url in pdf_info_idx.items():
-            WebPageUtils.download(pdf_url, page_url, dir_root)
+        List(list(pdf_info_idx.items())).map(
+            lambda x: WebPageUtils.download(x[0], x[1], dir_root)
+        )
