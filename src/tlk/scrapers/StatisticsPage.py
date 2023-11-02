@@ -13,4 +13,4 @@ DIR_ROOT = os.path.join('data_source')
 
 class StatisticsPage:
     def scrape(self):
-        WebPageUtils.scrape_and_download(URL_ROOT, DIR_ROOT, LIMIT)
+        WebPageUtils.scrape_and_download(URL_ROOT, LIMIT, DIR_ROOT, True)

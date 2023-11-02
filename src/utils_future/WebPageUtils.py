@@ -1,10 +1,11 @@
 import os
 import queue
+import shutil
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
-from utils import WWW, Log
+from utils import WWW, Log, String
 
 from utils_future import List
 
@@ -34,29 +35,41 @@ class WebPageUtils:
         log.debug('🔴browser_quit()')
 
     @staticmethod
-    def scrape_link_urls(browser, url) -> list[str]:
+    def scrape_link_url_info_list(browser, url) -> list[str]:
         try:
             browser = WebPageUtils.browser_open(browser, url)
         except Exception as e:
             log.error(f'browser_open({url}) -> {e}')
             return []
 
-        link_urls = []
+        link_url_info_list = []
         for a in browser.find_elements(By.TAG_NAME, 'a'):
             href = a.get_attribute('href')
-            link_urls.append(href)
+            url_info = dict(
+                href=href,
+                text=a.text,
+                url=url,
+            )
+            link_url_info_list.append(url_info)
 
-        link_urls = List(link_urls).unique()
+        link_url_info_list = List(link_url_info_list).unique_for_key('href')
 
-        log.debug(f'scrape_link_urls({url}) -> {len(link_urls)} links')
-        return link_urls
+        log.debug(
+            f'scrape_link_url_info_list({url})'
+            + f' -> {len(link_url_info_list)} links'
+        )
+        return link_url_info_list
 
     @staticmethod
-    def filter_pdf_urls(urls: list[str]) -> list[str]:
-        pdf_urls = List(urls).filter(lambda url: url.endswith('.pdf'))
-        pdf_urls = List(pdf_urls).unique()
-        log.debug(f'filter_pdf_urls(...) -> {len(pdf_urls)} pdfs')
-        return pdf_urls
+    def filter_pdf_url_info_list(link_url_info_list: list[str]) -> list[str]:
+        pdf_url_info_list = List(link_url_info_list).filter(
+            lambda url_info: url_info['href'].endswith('.pdf')
+        )
+        pdf_url_info_list = List(pdf_url_info_list).unique_for_key('href')
+        log.debug(
+            f'filter_pdf_url_info_list(...) -> {len(pdf_url_info_list)} pdfs'
+        )
+        return pdf_url_info_list
 
     @staticmethod
     def is_url_valid(url):
@@ -81,30 +94,35 @@ class WebPageUtils:
     @staticmethod
     def clean_urls(urls: list[str], root_domain: str) -> list[str]:
         cleaned_urls = []
-        for page_url_from_child in urls:
-            if root_domain not in page_url_from_child:
+        for page_url_c in urls:
+            if root_domain not in page_url_c:
                 continue
 
-            if not WebPageUtils.is_url_valid(page_url_from_child):
+            if not WebPageUtils.is_url_valid(page_url_c):
                 continue
 
-            if page_url_from_child.endswith('#'):
-                page_url_from_child = page_url_from_child[:-1]
-            cleaned_urls.append(page_url_from_child)
+            if page_url_c.endswith('#'):
+                page_url_c = page_url_c[:-1]
+            cleaned_urls.append(page_url_c)
         return cleaned_urls
 
     @staticmethod
     def visit_url(browser, url: str, root_domain: str):
-        page_urls = WebPageUtils.scrape_link_urls(browser, url)
-        pdf_urls = WebPageUtils.filter_pdf_urls(page_urls)
+        link_url_info_list = WebPageUtils.scrape_link_url_info_list(
+            browser, url
+        )
+        pdf_url_info_list = WebPageUtils.filter_pdf_url_info_list(
+            link_url_info_list
+        )
 
+        page_urls = List(link_url_info_list).map(lambda x: x['href'])
         cleaned_page_urls = WebPageUtils.clean_urls(page_urls, root_domain)
         log.debug(
-            f'visit_url({url}) -> {len(pdf_urls)} pdfs, '
+            f'visit_url({url}) -> {len(pdf_url_info_list)} pdfs, '
             + f'{len(cleaned_page_urls)} links'
         )
 
-        return pdf_urls, cleaned_page_urls
+        return pdf_url_info_list, cleaned_page_urls
 
     @staticmethod
     def scrape_pdf_links_recursive(
@@ -115,40 +133,42 @@ class WebPageUtils:
         page_url_queue = queue.Queue()
         page_url_queue.put(url_root)
 
-        pdf_info_idx = {}
+        pdf_url_info_list = []
         visited_url_set = set()
-        while page_url_queue.not_empty and len(pdf_info_idx.keys()) < limit:
+        while page_url_queue.not_empty and len(pdf_url_info_list) < limit:
             current_page_url = page_url_queue.get()
             if current_page_url in visited_url_set:
                 continue
-
-            log.debug(f'len(pdf_info_idx)={len(pdf_info_idx.keys())}')
             (
-                pdf_urls_from_child,
-                cleaned_page_urls_from_child,
+                pdf_url_info_list_c,
+                cleaned_page_urls_c,
             ) = WebPageUtils.visit_url(browser, current_page_url, root_domain)
             visited_url_set.add(current_page_url)
+            pdf_url_info_list.extend(pdf_url_info_list_c)
+            for page_url_c in cleaned_page_urls_c:
+                page_url_queue.put(page_url_c)
+            log.debug(
+                f'len(pdf_url_info_list)={len(pdf_url_info_list)}, '
+                + f'page_url_queue.qsize()={page_url_queue.qsize()}'
+            )
 
-            for pdf_url in pdf_urls_from_child:
-                pdf_info_idx[pdf_url] = current_page_url
-
-            for page_url_from_child in cleaned_page_urls_from_child:
-                page_url_queue.put(page_url_from_child)
-
+        pdf_url_info_list = List(pdf_url_info_list).unique_for_key('href')
         log.info(
-            f'Found {len(pdf_info_idx.keys())} PDFs in total'
+            f'Found {len(pdf_url_info_list)} PDFs in total'
             + f' from {url_root} ({len(visited_url_set)} pages visited)'
         )
-        return pdf_info_idx
+        return pdf_url_info_list
 
     @staticmethod
     def url_to_file_path_items(url: str) -> str:
         return url.split('/')[3:]
 
     @staticmethod
-    def download(pdf_url, page_url, dir_root):
-        pdf_url_path_items = WebPageUtils.url_to_file_path_items(pdf_url)
-        page_url_path_items = WebPageUtils.url_to_file_path_items(page_url)
+    def download(pdf_url_info, dir_root):
+        pdf_url = pdf_url_info['href']
+        page_url_path_items = WebPageUtils.url_to_file_path_items(
+            pdf_url_info['url']
+        )
 
         dir_path = os.path.join(dir_root, *page_url_path_items)
         # exists_ok: Optional. Default value of this parameter is False. If
@@ -156,7 +176,7 @@ class WebPageUtils:
         # an OSError is raised, else not.
         os.makedirs(dir_path, exist_ok=True)
 
-        file_name = pdf_url_path_items[-1]
+        file_name = String(pdf_url_info['text']).kebab + '.pdf'
         file_path = os.path.join(dir_path, file_name)
         if os.path.exists(file_path):
             log.warn(f'Already downloaded {pdf_url} to {file_path}')
@@ -165,13 +185,20 @@ class WebPageUtils:
             log.debug(f'Downloaded {pdf_url} to {file_path}')
 
     @staticmethod
-    def scrape_and_download(url_root: str, limit: int, dir_root: str):
+    def scrape_and_download(
+        url_root: str, limit: int, dir_root: str, force_clean: bool
+    ):
+        if force_clean:
+            if os.path.exists(dir_root):
+                shutil.rmtree(dir_root)
+            os.makedirs(dir_root)
+
         browser = WebPageUtils.browser_start()
 
-        pdf_info_idx = WebPageUtils.scrape_pdf_links_recursive(
+        pdf_url_info_list = WebPageUtils.scrape_pdf_links_recursive(
             browser, url_root, limit
         )
-        List(list(pdf_info_idx.items())).map(
-            lambda x: WebPageUtils.download(x[0], x[1], dir_root)
+        List(pdf_url_info_list).map(
+            lambda pdf_url_info: WebPageUtils.download(pdf_url_info, dir_root)
         )
         WebPageUtils.browser_quit(browser)
