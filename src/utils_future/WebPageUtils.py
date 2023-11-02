@@ -88,7 +88,7 @@ class WebPageUtils:
 
         pdf_info_idx = {}
         visited_urls = set()
-        while page_url_queue.not_empty() and len(pdf_info_idx.keys()) < limit:
+        while page_url_queue.not_empty and len(pdf_info_idx.keys()) < limit:
             current_page_url = page_url_queue.get()
             if current_page_url in visited_urls:
                 continue
@@ -134,9 +134,6 @@ class WebPageUtils:
 
     @staticmethod
     def scrape_and_download(url_root: str, limit: int, dir_root: str):
-        log.info(
-            f'Scraping and Downloading PDFs from {url_root} (limit={limit})'
-        )
         pdf_info_idx = WebPageUtils.scrape_pdf_links_recursive(
             url_root, limit
         )
