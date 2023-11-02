@@ -1,8 +1,14 @@
+from utils import mr
+
+
 class List:
     def __init__(self, *arr):
         if len(arr) == 1:
             arr = arr[0]
         self.arr = arr
+
+    def map_parallel(self, func, max_threads=3):
+        return mr.map_parallel(func, self.arr, max_threads)
 
     def map(self, func):
         return list(map(func, self.arr))

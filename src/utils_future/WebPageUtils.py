@@ -198,7 +198,10 @@ class WebPageUtils:
         pdf_url_info_list = WebPageUtils.scrape_pdf_links_recursive(
             browser, url_root, limit
         )
-        List(pdf_url_info_list).map(
-            lambda pdf_url_info: WebPageUtils.download(pdf_url_info, dir_root)
+        List(pdf_url_info_list).map_parallel(
+            lambda pdf_url_info: WebPageUtils.download(
+                pdf_url_info, dir_root
+            ),
+            max_threads=3,
         )
         WebPageUtils.browser_quit(browser)
