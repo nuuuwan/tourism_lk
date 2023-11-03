@@ -1,7 +1,7 @@
 from functools import cached_property
 
 import camelot
-import fitz
+from pdf2image import convert_from_path
 from PyPDF2 import PdfReader
 
 from utils_future import List
@@ -55,19 +55,7 @@ class GenericPDF:
     # pymupdf
     @cached_property
     def images(self):
-        doc = fitz.open(self.pdf_path)
-        n_pages = len(doc)
-        images = []
-        for i_page in range(n_pages):
-            page = doc[i_page]
-            page_images = page.get_images()
-            for image in page_images:
-                xref = image[0]
-                pix = fitz.Pixmap(doc, xref)
-                if pix.n - pix.alpha > 3:
-                    pix = fitz.Pixmap(fitz.csRGB, pix)
-                images.append(pix)
-        return images
+        return convert_from_path(self.pdf_path)
 
     @cached_property
     def n_images(self):

@@ -39,8 +39,11 @@ class GenericPDFParser:
 
     @staticmethod
     def build_tables(pdf, dir_pdf_parsed):
+        dir_tables = os.path.join(dir_pdf_parsed, 'tables')
+        os.makedirs(dir_tables, exist_ok=True)
+
         for i_table, table in enumerate(pdf.tables):
-            table_path = os.path.join(dir_pdf_parsed, f'table-{i_table}.csv')
+            table_path = os.path.join(dir_tables, f'table-{i_table}.csv')
             table.df.to_csv(table_path, index=False)
             log.debug(f'Wrote {table_path}')
 
@@ -63,7 +66,7 @@ class GenericPDFParser:
 
         for i_image, image in enumerate(pdf.images):
             image_path = os.path.join(dir_images, f'image-{i_image}.png')
-            image.save(image_path)
+            image.save(image_path, 'PNG')
             file_size = os.path.getsize(image_path)
             if file_size < MIN_IMAGE_FILE_SIZE:
                 os.remove(image_path)
