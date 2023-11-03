@@ -13,7 +13,7 @@ class DataReadMe:
             '# Data (TourismLK)',
             f'*Updated {time_str}*',
             '',
-            '## PDF Scraping',
+            '## PDFs from [SLTDA](https://www.sltda.gov.lk/statistics)',
             f'* {n_pdf_links} [links](data/sltda/pdf) scraped',
         ]
         file_path = os.path.join('data', 'README.md')
