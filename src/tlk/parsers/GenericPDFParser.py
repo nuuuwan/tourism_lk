@@ -10,12 +10,13 @@ from utils_future import SystemMode
 log = Log('GenericPDFParser')
 
 DIR_PDFS_PARSED_ROOT = os.path.join('data', 'sltda', 'pdf-parsed')
-FORCE_CLEAN = False
+FORCE_CLEAN = True
 TEST_PDF_PATH = os.path.join(
     DIR_ROOT,
     'weekly-tourist-arrivals-reports',
     'tourist-arrivals-2023-october.pdf',
 )
+MIN_IMAGE_FILE_SIZE = 20_000
 
 
 class GenericPDFParser:
@@ -53,19 +54,46 @@ class GenericPDFParser:
         log.debug(f'Wrote {text_path}')
 
     @staticmethod
+    def build_images(pdf, dir_pdf_parsed):
+        dir_images = os.path.join(dir_pdf_parsed, 'images')
+        os.makedirs(dir_images, exist_ok=True)
+
+        for i_image, image in enumerate(pdf.images):
+            print(image)
+            image_path = os.path.join(dir_images, f'image-{i_image}.png')
+            image.save(image_path)
+            log.debug(f'Wrote {image_path}')
+            file_size = os.path.getsize(image_path)
+            if file_size < MIN_IMAGE_FILE_SIZE:
+                log.warning(
+                    f'Image {image_path} is too small'
+                    + f' ({file_size} bytes). Deleting!'
+                )
+                os.remove(image_path)
+
+    @staticmethod
     def parse(pdf_path: str):
         log.debug(f'parse({pdf_path})')
-
-        pdf = GenericPDF(pdf_path)
 
         dir_pdf_parsed = (
             pdf_path.replace(DIR_ROOT, DIR_PDFS_PARSED_ROOT) + '-parsed'
         )
+        if FORCE_CLEAN:
+            if os.path.exists(dir_pdf_parsed):
+                shutil.rmtree(dir_pdf_parsed)
+
+        if os.path.exists(dir_pdf_parsed):
+            log.debug(f'{dir_pdf_parsed} already exists. Skipping.')
+            return
+
         os.makedirs(dir_pdf_parsed, exist_ok=True)
+
+        pdf = GenericPDF(pdf_path)
 
         GenericPDFParser.build_summary(pdf, dir_pdf_parsed)
         GenericPDFParser.build_tables(pdf, dir_pdf_parsed)
         GenericPDFParser.build_text(pdf, dir_pdf_parsed)
+        GenericPDFParser.build_images(pdf, dir_pdf_parsed)
 
     @staticmethod
     def parse_safe(pdf_path: str):
