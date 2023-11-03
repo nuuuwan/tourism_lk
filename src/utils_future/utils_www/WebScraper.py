@@ -21,7 +21,7 @@ class WebScraper(WebBrowser):
 
         link_list = Link.unique(
             List(browser.find_elements(By.TAG_NAME, 'a')).map(
-                lambda element_a: Link(element_a)
+                lambda element_a: Link(element_a, url)
             )
         )
 
@@ -77,12 +77,12 @@ class WebScraper(WebBrowser):
             f'Found {len(pdf_link_list)} PDFs in total'
             + f' from {url_root} ({len(visited_url_set)} pages visited)'
         )
-        return pdf_link_list
+        return pdf_link_list[:limit]
 
     @classmethod
     def download(cls, pdf_link, dir_root):
         pdf_url = pdf_link.href
-        page_url_path_items = cls.url_to_file_path_items(pdf_url)
+        page_url_path_items = cls.url_to_file_path_items(pdf_link.page_url)
 
         dir_path = os.path.join(dir_root, *page_url_path_items)
         os.makedirs(dir_path, exist_ok=True)

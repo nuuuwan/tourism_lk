@@ -5,8 +5,9 @@ from utils_future.utils_www.WebBrowser import WebBrowser
 
 
 class Link:
-    def __init__(self, element_a):
+    def __init__(self, element_a, page_url):
         self.element_a = element_a
+        self.page_url = page_url
 
     @cached_property
     def href(self):
