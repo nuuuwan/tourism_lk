@@ -1,7 +1,7 @@
 import os
 import shutil
 
-from utils import JSONFile, Log
+from utils import File, JSONFile, Log
 
 from tlk.parsers.GenericPDF import GenericPDF
 from tlk.scrapers.StatisticsPage import DIR_ROOT, LIMIT
@@ -33,6 +33,16 @@ class GenericPDFParser:
             log.debug(f'Wrote {table_path}')
 
     @staticmethod
+    def build_text(pdf, dir_pdf_parsed):
+        text_path = os.path.join(dir_pdf_parsed, 'text.md')
+        lines = []
+        for i, text in enumerate(pdf.text_list):
+            lines.append(f'### page {i}')
+            lines.append(text)
+        File(text_path).write_lines(lines)
+        log.debug(f'Wrote {text_path}')
+
+    @staticmethod
     def parse(pdf_path: str):
         log.debug(f'parse({pdf_path})')
 
@@ -45,6 +55,7 @@ class GenericPDFParser:
 
         GenericPDFParser.build_summary(pdf, dir_pdf_parsed)
         GenericPDFParser.build_tables(pdf, dir_pdf_parsed)
+        GenericPDFParser.build_text(pdf, dir_pdf_parsed)
 
     @staticmethod
     def parse_safe(pdf_path: str):
