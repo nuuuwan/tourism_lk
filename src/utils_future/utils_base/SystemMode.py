@@ -25,6 +25,6 @@ class SystemMode:
         if os_name == 'nt':
             mode = SystemMode('test', '🚸', log.warn)
         else:
-            mode = SystemMode('prod', '🏍️', log.info)
+            mode = SystemMode('prod', '💪🏽', log.info)
         mode.log()
         return mode
