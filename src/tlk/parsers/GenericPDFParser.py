@@ -101,10 +101,8 @@ class GenericPDFParser:
 
     @staticmethod
     def parse_all():
-        if FORCE_CLEAN:
-            if os.path.exists(DIR_PDFS_PARSED_ROOT):
-                shutil.rmtree(DIR_PDFS_PARSED_ROOT)
         os.makedirs(DIR_PDFS_PARSED_ROOT, exist_ok=True)
+
         pdf_paths = (
             GenericPDFParser.get_pdf_paths()
             if SystemMode.is_prod()

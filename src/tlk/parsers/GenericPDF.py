@@ -41,7 +41,12 @@ class GenericPDF:
     # camelot-py
     @cached_property
     def tables(self):
-        return camelot.read_pdf(self.pdf_path, pages="all")
+        return camelot.read_pdf(
+            self.pdf_path,
+            pages="all",
+            flavor='stream',
+            strip_text='\n',
+        )
 
     @cached_property
     def n_tables(self):
