@@ -86,6 +86,9 @@ class WebScraper(WebBrowser):
             max_threads=4,
         )
         WebScraper.browser_quit(browser)
+        return dict(
+            n_pdf_links=len(pdf_link_list),
+        )
 
     # IMPORTANT! classmethods that must be implemented by subclasses
 

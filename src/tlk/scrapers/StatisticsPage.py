@@ -23,4 +23,4 @@ class StatisticsPage:
             if os.path.exists(DIR_ROOT):
                 shutil.rmtree(DIR_ROOT)
             os.makedirs(DIR_ROOT)
-        CustomWebScraper.scrape_and_download(URL_ROOT, LIMIT, DIR_ROOT)
+        return CustomWebScraper.scrape_and_download(URL_ROOT, LIMIT, DIR_ROOT)
