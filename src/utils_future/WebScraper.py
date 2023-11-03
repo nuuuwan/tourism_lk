@@ -49,21 +49,6 @@ class WebScraper:
                 return ''
 
     @staticmethod
-    def get_link_text(a):
-        href = a.get_attribute('href')
-        text = WebScraper.get_element_text(a)
-
-        MIN_LEN_TEXT = 5
-        if len(text) >= MIN_LEN_TEXT:
-            return text
-
-        path_items = WebScraper.url_to_file_path_items(href)
-        text = path_items[-1].split('.')[0]
-        text = text.replace('%20', '-')
-        log.warning(f'get_element_text failed. Using url text ("{text}")')
-        return text
-
-    @staticmethod
     def scrape_link_url_info_list(browser, url) -> list[str]:
         try:
             browser = WebScraper.browser_open(browser, url)
@@ -74,7 +59,7 @@ class WebScraper:
         link_url_info_list = []
         for a in browser.find_elements(By.TAG_NAME, 'a'):
             href = a.get_attribute('href')
-            text = WebScraper.get_link_text(a)
+            text = WebScraper.get_element_text(a)
 
             url_info = dict(
                 href=href,
