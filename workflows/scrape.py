@@ -2,9 +2,9 @@ from tlk import DataReadMe, StatisticsPage
 
 
 def main():
-    d = StatisticsPage().scrape()
+    pdf_link_list = StatisticsPage().scrape()
     DataReadMe.update(
-        n_pdf_links=d['n_pdf_links'],
+        pdf_link_list=pdf_link_list,
     )
 
 

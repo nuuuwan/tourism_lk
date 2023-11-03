@@ -36,10 +36,13 @@ class WebScraper(WebBrowser):
         def func_end(url_list: list[str]):
             return len(url_list) > limit
 
-        all_pdf_link_list = QueueProcessor.run(
-            [url_root],
-            func_process,
-            func_end,
+        all_pdf_link_list = sorted(
+            QueueProcessor.run(
+                [url_root],
+                func_process,
+                func_end,
+            ),
+            key=lambda x: x.text,
         )
 
         log.info(
@@ -73,6 +76,7 @@ class WebScraper(WebBrowser):
         file_path = os.path.join(
             dir_path, String(pdf_link.text).kebab + '.pdf'
         )
+        pdf_link.local_file_path = file_path
         WebScraper.download_if_not_exists(pdf_link.href, file_path)
 
     @classmethod
@@ -86,9 +90,7 @@ class WebScraper(WebBrowser):
             max_threads=4,
         )
         WebScraper.browser_quit(browser)
-        return dict(
-            n_pdf_links=len(pdf_link_list),
-        )
+        return pdf_link_list
 
     # IMPORTANT! classmethods that must be implemented by subclasses
 

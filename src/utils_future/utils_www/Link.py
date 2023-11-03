@@ -13,6 +13,7 @@ class Link:
         self.page_url = page_url
         self.href = self.element_a.get_attribute('href')
         self.text = WebBrowser.get_element_text(self.element_a)
+        self.local_file_path = None
 
     def __lt__(self, other):
         return self.href < other.href
