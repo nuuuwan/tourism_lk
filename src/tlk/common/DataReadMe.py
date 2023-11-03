@@ -19,7 +19,7 @@ class DataReadMe:
             '## PDFs from [SLTDA](https://www.sltda.gov.lk/statistics)',
             f'*{len(pdf_link_list)} [PDFs](sltda/pdf) scraped*',
         ] + List(pdf_link_list).map(
-            lambda link: f'* [{link.local_file_path[5:]}]({link.local_file_path[5:]})'
+            lambda link: f'* [{link.local_file_path[15:]}]({link.local_file_path[15:]})'
         )
 
         file_path = os.path.join('data', 'README.md')
