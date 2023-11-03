@@ -48,8 +48,8 @@ class GenericPDFParser:
 
         pdf = GenericPDF(pdf_path)
 
-        dir_pdf_parsed = os.path.join(
-            DIR_PDFS_PARSED_ROOT, os.path.basename(pdf_path) + '-parsed'
+        dir_pdf_parsed = (
+            pdf_path.replace(DIR_ROOT, DIR_PDFS_PARSED_ROOT) + '-parsed'
         )
         os.makedirs(dir_pdf_parsed)
 
