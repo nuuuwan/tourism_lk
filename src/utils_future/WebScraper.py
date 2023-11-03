@@ -74,7 +74,7 @@ class WebScraper:
         link_url_info_list = []
         for a in browser.find_elements(By.TAG_NAME, 'a'):
             href = a.get_attribute('href')
-            text = WebScraper.get_element_text(a)
+            text = WebScraper.get_link_text(a)
 
             url_info = dict(
                 href=href,
