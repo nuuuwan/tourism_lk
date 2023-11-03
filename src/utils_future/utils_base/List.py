@@ -22,3 +22,12 @@ class List:
     def unique_for_key(self, func_key):
         idx = dict(self.map(lambda x: (func_key(x), x)))
         return sorted(list(idx.values()), key=func_key)
+
+    def flatten(self):
+        arr = []
+        for item in self.arr:
+            if isinstance(item, list):
+                arr += item
+            else:
+                raise Exception(f'Cannot flatten {item}')
+        return arr

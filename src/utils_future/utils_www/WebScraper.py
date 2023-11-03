@@ -12,7 +12,7 @@ log = Log('WebScraper')
 
 class WebScraper(WebBrowser):
     @classmethod
-    def scrape_page_links_recursive(
+    def scrape_pdf_links_recursive(
         cls, browser, url_root: str, limit: int
     ) -> dict[str, str]:
         root_domain = url_root.split('/')[2]
@@ -22,58 +22,38 @@ class WebScraper(WebBrowser):
 
         def func_process(url: str):
             link_list = Link.list_from_url(browser, url)
+            pdf_link_list = Link.filter_by_ext(link_list, 'pdf')
+
             new_urls = List(link_list).map(lambda x: x.href)
             cleaned_new_urls = List(new_urls).filter(is_url_clean)
-            return cleaned_new_urls, cleaned_new_urls
+            return cleaned_new_urls, pdf_link_list
 
         def func_end(url_list: list[str]):
             return len(url_list) > limit
 
-        all_page_urls = QueueProcessor.run(
+        all_pdf_link_list = QueueProcessor.run(
             [url_root],
             func_process,
             func_end,
         )
 
         log.info(
-            f'Found {len(all_page_urls)} unique URLs'
-            + f' starting from {url_root}.'
-        )
-        return all_page_urls[:limit]
-
-    @classmethod
-    def scrape_pdf_links_recursive(
-        cls, browser, url_root: str, limit: int
-    ) -> dict[str, str]:
-        page_urls = cls.scrape_page_links_recursive(browser, url_root, limit)
-        all_pdf_link_list = []
-        for page_url in page_urls:
-            link_list = Link.list_from_url(browser, page_url)
-            pdf_link_list = Link.filter_by_ext(link_list, 'pdf')
-            all_pdf_link_list += pdf_link_list
-            all_pdf_link_list = Link.unique(all_pdf_link_list)
-
-            log.debug(f'len(all_pdf_link_list)={len(all_pdf_link_list)}')
-            if len(all_pdf_link_list) >= limit:
-                break
-        log.info(
             f'Found {len(all_pdf_link_list)} unique PDFs'
             + f' starting from {url_root}.'
         )
-
         return all_pdf_link_list[:limit]
 
     @staticmethod
     def download_if_not_exists(url, file_path):
         if os.path.exists(file_path):
             log.warn(f'Already downloaded {url} to {file_path}')
-        else:
-            try:
-                WWW.download_binary(url, file_path)
-            except Exception as e:
-                log.error(f'WWW.download_binary({url}) -> {e}')
-                return
+            return
+
+        try:
+            WWW.download_binary(url, file_path)
             log.debug(f'Downloaded {url} to {url}')
+        except Exception as e:
+            log.error(f'WWW.download_binary({url}) -> {e}')
 
     @classmethod
     def get_dir_path_for_url(cls, pdf_link: Link, dir_root: str) -> str:
@@ -88,7 +68,6 @@ class WebScraper(WebBrowser):
         file_path = os.path.join(
             dir_path, String(pdf_link.text).kebab + '.pdf'
         )
-
         WebScraper.download_if_not_exists(pdf_link.href, file_path)
 
     @classmethod

@@ -22,6 +22,9 @@ class Link:
     def text(self):
         return WebBrowser.get_element_text(self.element_a)
 
+    def __lt__(self, other):
+        return self.href < other.href
+
     @staticmethod
     def filter_by_ext(link_list: list['Link'], ext: str) -> list['Link']:
         return List(link_list).filter(
