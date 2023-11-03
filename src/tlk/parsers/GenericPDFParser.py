@@ -14,7 +14,7 @@ DIR_PDFS_PARSED_ROOT = os.path.join('data', 'sltda', 'pdf-parsed')
 class GenericPDFParser:
     @staticmethod
     def get_pdf_paths() -> list[str]:
-        for root, dirs, files in os.walk(DIR_ROOT):
+        for root, _, files in os.walk(DIR_ROOT):
             for file in files:
                 if file.endswith('.pdf'):
                     yield os.path.join(root, file)

@@ -26,7 +26,6 @@ class WebScraper(WebBrowser):
         def func_process(url: str):
             link_list = Link.list_from_url(browser, url)
             pdf_link_list = Link.filter_by_ext(link_list, 'pdf')
-
             new_urls = List(link_list).map(lambda x: x.href)
             cleaned_new_urls = List(List(new_urls).map(clean_url)).filter(
                 is_url_valid
