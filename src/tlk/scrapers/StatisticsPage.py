@@ -1,4 +1,5 @@
 import os
+import shutil
 
 from utils import Log
 
@@ -15,6 +16,8 @@ FORCE_CLEAN = False
 
 class StatisticsPage:
     def scrape(self):
-        CustomWebScraper.scrape_and_download(
-            URL_ROOT, LIMIT, DIR_ROOT, FORCE_CLEAN
-        )
+        if FORCE_CLEAN:
+            if os.path.exists(DIR_ROOT):
+                shutil.rmtree(DIR_ROOT)
+            os.makedirs(DIR_ROOT)
+        CustomWebScraper.scrape_and_download(URL_ROOT, LIMIT, DIR_ROOT)

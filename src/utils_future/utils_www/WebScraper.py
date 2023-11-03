@@ -1,6 +1,5 @@
 import os
 import queue
-import shutil
 
 from selenium.webdriver.common.by import By
 from utils import WWW, Log, String
@@ -100,22 +99,14 @@ class WebScraper(WebBrowser):
             log.debug(f'Downloaded {pdf_url} to {file_path}')
 
     @classmethod
-    def scrape_and_download(
-        cls, url_root: str, limit: int, dir_root: str, force_clean: bool
-    ):
-        if force_clean:
-            if os.path.exists(dir_root):
-                shutil.rmtree(dir_root)
-            os.makedirs(dir_root)
-
+    def scrape_and_download(cls, url_root: str, limit: int, dir_root: str):
         browser = WebScraper.browser_start()
-
         pdf_link_list = cls.scrape_pdf_links_recursive(
             browser, url_root, limit
         )
         List(pdf_link_list).map_parallel(
             lambda pdf_link: cls.download(pdf_link, dir_root),
-            max_threads=5,
+            max_threads=4,
         )
         WebScraper.browser_quit(browser)
 
