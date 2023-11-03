@@ -1,5 +1,5 @@
 # Data (TourismLK)
-*Updated 2023-11-03 10:44:43*
+*Updated 2023-11-03 10:47:08*
 
 ## PDF Scraping
-* 5 [links](data/sltda/pdf) scraped
+* 63 [links](data/sltda/pdf) scraped
