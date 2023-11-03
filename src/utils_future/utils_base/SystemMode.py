@@ -23,7 +23,9 @@ class SystemMode:
     def log_mode():
         mode = SystemMode.get()
         mode.logger(
-            f'💻System is running in {mode.emoji} {mode.name.upper()} mode ({platform.platform()}, {os.name})'
+            '💻System is running in'
+            + f' {mode.emoji} {mode.name.upper()} mode '
+            + f'({platform.platform()}, {os.name})'
         )
 
     @staticmethod
