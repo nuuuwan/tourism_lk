@@ -5,7 +5,7 @@ from utils import File, JSONFile, Log
 
 from tlk.parsers.GenericPDF import GenericPDF
 from tlk.scrapers.StatisticsPage import DIR_ROOT
-from utils_future import SystemMode
+from utils_future import List, SystemMode
 
 log = Log('GenericPDFParser')
 
@@ -29,7 +29,7 @@ class GenericPDFParser:
                     pdf_path = os.path.join(root, file)
                     pdf_paths.append(pdf_path)
         return pdf_paths
-    
+
     @staticmethod
     def build_summary(pdf, dir_pdf_parsed):
         json_path = os.path.join(dir_pdf_parsed, 'summary.json')
@@ -64,14 +64,11 @@ class GenericPDFParser:
         for i_image, image in enumerate(pdf.images):
             image_path = os.path.join(dir_images, f'image-{i_image}.png')
             image.save(image_path)
-            log.debug(f'Wrote {image_path}')
             file_size = os.path.getsize(image_path)
             if file_size < MIN_IMAGE_FILE_SIZE:
-                log.warning(
-                    f'Image {image_path} is too small'
-                    + f' ({file_size} bytes). Deleting!'
-                )
                 os.remove(image_path)
+            else:
+                log.debug(f'Wrote {image_path}')
 
     @staticmethod
     def parse(pdf_path: str):
@@ -110,13 +107,11 @@ class GenericPDFParser:
             if os.path.exists(DIR_PDFS_PARSED_ROOT):
                 shutil.rmtree(DIR_PDFS_PARSED_ROOT)
         os.makedirs(DIR_PDFS_PARSED_ROOT, exist_ok=True)
-
         pdf_paths = (
             GenericPDFParser.get_pdf_paths()
             if SystemMode.is_prod()
             else [TEST_PDF_PATH]
         )
-        for i_pdf, pdf_path in enumerate(pdf_paths):
-            GenericPDFParser.parse_safe(pdf_path)
-            log.info(f'Completed {i_pdf + 1}/{len(pdf_paths)} - {pdf_path}')
-            
+        List(pdf_paths).map_parallel(
+            GenericPDFParser.parse_safe, max_threads=4
+        )
