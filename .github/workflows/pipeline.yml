@@ -22,6 +22,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt install ghostscript
+        sudo apt install poppler-utils
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
