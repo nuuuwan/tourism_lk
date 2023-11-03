@@ -28,3 +28,7 @@ class SystemMode:
             mode = SystemMode('prod', '💪🏽', log.info)
         mode.log()
         return mode
+
+    @staticmethod
+    def is_test_mode() -> bool:
+        return SystemMode.get().id == 'test'

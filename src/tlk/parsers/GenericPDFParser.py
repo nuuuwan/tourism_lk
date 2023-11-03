@@ -2,7 +2,7 @@ import os
 import shutil
 
 from utils import JSONFile, Log
-
+from utils_future import SystemMode
 from tlk.parsers.GenericPDF import GenericPDF
 from tlk.scrapers.StatisticsPage import DIR_ROOT
 
@@ -54,3 +54,5 @@ class GenericPDFParser:
 
         for pdf_path in GenericPDFParser.get_pdf_paths():
             GenericPDFParser.parse(pdf_path)
+            if SystemMode.is_test_mode():
+                break
