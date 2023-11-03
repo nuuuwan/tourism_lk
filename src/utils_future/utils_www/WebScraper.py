@@ -1,9 +1,9 @@
 import os
-import queue
 
 from utils import WWW, Log, String
 
 from utils_future.utils_base.List import List
+from utils_future.utils_base.QueueProcessor import QueueProcessor
 from utils_future.utils_www.Link import Link
 from utils_future.utils_www.WebBrowser import WebBrowser
 
@@ -15,41 +15,29 @@ class WebScraper(WebBrowser):
     def scrape_page_links_recursive(
         cls, browser, url_root: str, limit: int
     ) -> dict[str, str]:
-        log.info(
-            'Recursively Scraping Pages starting from'
-            + f' {url_root} (limit={limit})'
-        )
         root_domain = url_root.split('/')[2]
-        page_url_queue = queue.Queue()
-        page_url_queue.put(url_root)
 
-        visited_url_set = set()
-        all_page_urls = []
-        while page_url_queue.not_empty and len(all_page_urls) < limit:
-            # pre-visit
-            current_page_url = page_url_queue.get()
-            if current_page_url in visited_url_set:
-                continue
+        def is_url_clean(url):
+            return (root_domain in url) and cls.is_url_valid(url)
 
-            # visit
-            child_link_list = Link.list_from_url(browser, current_page_url)
-            child_page_urls = List(child_link_list).map(lambda x: x.href)
-            child_cleaned_page_urls = List(child_page_urls).filter(
-                lambda url: (root_domain in url) and cls.is_url_valid(url)
-            )
+        def func_process(url: str):
+            link_list = Link.list_from_url(browser, url)
+            new_urls = List(link_list).map(lambda x: x.href)
+            cleaned_new_urls = List(new_urls).filter(is_url_clean)
+            return cleaned_new_urls, cleaned_new_urls
 
-            # post-visit
-            visited_url_set.add(current_page_url)
-            for child_page_url in child_cleaned_page_urls:
-                page_url_queue.put(child_page_url)
+        def func_end(url_list: list[str]):
+            return len(url_list) > limit
 
-            all_page_urls += child_cleaned_page_urls
-            all_page_urls = List(all_page_urls).unique()
-
-            log.debug(f'len(all_page_urls)={len(all_page_urls)}')
+        all_page_urls = QueueProcessor.run(
+            [url_root],
+            func_process,
+            func_end,
+        )
 
         log.info(
-            f'Found {len(all_page_urls)} unique URLs' + f' starting from {url_root}.'
+            f'Found {len(all_page_urls)} unique URLs'
+            + f' starting from {url_root}.'
         )
         return all_page_urls[:limit]
 
