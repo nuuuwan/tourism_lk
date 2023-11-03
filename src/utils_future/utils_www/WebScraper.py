@@ -36,15 +36,11 @@ class WebScraper(WebBrowser):
         def func_end(url_list: list[str]):
             return len(url_list) > limit
 
-        all_pdf_link_list = sorted(
-            QueueProcessor.run(
+        all_pdf_link_list =  QueueProcessor.run(
                 [url_root],
                 func_process,
                 func_end,
-            ),
-            key=lambda x: x.href,
-        )
-
+            )
         log.info(
             f'Found {len(all_pdf_link_list)} unique PDFs'
             + f' starting from {url_root}.'
