@@ -40,13 +40,12 @@ jobs:
       run: |
         export PYTHONPATH="$PYTHONPATH:./src"
         python workflows/pipeline.py
+        echo "$(date)" >> update.log
 
     - name: Push to github repo
       run: |
         git config --global user.email "${{ secrets.GIT_USER_EMAIL }}"
         git config --global user.name "${{ secrets.GIT_USER_NAME }}"
-        
-        echo "$(date)" >> update.log
         
         git pull origin main
         git add .
