@@ -40,7 +40,7 @@ jobs:
       run: |
         export PYTHONPATH="$PYTHONPATH:./src"
         python workflows/pipeline.py
-        echo "$(date)" >> update.log
+        echo "* $(date)" >> data/updates.md
 
     - name: Push to github repo
       run: |
