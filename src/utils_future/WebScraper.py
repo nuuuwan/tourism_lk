@@ -36,7 +36,7 @@ class WebScraper:
         log.debug('🔴browser_quit()')
 
     @staticmethod
-    def get_text(element):
+    def get_element_text(element):
         current_element = element
         while True:
             text = current_element.text
@@ -61,7 +61,7 @@ class WebScraper:
             href = a.get_attribute('href')
             text = None
             if href.endswith('.pdf'):
-                text = WebScraper.get_text(a)
+                text = WebScraper.get_element_text(a)
                 if len(text) < 5:
                     path_items = WebScraper.url_to_file_path_items(href)
                     text = path_items[-1].split('.')[0]
