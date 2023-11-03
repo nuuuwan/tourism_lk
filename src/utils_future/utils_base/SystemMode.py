@@ -12,13 +12,6 @@ class SystemMode:
         self.emoji = emoji
         self.logger = logger
 
-    def log(self):
-        self.logger(
-            '💻System is running in'
-            + f' {self.emoji} {self.id.upper()} mode '
-            + f'(platform={platform.platform()}, os.name={os.name})'
-        )
-
     @staticmethod
     def get() -> 'SystemMode':
         os_name = os.name
@@ -27,6 +20,13 @@ class SystemMode:
         else:
             mode = SystemMode('prod', '💪🏽', log.info)
         return mode
+
+    def log(self):
+        self.logger(
+            '💻System is running in'
+            + f' {self.emoji} {self.id.upper()} mode '
+            + f'(platform={platform.platform()}, os.name={os.name})'
+        )
 
     @staticmethod
     def get_if(**kwargs):
@@ -38,3 +38,7 @@ class SystemMode:
         v = kwargs[mode_id]
         mode.logger(f'{kwargs=} -> {v}')
         return v
+
+    @staticmethod
+    def is_prod():
+        return SystemMode.get().id == 'prod'

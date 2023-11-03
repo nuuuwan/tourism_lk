@@ -4,11 +4,18 @@ import shutil
 from utils import File, JSONFile, Log
 
 from tlk.parsers.GenericPDF import GenericPDF
-from tlk.scrapers.StatisticsPage import DIR_ROOT, LIMIT
+from tlk.scrapers.StatisticsPage import DIR_ROOT
+from utils_future import SystemMode
 
 log = Log('GenericPDFParser')
 
 DIR_PDFS_PARSED_ROOT = os.path.join('data', 'sltda', 'pdf-parsed')
+FORCE_CLEAN = False
+TEST_PDF_PATH = os.path.join(
+    DIR_ROOT,
+    'weekly-tourist-arrivals-reports',
+    'tourist-arrivals-2023-october.pdf',
+)
 
 
 class GenericPDFParser:
@@ -23,6 +30,7 @@ class GenericPDFParser:
     def build_summary(pdf, dir_pdf_parsed):
         json_path = os.path.join(dir_pdf_parsed, 'summary.json')
         JSONFile(json_path).write(pdf.summary)
+        log.debug(pdf.summary)
         log.debug(f'Wrote {json_path}')
 
     @staticmethod
@@ -68,11 +76,15 @@ class GenericPDFParser:
 
     @staticmethod
     def parse_all():
-        if os.path.exists(DIR_PDFS_PARSED_ROOT):
-            shutil.rmtree(DIR_PDFS_PARSED_ROOT)
-        os.makedirs(DIR_PDFS_PARSED_ROOT)
+        if FORCE_CLEAN:
+            if os.path.exists(DIR_PDFS_PARSED_ROOT):
+                shutil.rmtree(DIR_PDFS_PARSED_ROOT)
+            os.makedirs(DIR_PDFS_PARSED_ROOT)
 
-        for i, pdf_path in enumerate(GenericPDFParser.get_pdf_paths()):
+        pdf_paths = (
+            GenericPDFParser.get_pdf_paths()
+            if SystemMode.is_prod()
+            else [TEST_PDF_PATH]
+        )
+        for pdf_path in pdf_paths:
             GenericPDFParser.parse_safe(pdf_path)
-            if i >= LIMIT:
-                break
