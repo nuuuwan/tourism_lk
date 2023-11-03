@@ -1,0 +1,19 @@
+0,1,2
+,Details of Foreign Visitors by Location - 2014,
+Location,No. of Foreign Visitors,Revenue (in Rs.)
+Anuradhapura,"79,685","251,708,838.28"
+Polonnaruwa,"181,344","571,971,966.92"
+Sigiriya,"354,997","1,348,197,649.22"
+Kataragama,105,"68,250.00"
+Galle,"10,560","6,406,280.00"
+Dambulla,445,"114,110.00"
+Total,"627,136","2,178,467,094.42"
+,Details of Domestic Visitors by Location - 2014,
+Location,No. of Local Visitors,Revenue (in Rs.)
+Anuradhapura,"32,016","550,120.00"
+Polonnaruwa,"84,398","2,949,185.00"
+Sigiriya,"368,605","17,403,650.00"
+Kataragama,"13,725","247,110.00"
+Galle,"47,367","1,205,050.00"
+Dambulla,"1,052","15,760.00"
+Total,"547,163","22,370,875.00"

@@ -1,0 +1,15 @@
+0,1,2,3,4,5,6
+,No. of Visitors,Revenue (in Rs.),,No. of Visitors,Revenue ( in Rs.),
+,"905,333","3,363,313,023.00",,"976,949","38,034,740.00",
+,Details of Foreign Visitors by Location - 2016,,,Details of Domestic Visitors by Location - 2016,,
+Location,No. of Foreign Visitors,Revenue ( in Rs.),Location,,No. of Local Visitors,Revenue (in Rs.)
+Anuradhapura,"77,703","349,793,130.00",Anuradhapura,,"54,638","772,610.00"
+Polonnaruwa,"234,242","797,741,537.00",Polonnaruwa,,"84,416","3,291,525.00"
+Sigiriya,"562,461","2,204,064,530.00",Sigiriya,,"633,055","27,097,375.00"
+Kataragama,92,"106,135.00",Kataragama,,"23,756","426,330.00"
+Galle,"15,949","9,189,716.00",Galle,,"62,975","1,707,540.00"
+Dambulla,669,"188,887.00",Dambulla,,"1,011","18,340.00"
+Kandy,202,"28,690.00",Kandy,,"3,854","62,640.00"
+Apegama,"10,635","1,258,764.00",Apegama,,"63,812","3,087,890.00"
+Ritigala,"3,380","941,634.00",Ritigala,,"49,432","1,570,490.00"
+Total,"905,333","3,363,313,023.00",Total,,"976,949","38,034,740.00"
