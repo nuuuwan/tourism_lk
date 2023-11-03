@@ -5,8 +5,8 @@ import shutil
 from selenium.webdriver.common.by import By
 from utils import WWW, Log, String
 
-from utils_future import List
-from utils_future.WebBrowser import WebBrowser
+from utils_future.utils_base.List import List
+from utils_future.utils_www.WebBrowser import WebBrowser
 
 log = Log('WebScraper')
 
