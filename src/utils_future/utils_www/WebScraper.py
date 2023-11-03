@@ -19,35 +19,24 @@ class WebScraper(WebBrowser):
         if not browser:
             return []
 
-        link_list = List(browser.find_elements(By.TAG_NAME, 'a')).map(
-            lambda element_a: Link(element_a)
+        link_list = Link.unique(
+            List(browser.find_elements(By.TAG_NAME, 'a')).map(
+                lambda element_a: Link(element_a)
+            )
         )
-        link_list = Link.unique(link_list)
+
         log.debug(f'scrape_link_list({url})' + f' -> {len(link_list)} links')
         return link_list
-
-    @classmethod
-    def clean_urls(cls, urls: list[str], root_domain: str) -> list[str]:
-        cleaned_urls = []
-        for page_url_c in urls:
-            if root_domain not in page_url_c:
-                continue
-
-            if not cls.is_url_valid(page_url_c):
-                continue
-
-            if page_url_c.endswith('#'):
-                page_url_c = page_url_c[:-1]
-            cleaned_urls.append(page_url_c)
-        return cleaned_urls
 
     @classmethod
     def visit_url(cls, browser, url: str, root_domain: str):
         link_list = WebScraper.scrape_link_list(browser, url)
         pdf_link_list = Link.filter_by_ext(link_list, 'pdf')
-        page_urls = List(link_list).map(lambda x: x.href)
 
-        cleaned_page_urls = cls.clean_urls(page_urls, root_domain)
+        page_urls = List(link_list).map(lambda x: x.href)
+        cleaned_page_urls = List(page_urls).filter(
+            lambda url: (root_domain in url) and cls.is_url_valid(url)
+        )
 
         log.debug(
             f'visit_url({url}) -> {len(pdf_link_list)} pdfs, '
@@ -97,9 +86,6 @@ class WebScraper(WebBrowser):
         page_url_path_items = cls.url_to_file_path_items(pdf_url)
 
         dir_path = os.path.join(dir_root, *page_url_path_items)
-        # exists_ok: Optional. Default value of this parameter is False. If
-        # the specified directory already exists and value is set to False
-        # an OSError is raised, else not.
         os.makedirs(dir_path, exist_ok=True)
         file_name = String(pdf_link.text).kebab + '.pdf'
 
