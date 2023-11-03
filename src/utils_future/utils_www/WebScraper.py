@@ -46,12 +46,12 @@ class WebScraper(WebBrowser):
     @staticmethod
     def download_if_not_exists(url, file_path):
         if os.path.exists(file_path):
-            log.warn(f'Already downloaded {url} to {file_path}')
+            log.warn(f'Already downloaded {url} -> {file_path}')
             return
 
         try:
             WWW.download_binary(url, file_path)
-            log.debug(f'Downloaded {url} to {url}')
+            log.debug(f'Downloaded {url} -> {file_path}')
         except Exception as e:
             log.error(f'WWW.download_binary({url}) -> {e}')
 
