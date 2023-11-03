@@ -11,8 +11,9 @@ class DataReadMe:
     @staticmethod
     def get_pdf_lines(pdf_link_list):
         def get_link_line(link: Link):
-            label = link.local_file_path[15:]
-            return f'* [{label}]({label})'
+            path = link.local_file_path[15:]
+            parsed_path = path.replace('.pdf', '.pdf-parsed')
+            return f'* [{path}]({path}) ([parsed]({parsed_path}))'
 
         inner_lines = List(pdf_link_list).map(get_link_line)
         return [
