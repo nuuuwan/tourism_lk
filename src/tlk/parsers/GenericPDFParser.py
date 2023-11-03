@@ -86,9 +86,7 @@ class GenericPDFParser:
             return
 
         os.makedirs(dir_pdf_parsed, exist_ok=True)
-
         pdf = GenericPDF(pdf_path)
-
         GenericPDFParser.build_summary(pdf, dir_pdf_parsed)
         GenericPDFParser.build_tables(pdf, dir_pdf_parsed)
         GenericPDFParser.build_text(pdf, dir_pdf_parsed)

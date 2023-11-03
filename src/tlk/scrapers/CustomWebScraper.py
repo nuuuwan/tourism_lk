@@ -10,11 +10,15 @@ URL_BLACK_LIST = [
 ]
 URL_WHITE_LIST = ['report', 'research']
 DIR_NAME_BLACKLIST = ['en', 'statistics']
+DOMAIN = 'www.sltda.gov.lk'
 
 
 class CustomWebScraper(WebScraper):
     @classmethod
     def is_url_valid(cls, url):
+        if DOMAIN not in url:
+            return False
+
         url_lower = url.lower()
 
         for keyword in URL_BLACK_LIST:

@@ -11,25 +11,23 @@ log = Log('WebScraper')
 
 
 class WebScraper(WebBrowser):
+    @staticmethod
+    def clean_url(url):
+        return url.split('#')[0]
+
     @classmethod
     def scrape_pdf_links_recursive(
         cls, browser, url_root: str, limit: int
     ) -> dict[str, str]:
-        root_domain = url_root.split('/')[2]
-
-        def is_url_valid(url):
-            return (root_domain in url) and cls.is_url_valid(url)
-
-        def clean_url(url):
-            return url.split('#')[0]
+        url_root.split('/')[2]
 
         def func_process(url: str):
             link_list = Link.list_from_url(browser, url)
             pdf_link_list = Link.filter_by_ext(link_list, 'pdf')
             new_urls = List(link_list).map(lambda x: x.href)
-            cleaned_new_urls = List(List(new_urls).map(clean_url)).filter(
-                is_url_valid
-            )
+            cleaned_new_urls = List(
+                List(new_urls).map(WebScraper.clean_url)
+            ).filter(cls.is_url_valid)
             return cleaned_new_urls, pdf_link_list
 
         def func_end(url_list: list[str]):
