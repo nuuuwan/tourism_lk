@@ -42,7 +42,6 @@ class WebScraper(WebBrowser):
             f'visit_url({url}) -> {len(pdf_link_list)} pdfs, '
             + f'{len(cleaned_page_urls)} links'
         )
-
         return pdf_link_list, cleaned_page_urls
 
     @classmethod
@@ -61,13 +60,13 @@ class WebScraper(WebBrowser):
             if current_page_url in visited_url_set:
                 continue
             (
-                pdf_link_list_c,
-                cleaned_page_urls_c,
+                child_pdf_link_list,
+                child_cleaned_page_urls,
             ) = cls.visit_url(browser, current_page_url, root_domain)
             visited_url_set.add(current_page_url)
-            pdf_link_list.extend(pdf_link_list_c)
-            for page_url_c in cleaned_page_urls_c:
-                page_url_queue.put(page_url_c)
+            pdf_link_list.extend(child_pdf_link_list)
+            for child_page_url in child_cleaned_page_urls:
+                page_url_queue.put(child_page_url)
             log.debug(
                 f'len(pdf_link_list)={len(pdf_link_list)}, '
                 + f'page_url_queue.qsize()={page_url_queue.qsize()}'
