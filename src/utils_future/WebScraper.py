@@ -149,7 +149,7 @@ class WebScraper:
         page_urls = List(link_url_info_list).map(lambda x: x['href'])
 
         cleaned_page_urls = WebScraper.clean_urls(page_urls, root_domain)
-        
+
         log.debug(
             f'visit_url({url}) -> {len(pdf_url_info_list)} pdfs, '
             + f'{len(cleaned_page_urls)} links'
