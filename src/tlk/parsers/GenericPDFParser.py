@@ -16,7 +16,7 @@ TEST_PDF_PATH = os.path.join(
     'weekly-tourist-arrivals-reports',
     'tourist-arrivals-2023-october.pdf',
 )
-MIN_IMAGE_FILE_SIZE = 20_000
+MIN_IMAGE_FILE_SIZE = 32_000
 
 
 class GenericPDFParser:
