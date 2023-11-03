@@ -1,59 +1,21 @@
 import os
 import queue
 import shutil
-import time
 
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
 from utils import WWW, Log, String
 
 from utils_future import List
+from utils_future.WebBrowser import WebBrowser
 
-log = Log('StatisticsPageUtils')
+log = Log('WebScraper')
 
 
-class WebScraper:
-    @staticmethod
-    def browser_start():
-        options = Options()
-        options.add_argument('--headless')
-        browser = webdriver.Firefox(options=options)
-        browser.implicitly_wait(2)
-        log.debug('🟢browser_start()')
-        return browser
-
-    @staticmethod
-    def browser_open(browser, url):
-        browser.get(url)
-        time.sleep(2)
-        log.debug(f'🔵browser_open({url})')
-        return browser
-
-    @staticmethod
-    def browser_quit(browser):
-        browser.quit()
-        log.debug('🔴browser_quit()')
-
-    @staticmethod
-    def get_element_text(element):
-        current_element = element
-        while True:
-            text = current_element.text
-            if len(text) > 128:
-                return ''
-            if text and len(text) > 5:
-                return text
-            current_element = current_element.find_element(By.XPATH, '..')
-            if current_element.tag_name == 'html':
-                return ''
-
+class WebScraper(WebBrowser):
     @staticmethod
     def scrape_link_url_info_list(browser, url) -> list[str]:
-        try:
-            browser = WebScraper.browser_open(browser, url)
-        except Exception as e:
-            log.error(f'browser_open({url}) -> {e}')
+        browser = WebScraper.browser_open(browser, url)
+        if not browser:
             return []
 
         link_url_info_list = []
