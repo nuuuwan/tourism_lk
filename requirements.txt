@@ -2,4 +2,4 @@ utils-nuuuwan
 PyPDF2<=2.0.0
 opencv-python
 camelot-py[cv]
-pymupdf
+pdf2image
