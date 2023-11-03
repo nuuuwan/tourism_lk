@@ -26,9 +26,14 @@ class SystemMode:
             mode = SystemMode('test', '🚸', log.warn)
         else:
             mode = SystemMode('prod', '💪🏽', log.info)
-        mode.log()
         return mode
 
     @staticmethod
-    def is_test_mode() -> bool:
-        return SystemMode.get().id == 'test'
+    def get_if(**kwargs):
+        mode = SystemMode.get()
+        mode_id = mode.id
+        if mode_id not in kwargs:
+            raise Exception(f'Unknown mode: {mode_id}')
+        mode.logger(f'Running in {mode_id} mode')
+        mode.logger(f'{kwargs=}')
+        return kwargs[mode_id]

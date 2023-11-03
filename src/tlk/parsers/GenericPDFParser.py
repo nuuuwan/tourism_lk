@@ -4,7 +4,7 @@ import shutil
 from utils import JSONFile, Log
 
 from tlk.parsers.GenericPDF import GenericPDF
-from tlk.scrapers.StatisticsPage import DIR_ROOT
+from tlk.scrapers.StatisticsPage import DIR_ROOT, LIMIT
 
 log = Log('GenericPDFParser')
 
@@ -59,5 +59,7 @@ class GenericPDFParser:
             shutil.rmtree(DIR_PDFS_PARSED_ROOT)
         os.makedirs(DIR_PDFS_PARSED_ROOT)
 
-        for pdf_path in GenericPDFParser.get_pdf_paths():
+        for i, pdf_path in enumerate(GenericPDFParser.get_pdf_paths()):
             GenericPDFParser.parse_safe(pdf_path)
+            if i >= LIMIT:
+                break
