@@ -11,7 +11,7 @@ class DataReadMe:
     @staticmethod
     def update(pdf_link_list: list[Link]):
         time_str = TIME_FORMAT_TIME.stringify(Time.now())
-        pdf_link_list  = sorted(pdf_link_list, key=lambda x: x.local_file_path)
+        pdf_link_list = sorted(pdf_link_list, key=lambda x: x.local_file_path)
         lines = [
             '# Data (TourismLK)',
             f'*Updated {time_str}*',

@@ -1,1 +1,3 @@
 utils-nuuuwan
+PyPDF2
+camelot-py
