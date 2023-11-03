@@ -22,11 +22,14 @@ MIN_IMAGE_FILE_SIZE = 20_000
 class GenericPDFParser:
     @staticmethod
     def get_pdf_paths() -> list[str]:
+        pdf_paths = []
         for root, _, files in os.walk(DIR_ROOT):
             for file in files:
                 if file.endswith('.pdf'):
-                    yield os.path.join(root, file)
-
+                    pdf_path = os.path.join(root, file)
+                    pdf_paths.append(pdf_path)
+        return pdf_paths
+    
     @staticmethod
     def build_summary(pdf, dir_pdf_parsed):
         json_path = os.path.join(dir_pdf_parsed, 'summary.json')
@@ -117,3 +120,4 @@ class GenericPDFParser:
         for i_pdf, pdf_path in enumerate(pdf_paths):
             GenericPDFParser.parse_safe(pdf_path)
             log.info(f'Completed {i_pdf + 1}/{len(pdf_paths)} - {pdf_path}')
+            
