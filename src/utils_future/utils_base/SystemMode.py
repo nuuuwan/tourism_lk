@@ -34,6 +34,7 @@ class SystemMode:
         mode_id = mode.id
         if mode_id not in kwargs:
             raise Exception(f'Unknown mode: {mode_id}')
-        mode.logger(f'Running in {mode_id} mode')
-        mode.logger(f'{kwargs=}')
-        return kwargs[mode_id]
+        mode.log()
+        v = kwargs[mode_id]
+        mode.logger(f'{kwargs=} -> {v}')
+        return v
