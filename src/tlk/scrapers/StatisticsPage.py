@@ -9,7 +9,10 @@ from utils_future import SystemMode
 log = Log('StatisticsPage')
 
 URL_ROOT = 'https://www.sltda.gov.lk/statistics'
-LIMIT = 10 if SystemMode.is_test() else 50
+SYSTEM_MODE_ID = SystemMode.get().id
+
+LIMIT = dict(test=5, prod=50).get(SYSTEM_MODE_ID)
+
 DIR_ROOT = os.path.join('data', 'sltda', 'pdf')
 FORCE_CLEAN = False
 
