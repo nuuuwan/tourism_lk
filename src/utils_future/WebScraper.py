@@ -102,34 +102,14 @@ class WebScraper:
         )
         return pdf_url_info_list
 
-    @staticmethod
-    def is_url_valid(url):
-        url_lower = url.lower()
-        KEYWORD_BLACK_LIST = [
-            'careers',
-            'download',
-            'about-us',
-            'contact',
-            '.pdf',
-            'page=',
-        ]
-        for keyword in KEYWORD_BLACK_LIST:
-            if keyword in url_lower:
-                return False
-        KEYWORD_WHITE_LIST = ['report']
-        for keyword in KEYWORD_WHITE_LIST:
-            if keyword in url_lower:
-                return True
-        return False
-
-    @staticmethod
-    def clean_urls(urls: list[str], root_domain: str) -> list[str]:
+    @classmethod
+    def clean_urls(cls, urls: list[str], root_domain: str) -> list[str]:
         cleaned_urls = []
         for page_url_c in urls:
             if root_domain not in page_url_c:
                 continue
 
-            if not WebScraper.is_url_valid(page_url_c):
+            if not cls.is_url_valid(page_url_c):
                 continue
 
             if page_url_c.endswith('#'):
@@ -137,8 +117,8 @@ class WebScraper:
             cleaned_urls.append(page_url_c)
         return cleaned_urls
 
-    @staticmethod
-    def visit_url(browser, url: str, root_domain: str):
+    @classmethod
+    def visit_url(cls, browser, url: str, root_domain: str):
         link_url_info_list = WebScraper.scrape_link_url_info_list(
             browser, url
         )
@@ -148,7 +128,7 @@ class WebScraper:
 
         page_urls = List(link_url_info_list).map(lambda x: x['href'])
 
-        cleaned_page_urls = WebScraper.clean_urls(page_urls, root_domain)
+        cleaned_page_urls = cls.clean_urls(page_urls, root_domain)
 
         log.debug(
             f'visit_url({url}) -> {len(pdf_url_info_list)} pdfs, '
@@ -157,9 +137,9 @@ class WebScraper:
 
         return pdf_url_info_list, cleaned_page_urls
 
-    @staticmethod
+    @classmethod
     def scrape_pdf_links_recursive(
-        browser, url_root: str, limit: int
+        cls, browser, url_root: str, limit: int
     ) -> dict[str, str]:
         log.info(f'Recursively Scraping PDFs from {url_root} (limit={limit})')
         root_domain = url_root.split('/')[2]
@@ -175,7 +155,7 @@ class WebScraper:
             (
                 pdf_url_info_list_c,
                 cleaned_page_urls_c,
-            ) = WebScraper.visit_url(browser, current_page_url, root_domain)
+            ) = cls.visit_url(browser, current_page_url, root_domain)
             visited_url_set.add(current_page_url)
             pdf_url_info_list.extend(pdf_url_info_list_c)
             for page_url_c in cleaned_page_urls_c:
@@ -192,17 +172,10 @@ class WebScraper:
         )
         return pdf_url_info_list
 
-    @staticmethod
-    def url_to_file_path_items(url: str) -> str:
-        BLACKLIST = ['en', 'statistics']
-        return List(url.split('/')[3:]).filter(lambda x: x not in BLACKLIST)
-
-    @staticmethod
-    def download(pdf_url_info, dir_root):
+    @classmethod
+    def download(cls, pdf_url_info, dir_root):
         pdf_url = pdf_url_info['href']
-        page_url_path_items = WebScraper.url_to_file_path_items(
-            pdf_url_info['url']
-        )
+        page_url_path_items = cls.url_to_file_path_items(pdf_url_info['url'])
 
         dir_path = os.path.join(dir_root, *page_url_path_items)
         # exists_ok: Optional. Default value of this parameter is False. If
@@ -222,9 +195,9 @@ class WebScraper:
                 return
             log.debug(f'Downloaded {pdf_url} to {file_path}')
 
-    @staticmethod
+    @classmethod
     def scrape_and_download(
-        url_root: str, limit: int, dir_root: str, force_clean: bool
+        cls, url_root: str, limit: int, dir_root: str, force_clean: bool
     ):
         if force_clean:
             if os.path.exists(dir_root):
@@ -233,11 +206,21 @@ class WebScraper:
 
         browser = WebScraper.browser_start()
 
-        pdf_url_info_list = WebScraper.scrape_pdf_links_recursive(
+        pdf_url_info_list = cls.scrape_pdf_links_recursive(
             browser, url_root, limit
         )
         List(pdf_url_info_list).map_parallel(
-            lambda pdf_url_info: WebScraper.download(pdf_url_info, dir_root),
+            lambda pdf_url_info: cls.download(pdf_url_info, dir_root),
             max_threads=5,
         )
         WebScraper.browser_quit(browser)
+
+    # IMPORTANT! classmethods that must be implemented by subclasses
+
+    @classmethod
+    def is_url_valid(cls, url):
+        raise NotImplementedError
+
+    @classmethod
+    def url_to_file_path_items(cls, url: str) -> str:
+        raise NotImplementedError
