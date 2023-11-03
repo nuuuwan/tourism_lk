@@ -1,4 +1,3 @@
-from functools import cached_property
 
 from selenium.webdriver.common.by import By
 from utils import Log
@@ -13,14 +12,8 @@ class Link:
     def __init__(self, element_a, page_url):
         self.element_a = element_a
         self.page_url = page_url
-
-    @cached_property
-    def href(self):
-        return self.element_a.get_attribute('href')
-
-    @cached_property
-    def text(self):
-        return WebBrowser.get_element_text(self.element_a)
+        self.href = self.element_a.get_attribute('href')
+        self.text = WebBrowser.get_element_text(self.element_a)
 
     def __lt__(self, other):
         return self.href < other.href
