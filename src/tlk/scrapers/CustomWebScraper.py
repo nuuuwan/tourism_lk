@@ -8,7 +8,7 @@ URL_BLACK_LIST = [
     '.pdf',
     'page=',
 ]
-URL_WHITE_LIST = ['report']
+URL_WHITE_LIST = ['report', 'research']
 DIR_NAME_BLACKLIST = ['en', 'statistics']
 
 
