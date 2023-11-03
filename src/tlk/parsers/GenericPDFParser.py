@@ -114,5 +114,6 @@ class GenericPDFParser:
             if SystemMode.is_prod()
             else [TEST_PDF_PATH]
         )
-        for pdf_path in pdf_paths:
+        for i_pdf, pdf_path in enumerate(pdf_paths):
             GenericPDFParser.parse_safe(pdf_path)
+            log.info(f'Completed {i_pdf + 1}/{len(pdf_paths)} - {pdf_path}')
