@@ -62,7 +62,6 @@ class GenericPDFParser:
         os.makedirs(dir_images, exist_ok=True)
 
         for i_image, image in enumerate(pdf.images):
-            print(image)
             image_path = os.path.join(dir_images, f'image-{i_image}.png')
             image.save(image_path)
             log.debug(f'Wrote {image_path}')
