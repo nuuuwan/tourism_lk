@@ -13,7 +13,7 @@ from utils_future import List
 log = Log('StatisticsPageUtils')
 
 
-class WebPageUtils:
+class WebScraper:
     @staticmethod
     def browser_start():
         options = Options()
@@ -51,7 +51,7 @@ class WebPageUtils:
     @staticmethod
     def scrape_link_url_info_list(browser, url) -> list[str]:
         try:
-            browser = WebPageUtils.browser_open(browser, url)
+            browser = WebScraper.browser_open(browser, url)
         except Exception as e:
             log.error(f'browser_open({url}) -> {e}')
             return []
@@ -61,9 +61,9 @@ class WebPageUtils:
             href = a.get_attribute('href')
             text = None
             if href.endswith('.pdf'):
-                text = WebPageUtils.get_text(a)
+                text = WebScraper.get_text(a)
                 if len(text) < 5:
-                    path_items = WebPageUtils.url_to_file_path_items(href)
+                    path_items = WebScraper.url_to_file_path_items(href)
                     text = path_items[-1].split('.')[0]
                     text = text.replace('%20', '-')
                     log.warning(f'Using {text}')
@@ -121,7 +121,7 @@ class WebPageUtils:
             if root_domain not in page_url_c:
                 continue
 
-            if not WebPageUtils.is_url_valid(page_url_c):
+            if not WebScraper.is_url_valid(page_url_c):
                 continue
 
             if page_url_c.endswith('#'):
@@ -131,15 +131,15 @@ class WebPageUtils:
 
     @staticmethod
     def visit_url(browser, url: str, root_domain: str):
-        link_url_info_list = WebPageUtils.scrape_link_url_info_list(
+        link_url_info_list = WebScraper.scrape_link_url_info_list(
             browser, url
         )
-        pdf_url_info_list = WebPageUtils.filter_pdf_url_info_list(
+        pdf_url_info_list = WebScraper.filter_pdf_url_info_list(
             link_url_info_list
         )
 
         page_urls = List(link_url_info_list).map(lambda x: x['href'])
-        cleaned_page_urls = WebPageUtils.clean_urls(page_urls, root_domain)
+        cleaned_page_urls = WebScraper.clean_urls(page_urls, root_domain)
         log.debug(
             f'visit_url({url}) -> {len(pdf_url_info_list)} pdfs, '
             + f'{len(cleaned_page_urls)} links'
@@ -165,7 +165,7 @@ class WebPageUtils:
             (
                 pdf_url_info_list_c,
                 cleaned_page_urls_c,
-            ) = WebPageUtils.visit_url(browser, current_page_url, root_domain)
+            ) = WebScraper.visit_url(browser, current_page_url, root_domain)
             visited_url_set.add(current_page_url)
             pdf_url_info_list.extend(pdf_url_info_list_c)
             for page_url_c in cleaned_page_urls_c:
@@ -190,7 +190,7 @@ class WebPageUtils:
     @staticmethod
     def download(pdf_url_info, dir_root):
         pdf_url = pdf_url_info['href']
-        page_url_path_items = WebPageUtils.url_to_file_path_items(
+        page_url_path_items = WebScraper.url_to_file_path_items(
             pdf_url_info['url']
         )
 
@@ -221,15 +221,15 @@ class WebPageUtils:
                 shutil.rmtree(dir_root)
             os.makedirs(dir_root)
 
-        browser = WebPageUtils.browser_start()
+        browser = WebScraper.browser_start()
 
-        pdf_url_info_list = WebPageUtils.scrape_pdf_links_recursive(
+        pdf_url_info_list = WebScraper.scrape_pdf_links_recursive(
             browser, url_root, limit
         )
         List(pdf_url_info_list).map_parallel(
-            lambda pdf_url_info: WebPageUtils.download(
+            lambda pdf_url_info: WebScraper.download(
                 pdf_url_info, dir_root
             ),
             max_threads=5,
         )
-        WebPageUtils.browser_quit(browser)
+        WebScraper.browser_quit(browser)
