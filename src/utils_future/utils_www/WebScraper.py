@@ -42,7 +42,7 @@ class WebScraper(WebBrowser):
                 func_process,
                 func_end,
             ),
-            key=lambda x: x.text,
+            key=lambda x: x.href,
         )
 
         log.info(
