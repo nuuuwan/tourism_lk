@@ -14,7 +14,7 @@ class DataReadMe:
             f'*Updated {time_str}*',
             '',
             '## PDFs from [SLTDA](https://www.sltda.gov.lk/statistics)',
-            f'* {n_pdf_links} [links](data/sltda/pdf) scraped',
+            f'* {n_pdf_links} [links](sltda/pdf) scraped',
         ]
         file_path = os.path.join('data', 'README.md')
         File(file_path).write_lines(lines)
