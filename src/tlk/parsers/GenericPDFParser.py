@@ -2,7 +2,7 @@ import os
 import shutil
 
 from utils import JSONFile, Log
-from utils_future import SystemMode
+
 from tlk.parsers.GenericPDF import GenericPDF
 from tlk.scrapers.StatisticsPage import DIR_ROOT
 
@@ -47,12 +47,17 @@ class GenericPDFParser:
         GenericPDFParser.build_tables(pdf, dir_pdf_parsed)
 
     @staticmethod
+    def parse_safe(pdf_path: str):
+        try:
+            GenericPDFParser.parse(pdf_path)
+        except Exception as e:
+            log.error(f'Failed to parse {pdf_path}: {e}')
+
+    @staticmethod
     def parse_all():
         if os.path.exists(DIR_PDFS_PARSED_ROOT):
             shutil.rmtree(DIR_PDFS_PARSED_ROOT)
         os.makedirs(DIR_PDFS_PARSED_ROOT)
 
         for pdf_path in GenericPDFParser.get_pdf_paths():
-            GenericPDFParser.parse(pdf_path)
-            if SystemMode.is_test_mode():
-                break
+            GenericPDFParser.parse_safe(pdf_path)
