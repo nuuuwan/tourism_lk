@@ -1,3 +1,5 @@
+PyPDF2<=2.0.0
+opencv-python
+camelot-py[cv]
 utils-nuuuwan
-PyPDF2
-camelot-py
+selenium
