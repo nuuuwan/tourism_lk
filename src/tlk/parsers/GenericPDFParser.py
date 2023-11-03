@@ -30,7 +30,7 @@ class GenericPDFParser:
     def build_summary(pdf, dir_pdf_parsed):
         json_path = os.path.join(dir_pdf_parsed, 'summary.json')
         JSONFile(json_path).write(pdf.summary)
-        log.debug(pdf.summary)
+        log.debug(str(pdf.summary))
         log.debug(f'Wrote {json_path}')
 
     @staticmethod
@@ -61,7 +61,7 @@ class GenericPDFParser:
         dir_pdf_parsed = (
             pdf_path.replace(DIR_ROOT, DIR_PDFS_PARSED_ROOT) + '-parsed'
         )
-        os.makedirs(dir_pdf_parsed)
+        os.makedirs(dir_pdf_parsed, exist_ok=True)
 
         GenericPDFParser.build_summary(pdf, dir_pdf_parsed)
         GenericPDFParser.build_tables(pdf, dir_pdf_parsed)
@@ -79,7 +79,7 @@ class GenericPDFParser:
         if FORCE_CLEAN:
             if os.path.exists(DIR_PDFS_PARSED_ROOT):
                 shutil.rmtree(DIR_PDFS_PARSED_ROOT)
-            os.makedirs(DIR_PDFS_PARSED_ROOT)
+        os.makedirs(DIR_PDFS_PARSED_ROOT, exist_ok=True)
 
         pdf_paths = (
             GenericPDFParser.get_pdf_paths()
