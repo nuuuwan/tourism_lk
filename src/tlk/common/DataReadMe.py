@@ -6,12 +6,14 @@ from utils_future import Link, List
 
 log = Log('DataReadMe')
 
+URL_PREFIX = 'https://github.com/nuuuwan/tourism_lk/tree/main/'
+
 
 class DataReadMe:
     @staticmethod
     def get_pdf_lines(pdf_link_list):
         def get_link_line(link: Link):
-            path = link.local_file_path[5:]
+            path = URL_PREFIX + link.local_file_path
             label = link.local_file_path[15:]
             parsed_path = path.replace('.pdf', '.pdf-parsed')
             return f'* [{label}]({path}) ([parsed]({parsed_path}))'
