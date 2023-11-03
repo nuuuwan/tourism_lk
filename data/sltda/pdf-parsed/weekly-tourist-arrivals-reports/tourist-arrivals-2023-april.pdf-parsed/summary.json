@@ -1,5 +1,6 @@
 {
   "pdf_path": "data/sltda/pdf/weekly-tourist-arrivals-reports/tourist-arrivals-2023-april.pdf",
   "n_pages": 6,
-  "n_tables": 0
+  "n_tables": 1,
+  "n_images": 91
 }

@@ -1,5 +1,6 @@
 {
   "pdf_path": "data/sltda/pdf/monthly-tourist-arrivals-reports-2023/arrivals-report-march-2023.pdf",
   "n_pages": 18,
-  "n_tables": 0
+  "n_tables": 4,
+  "n_images": 526
 }

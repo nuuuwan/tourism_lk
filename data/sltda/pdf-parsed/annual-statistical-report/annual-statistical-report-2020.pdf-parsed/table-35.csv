@@ -1,0 +1,40 @@
+0,1,2,3
+Country,By Air,By Sea,Total
+AMERICAS,"27,585","4,258","31,843"
+North America,"25,723","3,904","29,627"
+Canada,"11,122","1,314","12,436"
+Mexico,252,97,349
+United States,"14,349","2,493","16,842"
+,,,
+Caribbean & Central America,211,15,226
+Costa Rica,33,0,33
+Jamaica,23,2,25
+Others,155,13,168
+,,,
+South America,"1,651",339,"1,990"
+Argentina,352,64,416
+Brazil,675,200,875
+Chile,232,39,271
+Colombia,190,11,201
+Others,202,25,227
+,,,
+AFRICA,"2,510",370,"2,880"
+North Africa,638,51,689
+Morocco,275,36,311
+Sudan,137,6,143
+Others,226,9,235
+,,,
+Sub-Saharan Africa,"1,872",319,"2,191"
+Kenya,106,4,110
+Mauritius,132,38,170
+Nigeria,25,0,25
+South Africa,"1,144",220,"1,364"
+Others,465,57,522
+,,,
+ASIA & PACIFIC,"173,837","7,317","181,154"
+North East Asia,"36,944",376,"37,320"
+China,"25,910",237,"26,147"
+Japan,"6,613",31,"6,644"
+South Korea,"2,428",71,"2,499"
+Taiwan,"1,949",36,"1,985"
+Others,44,1,45
