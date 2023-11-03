@@ -19,6 +19,6 @@ class List:
     def unique(self):
         return sorted(list(set(self.arr)))
 
-    def unique_for_key(self, key):
-        idx = dict(self.map(lambda x: (x[key], x)))
-        return sorted(list(idx.values()), key=lambda x: x[key])
+    def unique_for_key(self, func_key):
+        idx = dict(self.map(lambda x: (func_key(x), x)))
+        return sorted(list(idx.values()), key=func_key)

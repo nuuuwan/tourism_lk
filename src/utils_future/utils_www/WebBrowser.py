@@ -41,12 +41,11 @@ class WebBrowser:
 
     @staticmethod
     def get_element_text(element):
+        MIN_LEN_TEXT, MAX_LEN_TEXT = 5, 128
         current_element = element
         while True:
             text = current_element.text
-            if len(text) > 128:
-                return ''
-            if text and len(text) > 5:
+            if text and MIN_LEN_TEXT < len(text) < MAX_LEN_TEXT:
                 return text
             current_element = current_element.find_element(By.XPATH, '..')
             if current_element.tag_name == 'html':
