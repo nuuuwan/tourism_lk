@@ -37,6 +37,8 @@ class GenericPDFParser:
         text_path = os.path.join(dir_pdf_parsed, 'text.md')
         lines = []
         for i, text in enumerate(pdf.text_list):
+            if len(text.strip()) == 0:
+                continue
             lines.append(f'### page {i}')
             lines.append(text)
         File(text_path).write_lines(lines)
