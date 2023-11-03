@@ -2,7 +2,7 @@ import os
 
 from utils import Log
 
-from utils_future import WebScraper
+from tlk.scrapers import CustomWebScraper
 
 log = Log('StatisticsPage')
 
@@ -13,4 +13,4 @@ DIR_ROOT = os.path.join('data', 'sltda', 'pdf')
 
 class StatisticsPage:
     def scrape(self):
-        WebScraper.scrape_and_download(URL_ROOT, LIMIT, DIR_ROOT, True)
+        CustomWebScraper.scrape_and_download(URL_ROOT, LIMIT, DIR_ROOT, True)
