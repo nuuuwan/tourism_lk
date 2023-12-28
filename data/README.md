@@ -1,5 +1,5 @@
 # Data (TourismLK)
-*Updated 2023-12-27 06:18:34*
+*Updated 2023-12-28 06:18:32*
 
 ## PDFs from [SLTDA](https://www.sltda.gov.lk/statistics)
 *68 [PDFs](sltda/pdf) scraped*
