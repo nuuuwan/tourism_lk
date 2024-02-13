@@ -1,8 +1,8 @@
 # Data (TourismLK)
-*Updated 2024-02-12 06:19:38*
+*Updated 2024-02-13 06:23:14*
 
 ## PDFs from [SLTDA](https://www.sltda.gov.lk/statistics)
-*71 [PDFs](sltda/pdf) scraped*
+*72 [PDFs](sltda/pdf) scraped*
 * [annual-statistical-report/annual-statistical-report-2010.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2010.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2010.pdf-parsed))
 * [annual-statistical-report/annual-statistical-report-2011.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2011.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2011.pdf-parsed))
 * [annual-statistical-report/annual-statistical-report-2012.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2012.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2012.pdf-parsed))
@@ -38,6 +38,7 @@
 * [monthly-tourist-arrivals-reports-2023/arrivals-report-november-2023.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/monthly-tourist-arrivals-reports-2023/arrivals-report-november-2023.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/monthly-tourist-arrivals-reports-2023/arrivals-report-november-2023.pdf-parsed))
 * [monthly-tourist-arrivals-reports-2023/arrivals-report-october-2023.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/monthly-tourist-arrivals-reports-2023/arrivals-report-october-2023.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/monthly-tourist-arrivals-reports-2023/arrivals-report-october-2023.pdf-parsed))
 * [monthly-tourist-arrivals-reports-2023/arrivals-report-september-2023.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/monthly-tourist-arrivals-reports-2023/arrivals-report-september-2023.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/monthly-tourist-arrivals-reports-2023/arrivals-report-september-2023.pdf-parsed))
+* [monthly-tourist-arrivals-reports-2024/arrivals-report-january-2024.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/monthly-tourist-arrivals-reports-2024/arrivals-report-january-2024.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/monthly-tourist-arrivals-reports-2024/arrivals-report-january-2024.pdf-parsed))
 * [research-papers-2/ecotourism-and-mangrove-conservation-in-sri-lanka-by-mr-upali-ratnayake.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/research-papers-2/ecotourism-and-mangrove-conservation-in-sri-lanka-by-mr-upali-ratnayake.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/research-papers-2/ecotourism-and-mangrove-conservation-in-sri-lanka-by-mr-upali-ratnayake.pdf-parsed))
 * [tourism-highlights.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-highlights.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-highlights.pdf-parsed))
 * [tourism-industry-report/tourism-industry-report-2018-q1.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-industry-report/tourism-industry-report-2018-q1.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-industry-report/tourism-industry-report-2018-q1.pdf-parsed))
