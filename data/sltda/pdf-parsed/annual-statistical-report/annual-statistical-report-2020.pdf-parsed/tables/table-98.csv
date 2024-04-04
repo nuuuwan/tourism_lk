@@ -1,0 +1,26 @@
+0,1,2,3,4,5,6
+,,,,,,Percentage of
+,,,Seating,,Number of,
+,,,,Average Seats,,Total Seating
+No,Air Lines,Type of Aircraft,Capacity,,Flights per,
+,,,,per Week,,Capacity by
+,,,,,Week,
+,,,(AVG),,,
+,,,,,,Carrier
+1,Air Arabia,A320 (168Y),168,"1,512",9,1.1
+2,Air Asia Burhan,A320 (186Y),186,"1,302",7,0.9
+3,Air China Airlines,A330-200,277,"1,108",4,0.8
+4,Air India,"A321, A320 (180Y)",181,"5,430",30,3.8
+5,Alliance Air,ATR72 (70Y),70,210,3,0.1
+6,Cathay Pacific Airways,"A330-33K(39J/21W/191Y), A330-33P",343,"1,715",5,1.2
+7,China Eastern Airlines,"A330-300, B737, B737",197,"1,576",8,1.1
+8,China Southern Airlines,A330-200/300(18J/245Y),263,789,3,0.6
+9,Chongqing Airlines,A320-200N(4J/24W/138Y),166,498,3,0.3
+10,Edelweiss Air,A340 (27C/287Y),314,628,2,0.4
+,Emirates,"B77WR(8F/42J/310Y),",391,"10,948",28,7.7
+,,"B77WP(8F/42J/304Y), B77WJ (42J/386Y),",,,,
+11,,B77WN(8F/42J/306Y),,,,
+,,"A320 (8J/150), A321 (22J/240Y),",322,"4,508",14,3.2
+,Etihad Airways,"A380(11F/70J/405Y), B777-300(28J/262Y),",,,,
+12,,"B787-9(8F/28J/190Y), B787-10(32J/304Y)",,,,
+13,Fly Dubai,73H(189Y),189,"2,646",14,1.9

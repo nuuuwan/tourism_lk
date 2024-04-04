@@ -1,0 +1,51 @@
+0,1,2,3,4
+,,,No of Seats,Frequency
+Country,,City,,
+,,,per week,Per Week
+,AUSTRALIA,Melbourne,"2,051",6
+,BAHARAIN,Baharain,2260,11
+,BANGALADESH,Dhaka,"1,411",7
+,,Guangzhou Baiyun,"1,881",8
+,,Shanghai,"1,164",4
+CHINA,,Beijing Capital,879,3
+,,Chengdu Shuangliu,855,3
+,,Kunming,715,5
+HONG KONG,,Hong Kong,"3,465",9
+,,Chennai,"11,018",56
+,,Mumbai,"2,528",14
+,,Delhi,"5,838",28
+,,Bangalore,"3,828",11
+,,Tiruchchirapalli,"2,600",14
+INDIA,,Cochin,"1,995",7
+,,Madurai,"1,780",14
+,,Trivandrum,"1,342",7
+,,Hyderabad Intl,"1,122",6
+,,Coimbatore,540,3
+,,Kolkata,720,4
+,INDONESIA,Jakarta,"1,596",7
+JAPAN,,Narita,879,3
+KUWAIT,,Kuwait,"3,990",14
+MALAYSIA,,Kuala Lumpur,"6,696",35
+,,Male,"7,529",29
+,MALDIVES,,,
+,,Gan Int,360,2
+QATAR,,Doha,"9,287",42
+,,Moscow,"1,155",
+RUSSIA,,,,19
+,,Muscat,"2,865",
+,,Jeddah,"3,735",11
+,SAUDI ARABIA,Riyadh,"2,436",8
+,,Dammam,"1,465",5
+,SEYCHELLES,Seychelles,720,4
+,SINGAPORE,Singapore,"7,753",33
+,SOUTH KOREA,Incheon,586,2
+THAILAND,,Bangkok,"7,214",34
+TURKEY,,Istanbul,"2,850",10
+,,Dubai,"11,944",46
+UAE,,Abudhabi,"3,970",18
+,,Sharjah,"1,800",10
+,,London/Heathrow,"2,051",7
+UK,,,,
+,,Manchester,484,2
+,SWITZERLAND,Zurich (Only May),247,1
+,Total,,"129,604",562

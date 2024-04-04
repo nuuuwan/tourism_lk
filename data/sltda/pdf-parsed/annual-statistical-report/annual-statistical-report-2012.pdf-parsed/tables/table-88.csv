@@ -1,0 +1,17 @@
+0,1,2
+,Details of Foreign Visitors by Location - 2012,
+Location,No. of Foreign Visitors,Revenue (in Rs.)
+Sigiriya,"284,964","773,414,360.36"
+Alahana,"241,382","392,879,998.25"
+Anuradhapura,"61,392","158,814,806.34"
+Galle,"5,115","5,120,310.03"
+Kataragama,127,"461,715.00"
+Total,"592,980","1,330,691,189.98"
+,Details of Domestic Visitors by Location - 2012,
+Location,No. of Local Visitors,Revenue (in Rs.)
+Sigiriya,"329,601","13,215,470.00"
+Alahana,"89,630","2,810,100.00"
+Anuradhapura,"33,138","593,680.00"
+Galle,"177,585","1,133,410.00"
+Kataragama,"20,570","367,470.00"
+Total,"650,524","18,120,130.00"
