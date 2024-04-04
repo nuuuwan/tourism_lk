@@ -1,6 +1,6 @@
 import os
 
-from utils import TIME_FORMAT_TIME, File, Log, Time
+from utils import TimeFormat, File, Log, Time
 
 from utils_future import Link, List
 
@@ -26,7 +26,7 @@ class DataReadMe:
 
     @staticmethod
     def update(pdf_link_list: list[Link]):
-        time_str = TIME_FORMAT_TIME.stringify(Time.now())
+        time_str = TimeFormat.TIME.stringify(Time.now())
         pdf_link_list = sorted(pdf_link_list, key=lambda x: x.local_file_path)
         lines = [
             '# Data (TourismLK)',

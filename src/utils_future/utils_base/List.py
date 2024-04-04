@@ -1,4 +1,4 @@
-from utils import mr
+from utils import Parallel
 
 
 class List:
@@ -8,7 +8,7 @@ class List:
         self.arr = arr
 
     def map_parallel(self, func, max_threads=3):
-        return mr.map_parallel(func, self.arr, max_threads)
+        return Parallel.map(func, self.arr, max_threads)
 
     def map(self, func):
         return list(map(func, self.arr))
