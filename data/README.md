@@ -1,8 +1,8 @@
 # Data (TourismLK)
-*Updated 2024-10-23 06:25:46*
+*Updated 2024-10-24 06:26:59*
 
 ## PDFs from [SLTDA](https://www.sltda.gov.lk/statistics)
-*92 [PDFs](sltda/pdf) scraped*
+*93 [PDFs](sltda/pdf) scraped*
 * [annual-statistical-report/annual-statistical-report-2010.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2010.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2010.pdf-parsed))
 * [annual-statistical-report/annual-statistical-report-2011.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2011.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2011.pdf-parsed))
 * [annual-statistical-report/annual-statistical-report-2012.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2012.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2012.pdf-parsed))
@@ -66,6 +66,7 @@
 * [tourism-industry-report/year-in-review-2021.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-industry-report/year-in-review-2021.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-industry-report/year-in-review-2021.pdf-parsed))
 * [tourism-industry-report/year-in-review-2022.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-industry-report/year-in-review-2022.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-industry-report/year-in-review-2022.pdf-parsed))
 * [tourism-industry-report/year-in-review-2023.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-industry-report/year-in-review-2023.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-industry-report/year-in-review-2023.pdf-parsed))
+* [tourism-industry-report/year-in-review-2024.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-industry-report/year-in-review-2024.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-industry-report/year-in-review-2024.pdf-parsed))
 * [tourism-sector-reports/flight-frequency-and-seating-capacity-july-2018-.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-sector-reports/flight-frequency-and-seating-capacity-july-2018-.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-sector-reports/flight-frequency-and-seating-capacity-july-2018-.pdf-parsed))
 * [tourism-sector-reports/flight-frequency-and-seating-capacity-may-2019-.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-sector-reports/flight-frequency-and-seating-capacity-may-2019-.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-sector-reports/flight-frequency-and-seating-capacity-may-2019-.pdf-parsed))
 * [tourism-sector-reports/recovery-volume-of-sri-lanka-s-primary-and-potential-source-markets-march-2022-new-.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/tourism-sector-reports/recovery-volume-of-sri-lanka-s-primary-and-potential-source-markets-march-2022-new-.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/tourism-sector-reports/recovery-volume-of-sri-lanka-s-primary-and-potential-source-markets-march-2022-new-.pdf-parsed))
