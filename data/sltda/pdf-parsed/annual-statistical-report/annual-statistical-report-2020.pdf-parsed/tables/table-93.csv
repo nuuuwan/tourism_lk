@@ -1,20 +1,23 @@
-0,1,2,3
-Table 12(Contd.),,,
-,,Average,
-Country of Residence,Arrivals,,Guest Nights
-,,Duration of stay,
-,"10,231",7.3,"80,475"
-MIDDLE EAST,,,
-,549,8.5,"4,667"
-Bahrain,,,
-Egypt,956,7.1,"6,788"
-Iraq,138,6.8,938
-Jordan,627,8.8,"5,518"
-Kuwait,825,5.9,"4,868"
-Lebanon,483,6.7,"3,236"
-Oman,"1,045",7.4,"7,733"
-Qatar,129,7.4,955
-Saudi Arabia,"4,755",8.7,"41,369"
-United Arab Emirates,352,4.8,"1,690"
-Others,372,7.3,"2,716"
-TOTAL,"507,704",8.5,"4,315,484"
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+Country of,,,,,,,,,,,,,,,,,,,,
+,Arrivals,Pleasure/,Vacation,VISITING FRIENDS,AND RELATIVES,Business,,MICE,,Health / Ayurveda,,Sports,,Education,,Official,Religious,,Others,
+Residence,,,,,,,,,,,,,,,,,,,,
+,"10,231",,"9,572",,459,,75,,51,,12,,57,,4,0,,1,,0
+MIDDLE,,,,,,,,,,,,,,,,,,,,
+EAST,,,,,,,,,,,,,,,,,,,,
+Bahrain,549,,534,,11,,1,,0,,0,,3,,0,0,,0,,0
+Egypt,956,,889,,18,,26,,11,,4,,7,,0,0,,1,,0
+Iraq,138,,122,,2,,6,,8,,0,,0,,0,0,,0,,0
+Jordan,627,,581,,23,,9,,7,,0,,6,,1,0,,0,,0
+Kuwait,825,,794,,28,,3,,0,,0,,0,,0,0,,0,,0
+Lebanon,483,,441,,5,,13,,15,,4,,2,,3,0,,0,,0
+Oman,"1,045",,983,,54,,8,,0,,0,,0,,0,0,,0,,0
+Qatar,129,,115,,7,,1,,5,,0,,1,,0,0,,0,,0
+Saudi Arabia,"4,755",,"4,432",,286,,1,,0,,3,,33,,0,0,,0,,0
+,352,,333,,14,,1,,2,,1,,1,,0,0,,0,,0
+United Arab,,,,,,,,,,,,,,,,,,,,
+Emirates,,,,,,,,,,,,,,,,,,,,
+Others,372,,348,,11,,6,,3,,0,,4,,0,0,,0,,0
+,,,,,,,,,,,,,,,,,,,,
+TOTAL,"507,704",,"444,328",,"38,658","13,946",,,"5,750","3,465",,"1,263",,134,,83,,53,,24
+,"Data sourced from Department of Immigration & Emigration except for Singapore and Maldives, which is derived from the Airport Survey of SLTDA",,,,,,,,,,,,,,,,,,,

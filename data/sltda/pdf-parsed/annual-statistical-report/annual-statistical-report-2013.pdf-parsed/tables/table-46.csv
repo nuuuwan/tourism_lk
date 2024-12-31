@@ -1,25 +1,10 @@
-0,1,2,3,4,5,6,7,8,9,10,11
-,,,,Share of Total Seating Capacity by Carrier - 2013,,,,,,,
-,,,,,,,Winter,Summer,,,
-80.0,,,,,,,,,,,
-70.0,,,,,,,,,,Winter,Summer
-,,,,,,,,,Sri Lankan Airlines,68.03,72.09
-60.0,,,,,,,,,,,
-,,,,,,,,,Emirates,5.50,3.88
-50.0,,,,,,,,,,,
-,,,,,,,,,Mihin Air,4.68,4.38
-,,,,,,,,,Qatar Airways,2.46,2.63
-40.0,,,,,,,,,,,
-,,,,,,,,,Malaysian Airlines,1.17,1.25
-30.0,,,,,,,,,,,
-,,,,,,,,,Cathay Pacific,0.82,0.88
-20.0,,,,,,,,,Singapore Air,0.82,0.88
-,,,,,,,,,Saudi Arabian A/L,0.59,0.50
-10.0,,,,,,,,,,,
-,,,,,,,,,Air Arabia,1.64,1.38
-0.0,,,,,,,,,,,
-,,,,,,,,,Air India Express,0.82,0.63
-,,mirates,Mihin Air,,,,Air Arabia,Others,,,
-,,,,Q atar A/ W,,,,,,,
-,,,,,,,,,,,
-Sri Lankan A/L,E,,,,C athay P acific,Singapore A/L,,,Others,13.47,11.51
+0,1,2
+Occupation,2012,2013
+Educationists,6.8%,9.2%
+Retired Persons,8.1%,9.4%
+Scientists & Technicians,9.9%,6.7%
+Professionals,17.5%,17.5%
+Businessmen,19.9%,29.5%
+Executives,16.8%,7.4%
+No Occupation,13.0%,10.1%
+Other Occupation,19.2%,10.2%

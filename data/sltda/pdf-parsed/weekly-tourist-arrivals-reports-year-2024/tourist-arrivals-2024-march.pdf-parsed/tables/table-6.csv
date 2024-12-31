@@ -1,6 +1,6 @@
 0,1,2
-,Country,
-Rank,,Number  of Tourists
+,Country,Number  of Tourists
+Rank,,
 1,India,"70,028"
 2,Russian Federation,"68,989"
 3,United Kingdom,"40,765"
@@ -17,8 +17,8 @@ Rank,,Number  of Tourists
 14,M,"6,657"
 ,aldives,
 15,Kazakhstan,"6,628"
-1,Switzerland,
-6,,"6,339"
+1 6,Switzerland,
+,,"6,339"
 17,Austria,"5,182"
 18,Bangladesh,"5,149"
 19,Japan,"5,123"

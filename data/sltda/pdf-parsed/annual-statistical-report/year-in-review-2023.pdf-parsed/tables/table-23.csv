@@ -1,41 +1,31 @@
-0,1
-Figure 03: Distribution of rooms by province,
-,"In terms of provincial distribution, the"
-,majority of accommodations are
-,"concentrated in the Western,"
-,"Southern, and  Central  Provinces,"
-,collectively representing a  significant
-,share of the country's room
-,"inventory.  Specifically, the  Western"
-,Province stands out with the  highest
-,"allocation of rooms, comprising 34%"
-,"of the total, followed by the Southern"
-,and Central Provinces at 26.6% and
-,"16.6%, respectively.  Conversely,  the"
-,Northern  Province has  a notably
-,"lower proportion of rooms,"
-,"accounting for only 1.8% of the total,"
-,indicating a disparity in
-,accommodation  distribution  across
-,"regions. Additionally, the Uva"
-,Province  contributes  5.2%  of the
-,total rooms available.
-,This distribution underscores a
-,concentration of the accommodation
-,"sector in specific regions, potentially"
-,limiting the equitable development of
-,tourism across the country. To foster
-,more balanced growth and capitalize
-,on the tourism potential of all
-,"provinces,  there  is  a  pressing  need"
-,to diversify tourism development
-,"initiatives beyond the Western,"
-,"Southern, and  Central  Provinces,"
-Table: 08 Distribution of rooms by provinces,
-,"ensuring that other regions,"
-,including the Northern and Uva
-,"Provinces, receive adequate"
-,attention and investment. This
-,approach  can  contribute  to  a  more
-,inclusive and sustainable tourism
-,landscape nationwide.
+0,1,2,3,4,5,6
+"Table 07: SLTDA registered accommodation establishments,",,,,,,
+2022 & 2023,,,,,,
+,,2022,,,2023,
+Category,,,,,,
+,Number  of,,Number  of,Number  of,,Number  of
+,establishments,,rooms,establishments,,rooms
+Boutique Hotel,40,,845,41,,865
+Boutique Villa,49,,346,51,,356
+Bungalow,857,,"3,513",984,,"4,078"
+Classified Tourist,156,,"15,080",168,,"16,686"
+Hotel,,,,,,
+1 Star,28,,"5,931",41,,"1,852"
+2 Star,28,,"3,110",41,,"2,499"
+3 Star,26,,"2,449",26,,"2,462"
+4 Star,37,,"1,903",30,,"3,590"
+5 Star,37,,"1,687",30,,"6,283"
+Guest House,"1,380",,"15,438","1,679",,"18,622"
+Eco lodge,*,,*,1,,20
+Heritage Bungalow,4,,19,4,,19
+Heritage Home,3,,9,2,,2
+Heritage Hotel,*,,*,2,,312
+Home Stay Unit,"1,009",,"3,049","1,080",,"3,231"
+Hostels,11,,133,12,,143
+Rented  Apartment,85,,323,86,,328
+Rented Home,10,,28,14,,41
+Themed,,,,,,
+Accommodation &,,,11,,,11
+Value-added Activities,,,,,,
+Tourist Hotel,224,,"9,326",221,,"8,515"
+Total,"3,829",,"48,120","4,346",,"53,229"

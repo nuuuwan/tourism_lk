@@ -1,5 +1,5 @@
 0,1,2
-,Country,
+,Country,Number  of Tourists
 Rank,,
 1,India,"98,628"
 2,Russian Federation,"93,087"
@@ -18,12 +18,12 @@ Rank,,
 14,S,"8,630"
 ,witzerland,
 15,Kazakhstan,"8,323"
-1,Maldives,
-6,,"7,855"
+16,Maldives,
+,,"7,855"
 17,Japan,"7,331"
 18,Spain,"6,957"
 19,Austria,"6,572"
 2,Denmark,"6,270"
 0,,
 ,Others,"116,441"
-,TOTAL,"Number  of Tourists 651,459"
+,TOTAL,"651,459"

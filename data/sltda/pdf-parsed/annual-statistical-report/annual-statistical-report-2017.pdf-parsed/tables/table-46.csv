@@ -1,10 +1,9 @@
-0,1,2
-Resort Region,,Occupancy Rate
-,2016,2017
-Colombo	City,76.75%,75.31%
-Greater	Colombo,75.18%,73.14%
-South	Coast,74.24%,72.38%
-East	Coast,74.92%,72.95%
-Hill	Country,75.24%,73.55%
-Ancient	Cities,75.46%,73.85%
-Northern	Region,69.58%,70.98%
+0,1
+,Share
+,Source:	SLTDA
+1.,"Supplementary establishments include Boutique Villas, Guest Houses, Rest Houses, Home Stay Units, Tourist Bungalows, Rented Tourist Homes,"
+,Rented Tourist Apartments and Heritage Bungalows/Homes etc. Other establishments refer to those who are not formally registered with the Sri
+,Lanka Tourism Development Authority. Currently there is no formal data on these facilities.
+"2.    The districts covered in each region are as follows: South Coast (Kalutara,Galle, Hambantota, Matara), Ancient Cities (Anuradhapura, Polonnaruwa,",
+,"Kandy, Kurunegala, Matale), Hill Country (Rathnapura, Nuwara Eliya, Badulla, Kegalle), East Coast (Batticaloa, Trincomalee, Ampara), Northern Region"
+,"(Vavuniya, Jaffna, Mannar )."

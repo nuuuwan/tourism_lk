@@ -1,45 +1,12 @@
-0,1,2,3
-Country of Residence,Total,By Air,Sea
-NORTH AMERICA,"91,956","91,565",391
-Canada,"38,897","38,829",68
-U.S.A.,"53,059","52,736",323
-LATIN AMERICA &,,,
-THE CARIBBEAN,"5,698","5,659",39
-WESTERN EUROPE,"599,415","592,702","6,713"
-Austria,"14,968","14,959",9
-Belgium,"14,239","14,232",7
-Denmark,"15,339","15,331",8
-Finland,"3,765","3,763",2
-France,"96,505","96,414",91
-Germany,"33,050","32,990",60
-Italy,"25,162","25,117",45
-Netherlands,"12,704","12,607",97
-Norway,"16,316","16,293",23
-Spain,"17,629","17,607",22
-Sweden,"23,425","23,417",8
-Switzerland,"170,614","170,603",11
-U.K.,"130,272","125,316","4,956"
-Others,"25,427","24,053","1,374"
-EASTERN EUROPE,"125,284","119,869","5,415"
-Russia,"63,648","59,897","3,751"
-Others,"61,636","59,972","1,664"
-AFRICA,"14,473","13,936",537
-MIDDLE EAST,"101,676","101,275",401
-ASIA,"787,483","775,891","11,592"
-China (PR),"224,210","223,747",463
-India,"278,017","270,817","7,200"
-Indonesia,"19,182","19,153",29
-Japan,"45,418","44,906",512
-Korea (South),"15,727","15,192",535
-Malaysia,"21,771","21,752",19
-Maldives,"95,248","95,245",3
-Philippines,"7,156","5,618","1,538"
-Singapore,"16,647","16,594",53
-Thailand,"10,372","10,367",5
-Taiwan (P.C.),"5,856","5,854",2
-Others,"47,879","46,646","1,233"
-AUSTRALASIA,"72,395","72,269",126
-Australia,"64,097","64,011",86
-New Zealand,"8,003","7,989",14
-Others,295,269,26
-Total,"1,798,380","1,773,166","25,214"
+0,1,2,3,4
+,,,,
+,,0.2%,,2015
+,2%,,2%,
+Inter-Regional,,,,
+Flights,,,,
+,,,,Inter-Regional Flights
+Intra-Regional,,,,
+Flights,,,,Intra-Regional Flights
+Charter Flights,,,,Charter Flights
+,,,,Sea Carrier
+Sea Carrier,,,,

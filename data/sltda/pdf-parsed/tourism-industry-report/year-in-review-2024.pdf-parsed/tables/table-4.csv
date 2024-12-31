@@ -1,21 +1,18 @@
-0
-Year in Review -2024
-"Sri  Lanka  welcomed  a  total  of  1,010,249  tourists  in  the  first  six months  of  2024,  reflecting  a"
-substantial  growth  of  61.6%  compared  to  the  same  period  in  2023.  This  notable  increase
-"indicates  a  strong  recovery  in  the  tourism  sector,  likely  driven  by  improved  global  travel"
-"conditions, enhanced marketing efforts, and renewed traveler confidence in the destination."
-"However,  when  compared  to  the  same  period  in  2018,  the  number  of  arrivals  represents  a"
-decline of 13.2%. This decrease highlights the ongoing challenges the tourism industry faces in
-"returning to pre-pandemic and pre-crisis levels, influenced by factors such as lingering economic"
-"impacts,  competition  from  other  destinations,  and  shifts  in  global  travel  trends.  Despite  the"
-"positive  growth  from  2023,  the  sector  still  has  some  way  to  go  in  fully  regaining  its  former"
-momentum seen in 2018.
-An  analysis  of  monthly  tourist  arrivals  reveals  that  January  and  February  experienced  the
-"highest  growth  rates  compared  to  the  same months  in  the  previous  year,  indicating  a  strong"
-"start to 2024. This surge could be attributed to increased travel during the peak tourist season,"
-"improved international connectivity, and successful promotional campaigns."
-"In contrast, June recorded the lowest growth rate, suggesting a slowdown in momentum as the"
-off-peak season set in. This dip could be influenced by seasonal travel patterns and emerging
-"competition  from  other  destinations  during  this  period.  Despite  the  overall  positive  trend,  the"
-variance in monthly growth rates underscores the impact of seasonality and market dynamics
-on tourism performance.
+0,1,2,3
+,"able 01: Tourist arrivals by month & percentage change, 2023 & 2024",,
+,,,% Cha.
+Month,2023,2024,
+,,,2024/23
+January,"102,545","208,253",103.08
+February,"107,639","218,350",102.9
+March,"125,495","209,181",66.68
+April,"105,498","148,867",41.1
+May,"83,309","112,128",34.6
+June,"100,388","113,470",13
+July,"143,039",−,−
+August,"136,405",−,−
+September,"111,938",−,−
+October,"109,199",−,−
+November,"151,496",−,−
+December,"210,352",−,−
+Total,"1,487,303","1,010,249",−

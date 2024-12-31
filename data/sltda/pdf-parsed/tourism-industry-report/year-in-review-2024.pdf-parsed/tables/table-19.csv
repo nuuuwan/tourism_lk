@@ -1,14 +1,30 @@
-0,1
-Year in Review -2024,
-"Up to June 2024, the SLTDA registered 4,390 accommodation establishments. Of these,",
-"167 were categorized as classifies tourist hotels, with 30 being five-star hotels. The sector",
-"was  primarily  driven  by  small  and  medium  enterprises  (SMEs),  with  guest  houses,",
-"homestays,  and  bungalows  making  up","the  majority  at  1,647,  1,112,  and  1,052"
-"establishments, respectively. Guest houses accounted for 37.5% of the total, followed by",
-"homestays at 25.3% and bungalows at 23.9%, while classified tourist hotels represented",
-"only  3.8%.  The  total  room  capacity  for  2024  up  to  June  was  53,378  with  guest  houses",
-"contributing the largest share of 18,445 rooms, highlighting the critical role of SMEs in the",
-accommodation sector.,
-T,"hese variations in establishment numbers can be attributed to several factors, including"
-"new openings, changes in classification during renewals, SLTDA registration processes,",
-and closures due to challenges posed by COVID-19 and economic conditions.,
+0,1,2,3,4,5
+2023 & 2024 (up to June),,,,,
+,2024 (Up to June),,,2023,
+Category,,,,,
+,Number of,Number of,Number of,,Number of
+,establishments,rooms,establishments,,rooms
+Boutique Hotel,38,835,41,,865
+Boutique Villa,49,345,51,,356
+Bungalow,"1,052","4,390",984,,"4,078"
+Classified Tourist,167,"16,808",168,,"16,686"
+Hotel,,,,,
+1 Star,41,"1,852",41,,"1,852"
+2 Star,40,"2,431",41,,"2,499"
+3 Star,25,"2,408",26,,"2,462"
+4 Star,31,"3,834",30,,"3,590"
+5 Star,30,"6,283",30,,"6,283"
+Guest House,"1,647","18,445","1,679",,"18,622"
+Eco lodge,1,20,1,,20
+Heritage Bungalow,4,19,4,,19
+Heritage Home,2,2,2,,2
+Heritage Hotel,2,312,2,,312
+Home Stay Unit,"1,112","3,308","1,080",,"3,231"
+Hostels,14,158,12,,143
+Rented Apartment,82,322,86,,328
+Rented Home,15,41,14,,41
+Themed,,,,,
+Accommodation &,,11,,,11
+Value-added Activities,,,,,
+Tourist Hotel,204,"8,362",221,,"8,515"
+Total,"4,390","53,378","4,346",,"53,229"

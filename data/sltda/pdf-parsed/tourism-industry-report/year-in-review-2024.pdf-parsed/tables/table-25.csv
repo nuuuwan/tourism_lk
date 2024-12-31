@@ -1,25 +1,9 @@
 0,1
-"classified hotels ,2024",
-D,Number of
-istrict,
-,rooms
-Anuradhapura,475
-Batticaloa,177
-Colombo,"6,129"
-Galle,"2,537"
-Gampaha,905
-Hambantota,691
-Jaffna,155
-Kalutara,"1,679"
-Kandy,"1,105"
-Kurunegala,43
-Matale,809
-Matara,235
-Moneragala,108
-Nuwara Eliya,787
-Polonnaruwa,161
-Puttalam,442
-Rathnapura,176
-Trincomalee,174
-Vavuniya,20
+,able 11: Number of rooms by star category - 2024
+Star category,No of rooms
+One,"1,852"
+Two,"2,431"
+Three,"2,408"
+Four,"3,834"
+Five,"6,283"
 Total,"16,808"

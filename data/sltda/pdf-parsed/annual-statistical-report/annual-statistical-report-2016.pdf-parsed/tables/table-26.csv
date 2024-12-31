@@ -1,17 +1,27 @@
-0,1
-2016,
-2015,
-,Western Europe
-2014,
-2013,Asia
-2012,
-,North America
-2011,
-2010,
-,Australasia
-2009,
-2008,Eastern Europe
-2007,
-,Others
-2006,
-2005,
+0,1,2,3,4,5,6
+,,4.1,,,,
+Australasia,,,,,,
+,,4.0,,,,
+,,,,,25.0,
+South Asia,,,,,,
+,,,,,25.5,
+East Asia,,,,20.7,,
+,,,,20.2,,
+,,5.2,,,,
+Middle East,,,,,,
+,,5.6,,,,
+,0.6,,,,,
+Africa,,,,,,
+,0.7,,,,,
+,,,7.9,,,
+Eastern Europe,,,,,,
+,,,8.3,,,
+,,,,,,31.4
+Western Europe,,,,,,
+,,,,,,30.7
+,0.3,,,,,
+La(cid:2)n America,,,,,,
+,0.3,,,,,
+,,4.8,,,,
+North America,,,,,,
+,,4.7,,,,

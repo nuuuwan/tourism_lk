@@ -1,23 +1,28 @@
-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
-,Direct Employment in the Tourist Industry - 2018 to 2020*,,,,,,,,,,,,,,
-Category of,,,,,"Managerial, Scientific &",,,Technical Clerical Allied,,,,,,,
-,,No of Establishments,,,,,,,,,Manual & Operative,,,Total,
-Establishments,,,,,Professional,,,and Supervisory,,,,,,,
-,2018,2019,2020**,2018,2019,2020**,2018,2019,2020**,2018,2019,2020**,2018,2019,2020**
-Hotels and Restaurants,"2,810","3,158","3,565","18,866","19,382","19,624","65,333","66,855","67,890","52,583","53,517","54,154","136,782","139,754","141,668"
-Travel Agents and Tour,,,,,,,,,,,,,,,
-,904,994,1016,"3,178","3,265","3,306","7,051","7,448","7,563","1,027","1,045","1,057","11,256","11,759",
-Operators,,,,,,,,,,,,,,,"11,926"
-Airlines,32,37,42,"1,236","1,269","1,285","5,248","5,544","5,630","1,784","1,815","1,837","8,267","8,629","8,752"
-Agencies Providing,,,,,,,,,,,,,,,
-,80,80,80,238,244,247,480,507,515,386,393,398,"1,104","1,144",
-Recreational Facilities,,,,,,,,,,,,,,,"1,160"
-Tourist Shops,78,87,90,280,288,292,"1,675","1,769","1,796",276,281,284,"2,231","2,338","2,372"
-Guides (Formal &,-,-,-,-,-,,"5,424","5,898","5,989",,,,"5,424","5,898","5,989"
-Informal) *,,,,,,,,,,,,,,,
-National Tourist,,,,,,,,,,,,,,,
-,4,4,4,260,267,270,272,297,314,319,274,277,827,855,866
-Organization,,,,,,,,,,,,,,,
-State Sector,18,18,18,940,966,978,980,"1,035","1,051","1,193","1,214","1,228","3,112","3,215","3,257"
-Total,"3,926","4,378","4,815","24,998","25,681","26,002","86,463","89,353","90,748","57,518","58,539","59,235","169,003","173,592","175,990"
-** Estimated/Provisional,,,,,,,,,,,,,,,
+0,1,2
+T,able 20 : Occupancy Rates by Districts,
+,District,Occupancy Rates
+,Colombo,15.9
+,Galle,23.2
+,Gampaha,16.3
+,Kandy,22
+,Kalutara,15.5
+,Matale,16.6
+,Hambantota,16.9
+,Nuwara Eliya,15.4
+,Matara,16.8
+,Badulla,17.2
+,Anuradhapura,16.9
+,Puttalam,17.1
+,Batticaloa,18.1
+,Ampara,8.5
+,Polonnaruwa,7.1
+,Trincomalee,14.1
+,Ratnapura,8.9
+,Moneragala,9.8
+,Jaffna,14.5
+,Kurunegala,15.7
+,Kegalle,9.1
+,Vavuniya,10.6
+,Kilinochchi,0
+,Mullaitivu,0
+,Mannar,0

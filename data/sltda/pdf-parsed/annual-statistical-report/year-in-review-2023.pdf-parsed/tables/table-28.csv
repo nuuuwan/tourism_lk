@@ -1,41 +1,32 @@
-0,1,2
-districts,,
-,Number,
-,,Province
-District,,
-,of Hotels,
-Colombo,42,Western Central Southern North Central Eastern North Western Northern Sabaragamuwa Uva Total
-Galle,21,
-,,30 Five 13 6 9 1 1 0 0 0 0
-Kandy,16,
-,,30 Four 9 9 5 2 2 1 0 1 1
-Kalutara,15,
-,,Three 10 7 3 2 1 1 2 0 0 26
-Gampaha,12,Star Category
-,,Two 15 8 9 2 2 3 1 1 0 41
-Matale,10,
-,,One 22 6 5 3 0 1 1 2 1 41
-Nuwara Eliya,10,
-Hambantota,7,168 Total 69  36  31 10 6 6 4 4 2
-Anuradhapura,7,
-Trincomalee,4,
-,,The distribution of tourist accommodations in  Sri Lanka
-Puttalam,4,showcases  a  significant  concentration  in  key  districts  such  as
-,,"Colombo,  Galle,  Kandy,  and  Kalutara.  Notably, the  Western"
-Rathnapura,4,
-,,"province  stands  out  with  69  classified  hotels,  with  a  majority"
-Matara,3,
-,,"falling  into  the  one-star  category,  while  13  are  categorized  as"
-Polonnaruwa,3,luxurious five-star establishments. This distribution pattern
-,,suggests  varying  levels  of  accommodation  options  catering  to
-Jaffna,3,
-,,diverse traveler  preferences  and  budget  considerations.  Five
-Batticaloa,2,
-,,and four-star hotels are present  across all provinces except  the
-Kurunegala,2,
-,,Northern province. This highlights the need to targeted
-Monaragala,2,investments and development initiatives to promote tourism and
-,,economic growth in the province.
-Vavuniya,1,
-Total,168,
-,,20 | P a g e
+0,1,2,3
+T,able 09: Distribution of rooms by districts,,
+,,,Figure: 04   Distribution of rooms by districts
+District,Number,Percentage,
+,of,share,
+,rooms,,
+Colombo,9545,17.9,
+Galle,8973,16.9,
+Gampaha,4603,8.6,
+Kandy,3956,7.4,
+Kalutara,3947,7.4,
+Matara,2694,5.1,
+Hambantota,2477,4.7,
+Matale,2451,4.6,
+Nuwara  Eliya,2409,4.5,
+Badulla,2082,3.9,
+Anuradhapura,1677,3.2,
+Puttlam,1509,2.8,
+Batticaloa,970,1.8,
+Ampara,800,1.5,
+Trincomalee,782,1.5,
+Monaragala,711,1.3,
+Ratnapura,703,1.3,
+Polonnaruwa,676,1.3,
+Kegalle,669,1.3,
+Jaffna,647,1.2,
+Kurunegala,640,1.2,
+Vavuniya,102,0.2,
+Kilinochchi,97,0.2,
+Mullaitivu,64,0.1,
+Mannar,45,0.1,
+Total,"53,229",,

@@ -1,14 +1,62 @@
-0,1,2
-Monthly Tourist Arrivals Report – February 2023,,
-Monthly Tourist Arrivals Report | January  2023,,
-,Top ten markets versus main last departure airports and,
-main airlines to Sri Lanka,,
-February 2023,,
-,The data shows that the choice of last departure airports and airlines for tourists visiting Sri,
-,Lanka differ based on their top markets. Indian tourists tend to choose Sri Lankan Airlines and,
-,"IndiGo,  while  Azur  Air,  Red  Wings,  and  Aeroflot  are  popular  among  Russian  tourists.  Sri",
-,"Lankan Airlines is the preferred choice for tourists from the United Kingdom, France, Australia,",
-,"United States, Maldives, Germany, and Canada. Additionally, the data highlights that Israeli",
-"tourists  prefer  Emirates,  with  Dubai  serving  as",the  main,last  departure  airport.  This
-,underscores the importance of destination accessibility in driving tourism.,
-,"Table 4. Top ten markets vs. main last departure airports to Sri Lanka,  February 2023",
+0,1,2,3,4,5,6,7,8
+,Monthly Tourist Arrivals Report – February 2023,,,,,,,
+,,,,,,,,14
+,Monthly Tourist Arrivals Report | January  2023,,,,,,,
+,,,,,,Total,Total  Tourist,
+,,February  2023,,Tourist,%,Tourist,Arrivals,
+,,Tourist Arrivals,,Arrivals,Change,Arrivals,up to Feb,Change
+,,,,Feb .,Feb .,up to,2022,up to
+,,By,,,,,,
+,By Air,,Total,2022,(23/22),Feb,,Feb.
+,,Sea,,,,,,
+,,,,,,2023,,(23/22)
+Western Europe,"19,050",0,"19,050","17,915",6.34,"37,034","30,493",21.45
+Austria,934,0,934,"1,054",(11.39),"1,890","1,842",2.61
+Belgium,725,0,725,620,16.94,"1,371","1,115",22.96
+France,"6,118",0,"6,118","5,699",7.35,"10,958","9,315",17.64
+Germany,"7,930",0,"7,930","7,780",1.93,"16,147","13,119",23.08
+Netherlands,"1,485",0,"1,485","1,232",20.54,"2,999","2,373",26.38
+Switzerland,"1,812",0,"1,812","1,495",21.20,"3,581","2,681",33.57
+Others,46,0,46,35,31.43,88,48,83.33
+Central/ Eastern,,0,,,,,,
+,"36,728",,"36,728","34,950",5.09,"69,466","66,234",4.88
+Europe,,,,,,,,
+Belarus,"1,244",0,"1,244",823,51.15,"2,448","1,559",57.02
+Czech Republic,"1,206",0,"1,206","2,055",(41.31),"2,166","3,229",(32.92)
+Estonia,193,0,193,285,(32.28),375,470,(20.21)
+Hungary,405,0,405,502,(19.32),805,927,(13.16)
+Kazakhstan,328,0,328,"2,821",(88.37),798,"4,862",(83.59)
+Lithuania,296,0,296,555,(46.67),574,907,(36.71)
+Poland,"1,118",0,"1,118","4,315",(74.09),"2,387","7,500",(68.17)
+Romania,398,0,398,776,(48.71),714,"1,304",(45.25)
+Russia,"29,084",0,"29,084","15,340",89.60,"54,338","28,818",88.56
+Slovakia,515,0,515,515,0.00,866,878,(1.37)
+Ukraine,562,0,562,"5,288",(89.37),"1,446","13,062",(88.93)
+,"1,379",0,"1,379","1,675",(17.67),"2,549","2,718",(6.22)
+Others,,,,,,,,
+Southern/,,0,,,,,,
+,"5,575",,"5,575",,"3,864","11,041","6,439",71.47
+Mediterranean,,,,,,,,
+Europe,,,,,,,,
+Greece,163,0,163,150,8.67,314,228,37.72
+Italy,"1,409",0,"1,409",553,154.79,"2,886","1,056",173.30
+Portugal,268,0,268,206,30.10,498,363,37.19
+Spain,770,0,770,744,3.49,"1,627","1,341",21.33
+Turkey,246,0,246,166,48.19,608,340,78.82
+Israel,"2,188",0,"2,188","1,587",37.87,"4,056","2,294",76.81
+Others,531,0,531,458,15.94,"1,052",817,28.76
+,,0,,,,,"4,463",(23.24)
+MIDDLE EAST,"1,856",,"1,856","2,383",( 22.11),"3,426",,
+Bahrain,35,0,35,49,(28.57),169,108,56.48
+Egypt,241,0,241,453,(46.80),368,670,(45.07)
+Iraq,92,0,92,171,(46.20),155,243,(36.21)
+Jordan,227,0,227,230,(1.30),488,454,7.49
+Kuwait,219,0,219,204,7.35,381,240,58.75
+Lebanon,188,0,188,153,22.88,299,240,24.58
+Oman,229,0,229,127,80.31,412,228,80.70
+Qatar,46,0,46,17,170.59,80,21,280.95
+Saudi Arabia,365,0,365,861,(57.81),705,"2,028",( 65.24)
+United Arab,138,0,138,53,160.38,239,117,104.27
+Emirates,,,,,,,,
+Others,76,0,76,65,16.92,130,114,14.04
+TOTAL,"107,639",0,"107,639","96,507",11.53,"210,184","178,834",17.53

@@ -1,16 +1,16 @@
-0
-December 2023
-The choice of airlines plays a crucial role in shaping the travel experiences of tourists heading to
-"Sri Lanka. Preferences in airlines are often intricately tied to the home countries of the visitors,"
-reflecting a diverse array of carriers catering to different regions.
-"For  instance,  Indian  travelers  frequently  prefer  Sri  Lankan  Airlines  and  IndiGo,  while  Russian"
-"tourists lean towards Red Wings and Aeroflot. Conversely, Sri Lankan Airlines is a popular choice"
-"among  tourists  from  the  United  Kingdom,  Germany,  Australia,  the  United  States,  Maldives,"
-"France, and  Canada.  Chinese  tourists  show  a  preference  for  China  Eastern.  Regarding  final"
-"ports, Chennai is the most utilized airport for Indian tourists, while Dubai is the primary port for"
-tourists from the United  Kingdom and Canada. Doha  serves as the main  final port for  tourists
-"from Germany, the USA, and France. For Australians and Russians, Singapore and Moscow are"
-"the main final airports, respectively.This underscores the critical role of accessibility in promoting"
-tourism  in  Sri  Lanka.  It  emphasizes  that  tourists'  decisions  regarding  airlines  and  departure
-"airports are significantly shaped by their home countries, highlighting the importance of seamless"
-connections in attracting visitors to Sri Lanka.
+0,1,2,3,4,5
+,Fits  Air,Etihad  Airways,Spicejet,Other,
+Air Asia,,,,,
+,1%,1%,1%,14%,
+2%,,,,,
+Vistara Airline,,,,,
+2%,,,,,
+,,,,,Sri Lankan Airlines
+Turkish Airline,,,,,28%
+2%,,,,,
+Singapore Airlines,,,,,
+2%,,,,,
+Air India,,,,,
+3%,,,,,
+Azur Air,,,,,Emirates
+3%,,,,,9%

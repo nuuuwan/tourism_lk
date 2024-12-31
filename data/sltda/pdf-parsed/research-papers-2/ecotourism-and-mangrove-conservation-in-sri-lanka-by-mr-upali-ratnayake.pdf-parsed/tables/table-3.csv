@@ -1,11 +1,7 @@
-0,1,2,3
-,"eographical distribution of mangrove species, by coastal districts:",,
-,Table 2: Extent of Mangrove in Coastal Districts in Sri Lanka (Hectares),,
-Puttalam,3210,Gampaha,313
-Jaffna,2276,Galle,238
-Trincomalee,2043,Ampara,100
-Batticaloa,1303,Colombo,39
-Kilinochchi,770,Kalutara,12
-Hambantota,,576  Matara,7
-Mullaitivu,428,Total,12189*
-*- total may not the sum,,,Source: FD (Sri Lanka)
+0,1,2
+T,able 1: Mangrove Species of Sri Lanka,
+,Very common species,4
+,Common species,10
+,Rare species,3
+,Very rare species,3
+,Total,20

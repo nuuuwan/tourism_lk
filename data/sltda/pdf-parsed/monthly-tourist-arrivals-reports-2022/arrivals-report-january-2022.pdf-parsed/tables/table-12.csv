@@ -1,60 +1,27 @@
-0,1,2,3,4,5
-,,,,Arrivals,Change
-,,Tourist Arrivals,,,
-,,,,January,January
-,,By,,,
-,,,,2021,(21/22)
-,By Air,,Total,,
-,,Sea,,,
-AMERICAS,"3,691",0,"3,691",27,-
-North America,"3,516",0,"3,516",27,-
-,,,,,-
-Canada,"1,666",0,"1,666",17,
-,,,,,-
-Mexico,21,0,21,0,
-,,,,,-
-United States,"1,829",0,"1,829",10,
-Carribean &,,,,0,
-Central,24,0,24,,-
-America,,,,,
-,4,0,4,0,
-Costa Rica,,,,,
-,2,0,2,0,-
-Jamaica,,,,,
-,18,0,18,0,-
-Others,,,,,
-,,,,0,-
-South America,151,0,151,,
-,,,,0,
-Argentina,29,0,29,,
-,,,,0,-
-Brazil,49,0,49,,
-,,,,0,-
-Chile,29,0,29,,
-,,,,0,-
-Colombia,20,0,20,,
-,,,,,-
-Others,24,0,24,0,
-AFRICA,420,0,420,0,-
-,,,,0,-
-North Africa,212,0,212,,
-,,,,‘’’,
-,,,,,-
-Morocco,29,0,29,,
-,,,,0,
-,,,,0,-
-Sudan,147,0,147,,
-,,,,,-
-Others,36,0,36,0,
-Sub-Saharan,,,,,-
-Africa,208,0,208,0,
-,,,,0,-
-Kenya,19,0,19,,
-,,,,0,-
-Mauritius,7,0,7,,
-,,,,0,-
-Nigeria,5,0,5,,
-,,,,0,-
-South Africa,73,0,73,,
-,,,,0,-
-Others,104,0,104,,
+0,1,2,3
+,OthersOfficial,,
+Buisness,,,
+,5%0.02 %0%,,Pleasure/
+1.81 %,,,
+,Educationsports,,Vacation
+,,Religious,
+,0.16 %0.44 %,,
+,,,Visiting riends
+,,0.007 %,
+,,,& relatives
+Visiting friends &,,,
+,Health,,Buisness
+,MICE,,
+relatives,,,
+,1.45 %2%,,
+,0.44 %,,
+13.6 %,,,
+,,,Health
+,,,sports
+,,,MICE
+,,,Education
+,,,Official
+,,Pleasure/ Vacation,
+,,,Religious
+,,76.7 %,
+,,,Others

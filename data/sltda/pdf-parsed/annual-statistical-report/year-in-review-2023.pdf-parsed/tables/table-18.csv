@@ -1,12 +1,21 @@
-0,1
-The analysis of tourist arrivals compared from July to December 2023 to January to June 2023,
-"revealed varying  growth  rates  among  different  source  markets.  Spain,  the  Netherlands,  China,",
-"Belgium,  Myanmar,  Bangladesh,  Taiwan,  and",the  Seychelles  demonstrated the  most rapid
-"growing  rates.  Additionally,  Poland,  UAE,  Pakistan,  Maldives,  Italy,  Japan,  Armenia,  Slovenia,",
-"South  Africa,  and  Nepal  also  showed  substantial  growth  rates.  In  contrast,  India,  the  United",
-"Kingdom, Australia, South Korea,  Latvia, Saudi Arabia, the  Czech Republic, Austria,  Malaysia,",
-"Estonia,  and  Greece  exhibited  moderate  growth","levels.  Meanwhile,  Thailand,  Germany,"
-"Switzerland, Denmark, and  France experienced  lower growth  rates. Notably,  despite being  top",
-"markets,  Russia,  Canada,  and  France  had  slower  recovery","levels,  potentially influenced  by"
-"factors such  as  the  Russia-Ukraine war  and  decreased  visitation from  Canada,  particularly  for",
-VFR (Visiting Friends and Relatives) purposes,
+0,1,2
+2,Russian,"197,498"
+,Federation,
+3,United Kingdom,"130,088"
+4,Germany,"102,539"
+5,China,"68,789"
+6,Australia,"67,436"
+7,France,"56,251"
+8,United States,"46,344"
+9,Canada,"43,944"
+10,Maldives,"37,328"
+11,Netherlands,"29,056"
+12,Spain,"23,905"
+13,Switzerland,"23,556"
+14,Italy,"22,242"
+15,Israel,"19,517"
+16,Japan,"19,583"
+17,Poland,"17,946"
+18,Bangladesh,"17,846"
+19,Czech Republic,"12,056"
+20,Belgium,"10,667"

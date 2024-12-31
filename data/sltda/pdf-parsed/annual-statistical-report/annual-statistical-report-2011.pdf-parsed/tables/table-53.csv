@@ -1,23 +1,11 @@
-0,1,2,3,4
-,,,,Chart 10
-,Shares of Total Seating Capacity by Carrier - 2011,,,
-70.0,,,,
-,,,Winter,Summer
-,Winter        Summer,,,
-,,Sri Lankan A/L,61.6%,64.0%
-60.0,,,,
-,,Emirates,11.3%,5.1%
-50.0,,,,
-,,Qatar A/W,1.8%,2.3%
-,,Cathay Pacific,2.3%,2.6%
-40.0,,,,
-,,Kingfisher,0.7%,0.7%
-30.0,,,,
-Share of total seating capacity,,Mihin Air,1.5%,1.6%
-,,Singapore A/L,1.4%,1.8%
-20.0,,,,
-,,Saudi Arabian A/L,0.9%,1.2%
-10.0,,,,
-,,Air Arabia,1.1%,1.2%
-0,,Air India Express,0.8%,1.0%
-Sri Lankan A/LEmiratesQatar A/WCathay PacificKingfisher,Mihin AirSingapore A/LSaudi Arabian A/LAir Arabia,Air India ExpressOthers Others,16.6%,18.5%
+0,1,2,3,4,5,6,7,8,9
+Philippines,"2,047",555,112,476,254,53,221,238,138
+Singapore,"15,953","1,708","1,936","5,135","1,711",845,935,"2,773",910
+Thailand,"5,880","2,297",169,826,447,248,436,889,568
+Taiwan (P.C.),"7,010","1,015",469,"1,727",765,160,"1,373",840,661
+Others,"10,114","1,824","2,480","1,385",739,366,978,"1,872",470
+AUSTRALASIA,"46,467","4,027","3,138","10,092","4,470","2,765","11,264","10,651",60
+Australia,"41,728","3,460","2,731","9,083","3,944","2,429","10,230","9,816",35
+New Zealand,"4,212",392,348,860,437,321,"1,016",827,11
+Others,527,175,59,149,89,15,18,8,14
+Total,,"855,975    156,330","65,721    143,039",,"67,909","40,689    215,519    120,997",,,"45,771"

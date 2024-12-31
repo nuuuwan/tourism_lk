@@ -1,17 +1,25 @@
-0,1,2,3,4,5
-,,Average,Average,,Total  value
-,Number of,value of,,duration  of,(USD Mn)
-Month,tourist  arrivals,the,the,,**
-,,Month  **,Month**,,
-January,"102,545",164.4,,9.11,153.5
-February,"107,639",164.4,,9.13,161.61
-March,"125,495",164.4,,9.15,188.84
-April,"105,498",164.4,,8.55,148.22
-May,"83,309",164.4,,7.30,99.98
-June,"100,388",164.4,,7.44,122.85
-July,"143,039",164.4,,9.31,218.98
-August,"136,405",164.4,,9.39,210.51
-September,"111,938",164.4,,8.27,152.19
-October,"109,199",164.4,,7.61,136.7
-November,"151,496",164.4,,8.24,205.31
-December,"210,352",164.4,,7.79,269.27
+0,1,2,3
+Table: 05   Average duration of stay by source markets,,,
+Rank,Country,Number of,Average duration of
+,,tourists,Stay (Nights)
+1,India,"302,844",4.60
+2,Russian,"197,498",10.00
+,Federation,,
+3,United Kingdom,"130,088",13.38
+4,Germany,"102,539",11.93
+5,China,"68,789",6.42
+6,Australia,"67,436",10.32
+7,France,"56,251",11.39
+8,United States,"46,344",7.32
+9,Canada,"43,944",11.25
+10,Maldives,"37,328",5.09
+11,Netherlands,"29,056",14.10
+12,Spain,"23,905",9.95
+13,Switzerland,"23,556",12.93
+14,Italy,"22,242",10.44
+15,Israel,"19,517",12.28
+16,Japan,"19,583",5.58
+17,Poland,"17,946",10.40
+18,Bangladesh,"17,846",3.85
+19,Czech Republic,"12,056",11.28
+20,Belgium,"10,667",12.89

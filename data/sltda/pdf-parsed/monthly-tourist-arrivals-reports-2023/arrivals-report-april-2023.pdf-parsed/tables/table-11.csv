@@ -1,24 +1,15 @@
-0
-April 2023
-A n analysis of the purpose of visits by tourists to Sri Lanka revealed that 60% of them came
-"for  pleasure  or  vacation,  while  14%  visited  friends  and  relatives,  and  only  5%  came  for"
-"business-related  reasons.  Furthermore,  4.5%  of  tourists  visited  for  MICE  purposes,  with  a"
-"small percentage of 0.7%  and 0.2% visiting for  health/Ayurvedic and sports-related  reasons,"
-respectively.
-"A mong the top source markets such as India, Russia, Germany, the United Kingdom, France,"
-"China, USA, and Japan, the primary reason for visiting Sri Lanka was for pleasure or vacation,"
-Other
-"accounting for  the  majority  of  visits.  Specifically,  Indian  tourists  constituted  64.3%,  Russian"
-27%
-"26%tourists 43%, German tourists 71.4%, British tourists 54.1%, French tourists 76%, US tourists"
-"62%, Chinese tourists 84.9%, and Japanese tourists 81% who visited for this purpose."
-"Canadian tourists (63.1%) and Australian tourists (54.4%), on the other hand, visited Sri Lanka"
-"primarily to see their friends and relatives, likely due to the presence of Sri Lankan diaspora in"
-these countries. Only  27.8% of Canadian  tourists and  31.8% of Australian  tourists came  for
-pleasure/vacation purposes.
-Israel
-F2%
-"urthermore, a fraction of Indian tourists, 17.4%, and 3.9% of Indian tourists visited Sri Lanka"
-"for business-related purposes and MICE purposes, respectively. 4.1% of German tourists and"
-1.4% of Japanese tourists had visited Sri Lanka for health purposes
-India
+0,1,2,3
+,Country of,Tourist Arrivals,Tourist Arrivals
+Rank,,,
+,Residence,(Jan ~ April  2023),(Jan ~ April  2022)
+1,Russian Federation,"94,547","41,591"
+2,India,"66,347","56,389"
+3,United Kingdom,"36,854","42,531"
+4,Germany,"33,253","28,768"
+5,France,"22,279","19,091"
+6,Australia,"16,502","10,369"
+7,United States,"14,720","8,670"
+8,Canada,"14,164","8,696"
+9,China,"10,584","1,111"
+10,Maldives,"7,391","6,410"
+,Others,"124,536","124,688"

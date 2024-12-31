@@ -1,62 +1,61 @@
-0,1,2,3
-Monthly Tourist Arrivals Report | July 2022,,,15
-M,ain last departure airports and airlines to Sri Lanka,,
-July  2022,,,
-,An  analysis  of  the  last  departure  airports  to  Sri  Lanka  reveals  the  vital  importance  of  air,,
-,"connectivity  in  the  tourism  industry.  As  depicted  in  the  below  Chart  5,  for  around  53%  of",,
-,"tourists the last airports had been Doha, Dubai and  Chennai. Further, in terms of airlines, Sri",,
-,"Lankan Airlines, Qatar Airways  and Emirates were the top airlines, handling 79% of tourists",,
-to Sri Lanka.,,,
-,"Chart 6. Main last departure airports to Sri Lanka, July  2022",,
-MuscatKuala Lampur,,,
-Melbourne,,,
-2%1%,,,
-2%Other,,,Doha
-9%,,,23%
-Mumbai,,,
-2%,,,
-Paris,,,
-2%,,,
-Bahrain,,,
-2%,,,
-Sharja,,,
-3%,,,
-,,,Dubai
-Singapore,,,
-,,,20%
-3%,,,
-Frankfurt,,,
-3%,,,
-Male,,,
-LondonAbu Dhabi,,,
-,,Chennai,
-4%,,,
-8%7%,,,
-,,10%,
-"Chart 7. Main airlines to Sri Lanka, July 2022",,,
-Air IndiaSpice Jet,Malaysia Airlines,,
-,,Guinea Airlines,
-1%1%,1%,,
-Turkish Airlines,,,
-,,0.3 %,
-1%,,,
-,,,Other
-Fly Dubai,,,0.4 %
-1%,,,
-Oman Air,,,
-2%,,,
-Singapore,,,
-Airlines,,,Sri Lankan Airlines
-Gulf Air,,,
-2%,,,40%
-2%,,,
-Air Arabia,,,
-3%,,,
-IndiGo,,,
-3%,,,
-Etihad Airways,,,
-4%,,,
-,,Qatar  Airways,
-Emirates,,,
-,,22%,
-17%,,,
+0,1,2,3,4,5,6,7,8,9
+Monthly Tourist Arrivals Report | July 2022,,,,,,,,14,
+,,July 2022,,,,Total,Total,,%
+,,,,Tourist,%,,,,
+,,,,,,Tourist,Tourist,,Change
+,,,,Arrivals,Change,,,,
+,,Tourist Arrivals,,,,Arrivals up,Arrivals up,,up to
+,,,,July,July,,,,
+,,,,,,to July,to July,,July
+,,,,2021,(22/21),,,,
+,By Air,By Sea,Total,,,2022,2021,,(20/21)
+Western Europe,"12,924",-,"12,924",626,-,"88,293","3,622",,-
+Austria,299,-,299,47,-,"3,901",158,,-
+Belgium,"1,115",-,"1,115",17,-,"4,308",59,,-
+France,"3,567",-,"3,567",147,-,"25,451","1,028",,-
+Germany,"3,666",-,"3,666",215,-,"37,108","1,723",,-
+Netherlands,"2,053",-,"2,053",72,-,"8,329",229,,-
+Switzerland,"2,207",-,"2,207",123,-,"9,013",408,,-
+Others,17,-,17,5,-,183,17,,-
+Central/ Eastern,,,,,,,,,
+,"2,966",-,"2,966",135,-,"105,391","7,325",,-
+Europe,,,,,,,,,
+Belarus,35,-,35,0,-,"2,340",81,,-
+Czech Republic,217,-,217,17,-,"6,168",147,,-
+Estonia,8,-,8,0,-,769,34,,-
+Hungary,42,-,42,2,-,"1,774",21,,-
+Kazakhstan,12,-,12,2,-,"7,644","3,190",,-
+Lithuania,52,-,52,2,-,"1,653",25,,-
+Poland,344,-,344,8,-,"13,073",101,,-
+Romania,64,-,64,0,-,"2,456",46,,-
+Russia,"1,918",-,"1,918",66,-,"48,321",702,,-
+Slovakia,112,-,112,11,-,"1,852",104,,-
+Ukraine,58,-,58,13,-,"13,840","2,679",,-
+Others,104,-,104,14,-,"5,501",195,,-
+Southern/,,,,,,,,,
+Mediterranean,"2,872",-,"2,872",83,-,"20,937",522,,-
+Europe,,,,,,,,,
+Greece,40,-,40,3,-,556,13,,-
+Italy,650,-,650,32,-,"3,855",179,,-
+Portugal,86,-,86,1,-,1277,21,,-
+Spain,"1,499",-,"1,499",15,-,"7,118",129,,-
+Turkey,57,-,57,6,-,986,48,,-
+Israel,404,-,404,22,-,"5,295",81,,-
+Others,136,-,136,4,-,"1,850",51,,-
+MIDDLE,,,,,,,,,
+,"1,277",,"1,277",47,-,"12,465",345,,-
+EAST,,,,,,,,,
+Bahrain,36,-,36,3,-,339,26,,-
+Egypt,136,-,136,3,-,"1,716",26,,-
+Iraq,98,-,98,8,-,808,15,,-
+Jordan,242,-,242,10,-,1480,91,,-
+Kuwait,78,-,78,1,-,661,7,,-
+Lebanon,108,-,108,7,-,1047,122,,-
+Oman,75,-,75,1,-,496,2,,-
+Qatar,38,-,38,0,-,181,3,,-
+Saudi Arabia,311,-,311,11,-,"4,607",24,,-
+United Arab,,,,,,,,,
+,112,-,112,3,-,780,20,,-
+Emirates,,,,,,,,,
+Others,43,-,43,0,-,350,9,,-
+TOTAL,"47,293",-,"47,293","2,429",-,"458,670","19,337",,-
