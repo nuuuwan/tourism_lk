@@ -1,5 +1,5 @@
 # Data (TourismLK)
-*Updated 2025-01-10 06:12:37*
+*Updated 2025-01-11 06:12:28*
 
 ## PDFs from [SLTDA](https://www.sltda.gov.lk/statistics)
 *100 [PDFs](sltda/pdf) scraped*
@@ -14,8 +14,8 @@
 * [annual-statistical-report/annual-statistical-report-2018.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2018.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2018.pdf-parsed))
 * [annual-statistical-report/annual-statistical-report-2019-new.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2019-new.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2019-new.pdf-parsed))
 * [annual-statistical-report/annual-statistical-report-2020.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2020.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2020.pdf-parsed))
+* [annual-statistical-report/annual-statistical-report-2023.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/annual-statistical-report-2023.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/annual-statistical-report-2023.pdf-parsed))
 * [annual-statistical-report/year-in-review-2022.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/year-in-review-2022.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/year-in-review-2022.pdf-parsed))
-* [annual-statistical-report/year-in-review-2023.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/annual-statistical-report/year-in-review-2023.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/annual-statistical-report/year-in-review-2023.pdf-parsed))
 * [monthly-tourist-arrivals-reports-2022/arrivals-report-april-2022.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/monthly-tourist-arrivals-reports-2022/arrivals-report-april-2022.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/monthly-tourist-arrivals-reports-2022/arrivals-report-april-2022.pdf-parsed))
 * [monthly-tourist-arrivals-reports-2022/arrivals-report-august-2022.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/monthly-tourist-arrivals-reports-2022/arrivals-report-august-2022.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/monthly-tourist-arrivals-reports-2022/arrivals-report-august-2022.pdf-parsed))
 * [monthly-tourist-arrivals-reports-2022/arrivals-report-december-2022.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/monthly-tourist-arrivals-reports-2022/arrivals-report-december-2022.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/monthly-tourist-arrivals-reports-2022/arrivals-report-december-2022.pdf-parsed))
