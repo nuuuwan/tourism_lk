@@ -1,26 +1,31 @@
-0,1,2,3,4,5,6,7,8,9,10
-,,,,Share of Total Seating Capacity by Carrier - 2013,,,,,,
-,,,,,Winter,Summer,,,,
-80.0,,,,,,,,,,
-70.0,,,,,,,,,Winter,Summer
-,,,,,,,,Sri Lankan Airlines,68.03,72.09
-60.0,,,,,,,,,,
-,,,,,,,,Emirates,5.50,3.88
-,,,,,,,,,,
-50.0,,,,,,,,Mihin Air,4.68,4.38
-,,,,,,,,Qatar Airways,2.46,2.63
-40.0,,,,,,,,,,
-,,,,,,,,Malaysian Airlines,1.17,1.25
-30.0,,,,,,,,,,
-,,,,,,,,Cathay Pacific,0.82,0.88
-20.0,,,,,,,,Singapore Air,0.82,0.88
-,,,,,,,,Saudi Arabian A/L,0.59,0.50
-10.0,,,,,,,,,,
-,,,,,,,,Air Arabia,1.64,1.38
-0.0,,,,,,,,,,
-,,,,,,,,Air India Express,0.82,0.63
-,,,,,,,Others,,,
-,,mirates,Mihin Air,,,Air Arabia,,,,
-,,,,,,,,,,
-Sri Lankan A/L,,,,Q atar A/ W,Singapore A/L,,,Others,13.47,11.51
-,E,,,C athay P acificM alaysian Airlines,S audi Arabian A/L,Air India E xpress,,,,
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+,,,,,,,,,,Winter,,Summer,,,,
+80.0,,,,,,,,,,,,,,,,
+70.0,,,,,,,,,,,,,,,Winter,Summer
+,,,,,,,,,,,,,,Sri Lankan Airlines,68.03,72.09
+60.0,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,Emirates,5.50,3.88
+,,,,,,,,,,,,,,,,
+50.0,,,,,,,,,,,,,,Mihin Air,4.68,4.38
+,,,,,,,,,,,,,,Qatar Airways,2.46,2.63
+40.0,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,Malaysian Airlines,1.17,1.25
+30.0,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,Cathay Pacific,0.82,0.88
+20.0,,,,,,,,,,,,,,Singapore Air,0.82,0.88
+,,,,,,,,,,,,,,Saudi Arabian A/L,0.59,0.50
+10.0,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,Air Arabia,1.64,1.38
+0.0,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,Air India Express,0.82,0.63
+,L/,se,ri,,W,s,c,,L/,L/,ai,ss,sr,,,
+,A,ta,A,A,/,en,ifi,,A,A,ba,e,e,,,
+,n,ri,ni,r,,il,ca,er,,n,r,rp,ht,,,
+,a,m,h,a,,ri,P,o,,ai,A,x,O,,,
+,kn,E,iM,ta,,A,y,p,,ba,ri,E,,Others,13.47,11.51
+a,,,,Q,a,n,a,ag,,r,A,ai,,,,
+L i,,,,,is,,ht,n,A,,d,,,,,
+rS,,,,,y,a,iS,,id,,nI,,,,,
+,,,,,al,C,,,ua,,ri,,,,,
+,,,,,a,,,,S,,A,,,,,
+,,,,,M,,,,,,,,,,,
