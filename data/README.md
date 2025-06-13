@@ -1,5 +1,5 @@
 # Data (TourismLK)
-*Updated 2025-06-12 06:15:45*
+*Updated 2025-06-13 06:18:24*
 
 ## PDFs from [SLTDA](https://www.sltda.gov.lk/statistics)
 *100 [PDFs](sltda/pdf) scraped*
@@ -78,7 +78,7 @@
 * [weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-april.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-april.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-april.pdf-parsed))
 * [weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-february.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-february.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-february.pdf-parsed))
 * [weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-january.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-january.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-january.pdf-parsed))
-* [weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-march.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-march.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-march.pdf-parsed))
+* [weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-june.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-june.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/weekly-tourist-arrivals-reports-2025/tourist-arrivals-2025-june.pdf-parsed))
 * [weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-april.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-april.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-april.pdf-parsed))
 * [weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-august.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-august.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-august.pdf-parsed))
 * [weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-december.pdf](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf/weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-december.pdf) ([parsed](https://github.com/nuuuwan/tourism_lk/tree/main/data/sltda/pdf-parsed/weekly-tourist-arrivals-reports-year-2024/tourist-arrivals-2024-december.pdf-parsed))
