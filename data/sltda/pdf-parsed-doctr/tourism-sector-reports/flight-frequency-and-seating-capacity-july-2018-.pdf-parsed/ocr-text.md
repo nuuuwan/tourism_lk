@@ -1,0 +1,333 @@
+### page 0
+FLIGHTFREQUENCY AND
+SEATINGCAPACITY JULY2018
+
+
+### page 1
+ARRIVAL FLIGHT FREQUENCY PER WEEK
+SEATING CAPACITY OF ARRIVAL FLIGHTS PER WEEK
+No of Frequency
+Flight
+No of Seats
+Country
+City
+Seats per Per Week
+week
+srilankan Airlines e
+76,221
+AUSTRALIA
+Melbourne 1,995
+7
+Emirates Le
+11,060
+BAHARAIN
+Bahrain
+2448
+12
+QATARES
+9,187
+BANGALADESH
+Dhaka
+1,467
+22
+
+Guangzhou Baiyun 2,850
+10
+IHA D
+4,872
+Shanghai
+2,312
+8
+CHINA
+Beijing Capital 1,164
+4
+CATHAYPACIFIC 4
+3,850
+Chengdu
+1,140
+4
+Kunming
+572
+4
+IndiGo
+3,780
+ds
+HONG KONG
+Hong! Kong 4,434
+13
+Chennai
+12,166 58
+3,080
+Mumbai
+5,352
+28
+Delhi
+4,771
+22
+JET AIRWAYS
+2,896
+Bangalore
+4,208
+22
+Tiruchchirapalli 2,884
+14
+TURKISH
+0
+Cochin
+2,027
+7
+AIRLINES
+2,565
+INDIA
+Madurai
+1,866
+14
+yuloall sbutll
+Trivandrum 1,759
+7
+OMAN AIR
+2,534
+Hyderabad Intl 1,084
+5
+Coimbatore
+990
+5
+EMAEKIPEE -
+2,284
+Kolkata
+588
+3
+Vishakhapatnam 580
+3
+2,212
+INDONESIA
+Jakarta
+1,800
+7
+SINGAPORE ARUINES
+2,051
+JAPAN
+Narita
+1,172
+4
+I
+KUWAIT
+Kuwait
+4,038
+14
+flydubar
+2,002
+C
+MALAYSIA
+Kuala Lumpur 8,551
+44
+KUWAITAIRWAYS
+1,995
+- (
+MALDIVES
+Male
+8,066
+31
+Gan Int
+636
+3
+QTHAI
+1,995
+C PAKISTAN
+Karachchi
+902
+5
+Lahore
+722
+4
+TSL ia
+1,980
+QATAR
+Doha
+12,207
+41
+alrarabila.com
+1,980
+RUSSIA
+Muscat
+3,656
+20
+Jeddah
+3,045
+10
+malaysia
+1,810
+SENN
+SAUDI ARABIA
+Riyadh
+2,683
+9
+Dammam
+1,164
+4
+Znspicelet
+1,785
+SEYCHELLES
+Seychelles
+540
+3
+KSREAN AIR @
+1,758
+(:
+SINGAPORE
+Singapore
+8,998
+38
+1,710
+M
+EmAsCUTIEN
+a 9 SOUTHI KOREA
+Incheon
+879
+3
+Malindo air
+1,629
+THAILAND
+Bangkok
+5,498
+24
+AIR CHINA
+C+
+TURKEY
+Istanbul
+2,565
+9
+tAURATI
+1,140
+Dubai
+13,665 53
+900
+UAE
+Abudhabi
+6,525
+23
+Air
+cuirair
+Sharjah
+1,980
+11
+I L
+UIA
+750
+a
+UK
+London/Heathrow 2,051
+7
+UKRAINE
+Boryspill
+750
+3
+SILKAIR
+724
+Total
+148,750 642
+
+### page 2
+AVAILABILITY OF SEATS BY COUNTRY
+RUSSIA
+CHI A
+Pacific Ocean
+LIBYA EGYPT
+SAUDI BIA
+SUDAN
+EMEN
+Philippine Sea
+CHAD
+Arabian: Seo
+of
+Benga
+PHILIPPINES
+OUTH SUCAN
+GANDA
+IA
+CONGO (DRO
+TANZANIA
+GUNER
+Indian Ocean
+MADA
+HORN
+MOZAMBIQUE
+WAEAND
+AUESTIRNA AUSALIA
+Number of Seats
+Country
+Available in
+45,000
+Arrival Flights
+INDIA
+38,275
+40,000
+UAE
+22,170
+35,000
+QATAR
+12,207
+30,000
+SINGAPORE
+8,998
+MALDIVES
+8,702
+25,000
+MALAYSIA
+8,551
+20,000
+CHINA
+8,038
+SAUDI ARABIA
+6,892
+15,000
+THAILAND
+5,498
+10,000
+HONG KONG
+4,434
+5,000
+KUWAIT
+4,038
+RUSSIA
+3,656
+0
+I -
+TURKEY
+2,565
+a I -
+5
+BAHARAIN
+6
+2,448
+€ I
+I I I
+I a
+UNITED
+I I I
+I
+I I I I
+I
+KINGDOM
+I
+2,051
+6
+€
+-
+AUSTRALIA
+I
+1,995
+INDONESIA
+1,800
+PAKISTAN
+1,624
+BANGALADESH
+1,467
+JAPAN
+1,172
+SOUTH KOREA
+879
+UKRAINE
+750
+SEYCHELLES
+540

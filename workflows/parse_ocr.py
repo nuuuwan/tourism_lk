@@ -1,7 +1,7 @@
-from tlk.parsers.GLMOCRParser import GLMOCRParser
+from tlk.parsers.DocTRParser import DocTRParser
 
 def main():
-    GLMOCRParser.parse_all()
+    DocTRParser.parse_all()
 
 if __name__ == '__main__':
     main()
