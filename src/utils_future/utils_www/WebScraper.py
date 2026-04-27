@@ -51,10 +51,14 @@ class WebScraper(WebBrowser):
             return
 
         try:
-            WWW.download_binary(url, file_path)
+            import requests
+            response = requests.get(url, timeout=30)
+            response.raise_for_status()
+            with open(file_path, 'wb') as f:
+                f.write(response.content)
             log.debug(f'Downloaded {url} -> {file_path}')
         except Exception as e:
-            log.error(f'WWW.download_binary({url}) -> {e}')
+            log.error(f'requests.get({url}) -> {e}')
 
     @classmethod
     def get_dir_path_for_url(cls, pdf_link: Link, dir_root: str) -> str:
