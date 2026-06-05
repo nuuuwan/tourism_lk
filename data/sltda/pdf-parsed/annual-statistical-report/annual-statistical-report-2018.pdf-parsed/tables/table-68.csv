@@ -1,36 +1,62 @@
-0,1,2,3,4,5,6,7,8,9,10,11,12,13
-COUNTRY,JANUARY,FEBRUARY,MARCH,APRIL,MAY,JUNE,,AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER,TOTAL UP TO END OF DECEMBER
-"AFGHANISTAN,",,,,,,,JULY,,,,,,
-ISLAMIC,83,150,112,40,108,44,47,78,34,41,52,72,861
-REPUBLIC OF,,,,,,,,,,,,,
-"ALBANIA, REPUBLIC",,,,,,,,,,,,,
-,14,15,5,16,12,15,11,19,14,13,12,31,177
-OF,,,,,,,,,,,,,
-"ALGERIA, PEOPLE'S",,,,,,,,,,,,,
-DEMOCRATIC,38,35,28,24,12,19,24,71,27,20,27,43,368
-REPUBLIC OF,,,,,,,,,,,,,
-"ANDORRA,",,,,,,,,,,,,,
-,4,6,2,3,6,0,5,16,3,3,1,4,53
-PRINCIPALITY OF,,,,,,,,,,,,,
-"ANGOLA, REPUBLIC",,,,,,,,,,,,,
-,0,1,2,1,0,0,0,0,2,1,1,1,9
-OF,,,,,,,,,,,,,
-ANTIGUA & BARBUDA,1,5,2,2,1,1,2,1,1,1,0,3,20
-ARGENTINA,236,254,271,300,122,50,71,54,92,87,169,103,"1,809"
-"ARMENIA, REPUBLIC",,,,,,,,,,,,,
-,180,87,75,66,53,87,105,102,123,88,79,165,"1,210"
-OF,,,,,,,,,,,,,
-AUSTRALIA,"9,452","5,693","8,932","14,023","4,873","9,997","8,801","8,239","8,746","6,912","10,299","14,961","110,928"
-AUSTRIA,"2,833","3,156","2,573","1,103",637,543,"1,642","1,216",875,"1,036","1,692","2,014","19,320"
-"AZERBAIJAN,",,,,,,,,,,,,,
-,78,30,109,19,16,13,30,30,24,36,19,108,512
-REPUBLIC OF,,,,,,,,,,,,,
-"BAHAMAS,",,,,,,,,,,,,,
-COMMONWEALTH,1,4,4,24,6,1,0,5,3,0,0,0,48
-OF THE,,,,,,,,,,,,,
-"BAHRAIN, KINGDOM",,,,,,,,,,,,,
-,588,147,195,151,108,245,392,432,99,90,103,308,"2,858"
-OF,,,,,,,,,,,,,
-"BANGLADESH,",,,,,,,,,,,,,
-PEOPLE'S REPUBLIC,982,741,996,672,729,"1,030",857,"1,060",771,894,736,"1,019","10,487"
-OF,,,,,,,,,,,,,
+0,1,2,3,4,5
+Table 1 - Tourist Arrivals by NaƟ onality – 2018,,,,,
+,,,,,Percentage
+,,Percentage,NaƟ onality,2018,
+NaƟ onality,2018,,,,Share (%)
+,,Share (%),,,
+,,,SOUTHERN EUROPE,"101,939",4.37
+NORTH AMERICA,"131,117",5.62,,,
+,,,Spanish,"27,195",1.17
+Canadian,"52,042",2.23,,,
+American,"77,809",3.33,Italian,"36,865",1.58
+,,,Israeli,"13,373",0.57
+Mexican,"1,266",0.05,,,
+,,,Others,"24,506",1.05
+"CARIBBEAN, CENTRAL",,,MIDDLE EAST,"72,786",3.12
+,"8,309",0.36,,,
+& SOUTH AMERICA,,,,,
+,,,Saudi Arabian,"33,663",1.44
+ArgenƟ nian,"1,966",0.08,Omani,"7,226",0.31
+Brazilian,"2,847",0.12,Others,"31,897",1.37
+Others,"3,496",0.15,AFRICA,"16,006",0.69
+,,,South Africans,"7,257",0.31
+WESTERN EUROPE,"392,697",16.83,,,
+,,,Seychellois,983,0.04
+Austrian,"19,671",0.84,,,
+,,,Others,"7,766",0.33
+Belgian,"17,204",0.74,,,
+,,,NORTH EAST ASIA,"343,870",14.73
+Deutsch,"157,814",6.76,,,
+,,,Chinese,"269,327",11.54
+Dutch,"56,988",2.44,,,
+,,,Japanese,"49,038",2.10
+French,"107,191",4.59,,,
+,,,Others,"25,505",1.09
+Swiss,"32,749",1.40,,,
+,,,SOUTH ASIA,"549,108",23.53
+Others,"1,080",0.05,,,
+,,,Indians,"425,110",18.22
+,,,Maldivians,"75,086",3.22
+NORTHERN EUROPE,"339,049",14.53,,,
+,,,Pakistani,"21,116",0.90
+BriƟ sh,"256,415",10.99,,,
+,,,Others,"27,796",1.19
+Danish,"18,541",0.79,,,
+,,,SOUTH EAST ASIA,"87,054",3.73
+Finnish,"8,728",0.37,,,
+,,,Indonesians,"6,678",0.29
+Irish,"10,721",0.46,,,
+,,,Malaysians,"23,931",1.03
+Norwegian,"16,811",0.72,,,
+Swedish,"27,378",1.17,Singaporeans,"19,461",0.83
+,,,Others,"36,984",1.58
+Others,455,0.02,,,
+,,,OCEANIA,"122,815",5.26
+CENTRAL & EASTERN,,,Australian,"107,718",4.62
+,"169,046",7.24,,,
+EUROPE,,,,,
+,,,New Zealanders,"14,595",0.63
+Czech,"17,178",0.74,Others,502,0.02
+Polish,"19,673",0.84,,,
+,,,TOTAL,"2,333,796",100.00
+Russian,"61,467",2.63,,,

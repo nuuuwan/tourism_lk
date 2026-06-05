@@ -1,28 +1,21 @@
-0,1,2
-T,able 20 : Occupancy Rates by Districts,
-,District,Occupancy Rates
-,Colombo,15.9
-,Galle,23.2
-,Gampaha,16.3
-,Kandy,22
-,Kalutara,15.5
-,Matale,16.6
-,Hambantota,16.9
-,Nuwara Eliya,15.4
-,Matara,16.8
-,Badulla,17.2
-,Anuradhapura,16.9
-,Puttalam,17.1
-,Batticaloa,18.1
-,Ampara,8.5
-,Polonnaruwa,7.1
-,Trincomalee,14.1
-,Ratnapura,8.9
-,Moneragala,9.8
-,Jaffna,14.5
-,Kurunegala,15.7
-,Kegalle,9.1
-,Vavuniya,10.6
-,Kilinochchi,0
-,Mullaitivu,0
-,Mannar,0
+0,1,2,3,4,5,6
+Passenger Arrivals and Departures by Port and by Category of Travelers - 2020,,,,,,
+Port,Total,,Sri Lankan Residents,,Foreign Tourists,
+,Arrivals,Departures,Arrivals,Departures,Arrivals,Departures
+Katunayake,,,,,"495,276",
+,"818,975","927,755","314,789","309,532",,"505,766"
+Mattala,,,,,595,
+,"14,406","3,086","11,547",420,,181
+TOTAL AIR,,,,,"495,871",
+,"833,381","930,841","326,336","309,952",,"505,947"
+Colombo Harbour,,,,,,
+,"26,816",25550,610,"1,047","11,590","11,184"
+Galle Harbour,,,,,,
+,"13,416","11,317","2,868","2,819",119,599
+Trinco harbour,,,,,,
+,404,306,98,96,124,55
+TOTAL SEA,,,,,"11,833",
+,"40,636","37,173","3,576","3,962",,"11,838"
+Grand Total,,,,,"507,704",
+,"874,017","968,014","329,912","313,914",,"517,785"
+Consists of resident visa holders and other foreign travelers who cannot be classified as tourists.,,,,,,

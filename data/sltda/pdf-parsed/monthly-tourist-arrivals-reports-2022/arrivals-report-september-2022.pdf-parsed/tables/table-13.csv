@@ -1,67 +1,18 @@
-0,1,2,3,4,5,6,7,8
-,International tourist arrivals by country of residence,,,,,,,
-,,,,,,Total,Total,%
-,,September  2022,,,,,,
-,,,,Tourist,%,,,
-,,,,,,Tourist,Tourist,Change
-,,,,Arrivals,Change,,,
-,,,,,,Arrivals,Arrivals,up to
-,,Tourist Arrivals,,Sep.,Sep.,,,
-,,,,,,up to Sep.,up to Sep.,Sep.
-,,,,2021,(22/21),,,
-,,,,,,2022,2021,(20/21)
-,By Air,By Sea,Total,,,,,
-,"2,642",-,"2,642",438,-,"37,508","3,108",-
-AMERICAS,,,,,,,,
-North,"2,556",-,"2,556",419,-,"36,066","3,028",-
-America,,,,,,,,
-,"1,552",-,"1,552",265,-,"20,608","1,525",-
-Canada,,,,,,,,
-,13,-,13,4,-,208,14,-
-Mexico,,,,,,,,
-,991,-,991,150,-,"15,250","1,489",-
-United States,,,,,,,,
-Carribean &,11,-,11,7,-,223,23,
-Central,,,,,,,,
-America,,,,,,,,
-,0,-,0,0,,31,0,-
-Costa Rica,,,,,,,,
-,1,-,1,0,-,11,1,-
-Jamaica,,,,,,,,
-,10,-,10,7,-,181,22,-
-Others,,,,,,,,
-South,75,-,75,12,-,"1,219",57,-
-America,,,,,,,,
-,4,-,4,3,,156,10,-
-Argentina,,,,,,,,
-,40,-,40,6,-,494,25,-
-Brazil,,,,,,,,
-,7,-,7,0,-,124,1,-
-Chile,,,,,,,,
-,11,-,11,0,-,237,14,-
-Colombia,,,,,,,,
-,13,-,13,3,-,208,7,-
-Others,,,,,,,,
-,167,-,167,16,-,"3,319",151,-
-AFRICA,,,,,,,,
-,65,-,65,5,-,"1,398",24,-
-North Africa,,,,,,,,
-,10,-,10,1,-,324,7,-
-Morocco,,,,,,,,
-,36,-,36,1,-,675,8,-
-Sudan,,,,,,,,
-,19,-,19,3,-,399,9,-
-Others,,,,,,,,
-Sub-,102,-,102,11,-,"1,921",127,-
-Saharan,,,,,,,,
-Africa,,,,,,,,
-,6,-,6,1,-,144,4,-
-Kenya,,,,,,,,
-,7,-,7,1,-,68,7,-
-Mauritius,,,,,,,,
-,1,-,1,1,-,19,3,-
-Nigeria,,,,,,,,
-,34,-,34,4,-,1061,77,-
-South Africa,,,,,,,,
-,54,-,54,4,-,629,36,-
-Others,,,,,,,,
+0,1,2,3
+"Table 3. Top ten markets to Sri Lanka, January to September 2021 & 2022",,,
+,,Tourist Arrivals,Tourist Arrivals
+,Country of,,
+Rank,,(Jan ~ September,(Jan ~ September
+,Residence,,
+,,2022),2021)
+1,India,"86,625","10,060"
+2,United Kingdom,"68,527","2,142"
+3,Russian Federation,"51,300","1,253"
+4,Germany,"42,508","2,704"
+5,France,"29,436","1,457"
+6,Australia,"20,721",231
+7,Canada,"20,608","1,525"
+8,United States,"15,250","1,489"
+9,Ukraine,"13,977","2,742"
+10,Poland,"13,562",155
+11,Others,"163,718","14,166"

@@ -1,23 +1,63 @@
-0,1,2,3,4,5,6,7,8,9,10,11,12,13
-COUNTRY,JANUARY,FEBRUARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST,SEPTEMBER,OCTOBER,NOVEMBER,DECEMBER,TOTAL UP TO END OF DECEMBER
-BARBADOS,4,2,3,3,3,0,0,1,0,2,0,0,18
-"BELARUS, REPUBLIC OF",802,942,666,286,128,122,71,96,174,256,500,578,"4,621"
-BELGIUM,"1,275","1,449","1,666","1,211",494,785,"3,681","1,994","1,384",816,"1,045","1,719","17,519"
-BELIZE,2,1,1,2,0,0,1,1,0,6,0,2,16
-BENIN,1,0,0,0,0,0,1,1,2,1,1,4,11
-"BHUTAN, KINGDOM OF",110,72,37,42,30,41,49,48,38,29,47,136,679
-BOLIVIA,6,5,17,9,2,8,4,9,6,4,5,6,81
-BOSNIA & HERZEGOVINA,20,45,25,18,8,16,15,9,13,19,30,43,261
-"BOTSWANA, REPUBLIC",9,4,4,4,0,3,4,5,1,0,1,13,48
-OF,,,,,,,,,,,,,
-"BRAZIL, FEDERATIVE",226,156,357,786,124,116,117,98,102,125,298,269,"2,774"
-REPUBLIC OF,,,,,,,,,,,,,
-"BRUNEI, NATION OF",4,3,17,6,6,5,13,10,4,7,5,11,91
-BULGARIA,277,381,352,218,87,85,110,96,93,135,223,607,"2,664"
-BURKINA FASO,2,1,0,4,1,0,1,1,3,2,0,4,19
-BURUNDI,1,0,0,0,0,0,1,1,1,11,1,2,18
-"CAMBODIA, KINGDOM",85,85,103,142,84,38,51,35,37,28,64,19,771
-OF,,,,,,,,,,,,,
-CAMEROON,2,0,1,1,0,4,2,2,4,5,2,1,24
-CANADA,"5,682","3,999","5,113","4,972","3,297","4,676","6,017","5,440","2,903","2,406","3,496","4,680","52,681"
-CAPE VERDE,1,0,0,0,0,0,2,1,1,0,0,1,6
+0,1,2,3,4,5
+,,,,,Percentage
+,,Percentage,NaƟ onality,2018,
+NaƟ onality,2018,,,,Share (%)
+,,Share (%),,,
+,,,SOUTHERN EUROPE,"101,939",4.37
+NORTH AMERICA,"131,117",5.62,,,
+,,,Spanish,"27,195",1.17
+Canadian,"52,042",2.23,,,
+American,"77,809",3.33,Italian,"36,865",1.58
+,,,Israeli,"13,373",0.57
+Mexican,"1,266",0.05,,,
+,,,Others,"24,506",1.05
+"CARIBBEAN, CENTRAL",,,MIDDLE EAST,"72,786",3.12
+,"8,309",0.36,,,
+& SOUTH AMERICA,,,,,
+,,,Saudi Arabian,"33,663",1.44
+ArgenƟ nian,"1,966",0.08,Omani,"7,226",0.31
+Brazilian,"2,847",0.12,Others,"31,897",1.37
+Others,"3,496",0.15,AFRICA,"16,006",0.69
+,,,South Africans,"7,257",0.31
+WESTERN EUROPE,"392,697",16.83,,,
+,,,Seychellois,983,0.04
+Austrian,"19,671",0.84,,,
+,,,Others,"7,766",0.33
+Belgian,"17,204",0.74,,,
+,,,NORTH EAST ASIA,"343,870",14.73
+Deutsch,"157,814",6.76,,,
+,,,Chinese,"269,327",11.54
+Dutch,"56,988",2.44,,,
+,,,Japanese,"49,038",2.10
+French,"107,191",4.59,,,
+,,,Others,"25,505",1.09
+Swiss,"32,749",1.40,,,
+,,,SOUTH ASIA,"549,108",23.53
+Others,"1,080",0.05,,,
+,,,Indians,"425,110",18.22
+,,,Maldivians,"75,086",3.22
+NORTHERN EUROPE,"339,049",14.53,,,
+,,,Pakistani,"21,116",0.90
+BriƟ sh,"256,415",10.99,,,
+,,,Others,"27,796",1.19
+Danish,"18,541",0.79,,,
+,,,SOUTH EAST ASIA,"87,054",3.73
+Finnish,"8,728",0.37,,,
+,,,Indonesians,"6,678",0.29
+Irish,"10,721",0.46,,,
+,,,Malaysians,"23,931",1.03
+Norwegian,"16,811",0.72,,,
+Swedish,"27,378",1.17,Singaporeans,"19,461",0.83
+,,,Others,"36,984",1.58
+Others,455,0.02,,,
+,,,OCEANIA,"122,815",5.26
+CENTRAL & EASTERN,,,Australian,"107,718",4.62
+,"169,046",7.24,,,
+EUROPE,,,,,
+,,,New Zealanders,"14,595",0.63
+Czech,"17,178",0.74,Others,502,0.02
+Polish,"19,673",0.84,,,
+,,,TOTAL,"2,333,796",100.00
+Russian,"61,467",2.63,,,
+Ukrainian,"33,325",1.43,,,
+Others,"37,403",1.60,,,

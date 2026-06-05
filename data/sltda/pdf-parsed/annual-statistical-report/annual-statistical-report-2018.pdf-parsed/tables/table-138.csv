@@ -1,14 +1,33 @@
-0,1,2,3,4,5
-Year,Total,Year,Total,Year,Total
-Amount,in Rs.’000,Amount,in Rs.’000,Amount,in Rs.’000
-1988,"37,201.20",1998,"190,531.50",2008,"738,812.90"
-1989,"53,861.00",1999,"218,220.00",2009,"766,266.70"
-1990,"99,020.30",2000,"200,207.00",2010,"1,000,080.00"
-1991,"130,943.10",2001,"269,268.00",2011,"1,041,700.00"
-1992,"177,151.10",2002,"393,171.00",2012,"1,161,686.00"
-1993,"196,125.00",2003,"500,646.00",2013,"1,604,887.10"
-1994,"203,755.50",2004,"566,202.00",2014,"1,779,766.10"
-1995,"201,505.50",2005,"823,962.00",2015,"1,968,541.10"
-1996,"151,132.50",2006,"839,404.50",2016,"2,335,444.20"
-1997,"183,082.50",2007,"741,012.00",2017,"2,378,828.21"
-,,,,2018,"2,824,969.83"
+0,1,2
+"979,171","4,199,569,920          1,174,840        48,377,894",
+Table 33 (b) - Details of Foreign Visitors by LocaƟ on - 2018,,
+City,LocaƟ on Number of Foreign Visitors,Revenue ( In Rs. )
+Anuradapura,"Abhayagiriya/ Jetawana 100,548","391,892,701"
+Polonnaruwa,"Gal Viharaya, Museum, Kingdom 200,224","1,023,140,249"
+Sigiriya,"Museum, Sigiriya Rock 594,917","2,746,939,936"
+Kataragama,Museum 88,"69,735"
+Galle,"Museum 20,461","14,300,531"
+Dambulla,Museum 789,"251,741"
+Kandy,Museum 353,"56,941"
+Ape Gama,"Ape Gama 2,132","1,223,581"
+Monaragala,"Buduruwagala 40,839","12,830,236"
+Yapahuwa,"Yapahuwa kingdom 7,511","4,808,169"
+Ramba,Ramba Viharaya 13,"4,230"
+RiƟ gala,"RiƟ gala Forest Monastery 10,140","3,707,745"
+Ibbankatuwa,"Ancient Burial Ground 1,156","344,126"
+Namal Uyana,Namal Uyana 938,"577,953"
+Total,"980,109","4,200,147,873"
+Table 33(c) - Details of DomesƟ c Visitors by LocaƟ on – 2018,,
+City,LocaƟ on Number of Foreign Visitors,Revenue ( In Rs. )
+Anuradapura,"Abhayagiriya/ Jetawana 47,436","994,314"
+Polonnaruwa,"Gal Viharaya, Museum, Kingdom 83,920","3,135,750"
+Sigiriya,"Museum, Sigiriya Rock 766,815","33,256,875"
+Kataragama,"Museum 10,918","192,880"
+Galle,"Museum 54,340","1,608,855"
+Dambulla,"Museum 1,267","23,040"
+Kandy,"Museum 6,335","108,970"
+Ape Gama,"Ape Gama 114,550","7,572,910"
+RiƟ gala,"RiƟ gala Forest Monastry 57,128","885,440"
+Ibbankatuwa,"Ancient Burial Ground 32,131","598,860"
+Namal Uyana,"Namal Uyana 37,850","521,304"
+Total,"1,212,690","48,899,198"

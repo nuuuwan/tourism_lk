@@ -1,11 +1,6 @@
-0,1,2,3,4,5,6,7,8,9,10
-,Relative Importance of Different Carriers - Percentage Distribution of Arrivals,,,,,,,,,
-,,,2002 to 2011,,,,,,,
-Carrier,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011
-Inter-Regional  Flights,79.6,77.8,74.5,77.3,76.1,77.6,78.1,82.5,81.5,86.2
-Intra-Regional  Flights,18.0,18.9,21.5,21.6,22.9,20.6,18.8,16.2,17.4,11.8
-Charter Flights,2.3,3.2,3.9,1.0,0.9,1.7,3.0,1.2,1.0,1.8
-TOTAL AIR,99.9,99.9,99.9,99.9,99.9,99.9,99.9,99.9,99.9,99.8
-Passenger Ships  (CBO),0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2
-TOTAL SEA,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2
-Total,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0
+0,1,2
+Carrier,2010,2011
+Inter-Regional Flights,81.5%,86.2%
+Intra-Regional Flights,17.4%,11.8%
+Charter Flights,1.0%,1.8%
+Sea Carrier,0.1%,0.2%

@@ -1,17 +1,19 @@
-0,1,2,3
-"able 3. Top ten markets to Sri Lanka, January to May  2023",,,
-,Country of,Tourist Arrivals,Tourist Arrivals
-Rank,,,
-,Residence,(Jan ~ May 2023),(Jan ~ May 2022)
-1,Russian Federation,"102,307","44,793"
-2,India,"89,363","61,951"
-3,United Kingdom,"42,841","46,254"
-4,Germany,"40,107","30,976"
-5,France,"24,693","20,167"
-6,Australia,"20,703","12,029"
-7,United States,"17,960","10,038"
-8,Canada,"17,917","10,709"
-9,China,"14,757","1,353"
-10,Maldives,"9,829","7,259"
-10,Others,"144,009","132,992"
-Total,,"524,486","378,521"
+0,1,2,3,4,5
+"Table 2. Top ten source markets to Sri Lanka, May 2023",,,,,
+,,,Tourist Arrivals (May 2023),,Tourist Arrivals
+,Country of,,,,
+Rank,,,,,
+,Residence,,,,
+,,By Air,By Sea,Total,( May 2022)
+,India,"23,008",08,"23,016","5,562"
+1,,,,,
+,Russian Federation,"7,758",02,"7,760","3,202"
+2,,,,,
+3,Germany,"4,529","2,325","6,854","2,208"
+4,United Kingdom,"5,866",121,"5,987","3,723"
+5,Australia,"3,774",427,"4,201","1,660"
+6,China,"4,172",01,"4,173",242
+7,Canada,"3,561",192,"3,753","2,013"
+8,United States,"2,465",775,"3,240","1,368"
+9,Maldives,"2,438",0,"2,438",849
+10,France,"2,396",18,"2,414","1,076"

@@ -1,27 +1,46 @@
-0,1,2,3,4,5,6,7,8,9
-Ampara,,,1,4,,1,,16,
-Anuradhapura,,,13,13,,,,3,
-Badulla,,,9,10,,,,,
-Batticaloa,,,3,,,1,,10,2
-Colombo,,,380,80,28,2,,771,52
-Galle,,,68,34,8,4,3,29,16
-Gampaha,,,100,23,6,1,,197,14
-Hambantota,2,,14,7,,,,1,6
-Jaffna,,,11,4,,,,1,
-Kalutara,,,18,9,5,5,,45,11
-Kandy,1,,33,27,30,,,34,7
-Kegalle,,,20,6,,3,13,13,1
-Kilinochchi,,,2,3,,,,,
-Kurunegala,,,24,5,,1,,28,1
-Mannar,,,,,,,,,
-Matale,,,19,2,13,,24,,2
-Matara,,1,31,22,1,10,,6,6
-Monaragala,5,,11,2,,,,,
-Mullaitivu,,,4,3,,,,,
-Nuwara Eliya,,,13,4,2,,,2,4
-Polonnaruwa,,,7,7,1,,1,,1
-Puttalam,,,16,9,,15,,19,1
-Rathnapura,1,,9,4,1,,,3,1
-Trincomalee,,,5,,,1,,4,2
-Vavuniya,,,1,,,,,,
-Total,9,1,812,278,95,44,41,"1,182",127
+0,1,2,3,4,5,6,7,8,9,10,11,12,13
+,The  breakdown  of  rooms  in  classified  hotels  shows  that  five-star  establishments  have  the,,,,,,,,,,,,
+,"largest share, comprising 38% of total rooms. Four-star hotels follow with 21%, while three,",,,,,,,,,,,,
+,"two, and one-star accommodations account for 15%, 15%, and 11% respectively.",,,,,,,,,,,,
+,,,Table xi: Distribution of Classified Tourist Hotels by,,,,,,,,,,
+District,No. of,,,,,,,,,,,,
+,,,Province -2023,,,,,,,,,,
+,Hotels,,,,,,,,,,,,
+Colombo,,42,,,,,,,,,,,
+,,,,,,,Province,,,,,,
+Galle,,21,,,,,,,,,,,
+Kandy,,16,,,,,,,,,,,
+Kalutara,,15,,,,,,,,,,,
+Gampaha,,12,,,,,North central,,North western,,Sabaragamuwa,,
+Matale,,10,,western,central,southern,,Eastern,,Northern,,UVA,Total
+Nuwara Eliya,,10,,,,,,,,,,,
+Hambanthota,,7 Star Category,,,,,,,,,,,
+,,,Five,13,6,9,1,1,0,0,0,0,30
+Anuradhapura,,7,,,,,,,,,,,
+,,,Four,9,9,5,2,2,1,0,1,1,30
+Trincomalee,,4,,,,,,,,,,,
+,,,Three,10,7,3,2,1,1,2,0,0,26
+Puttalam,,4,,,,,,,,,,,
+,,,Two,15,8,9,2,2,3,1,1,0,41
+Rathnapura,,4,,,,,,,,,,,
+,,,One,22,6,5,3,0,1,1,2,1,41
+Matara,,3,,,,,,,,,,,
+,,,Total,69,36,31,10,6,6,4,4,2,168
+Polonnaruwa,,3,,,,,,,,,,,
+Jaffna,,3,,,,,,,,,,,
+,,,,The  distribution  of,,tourist  accommodations,,,,,,in  Sri  Lanka,
+Batticaloa,,2,,,,,,,,,,,
+,,,,showcases  a  significant  concentration  in  key  districts  such,,,,,,,,,
+Kurunegala,,2,,"as  Colombo,  Galle,  Kandy,  and  Kalutara.  Notably,",,,,,,,,,the
+Monaragala,,2,,"Western province stands out with 69 classified hotels, with a",,,,,,,,,
+,,,majority,falling,into,,"the  one-star  category,  while  13  are",,,,,,
+Vavuniya,,1,,,,,,,,,,,
+,,,,categorized  as,,luxurious,,five-star  establishments.  This,,,,,
+Total,,168,,,,,,,,,,,
+,,,distribution,,pattern,,suggests,,,varying,,levels,of
+,,,,accommodation,,options,,catering,to,,diverse,,traveler
+,,,,preferences  and  budget  considerations.  Five  and  four-star,,,,,,,,,
+,,,,hotels are present across all provinces except the Northern,,,,,,,,,
+,,,,Province.  This  highlights  the  need  to  targeted  investments,,,,,,,,,
+,,,and,development,,,initiatives,to,promote,,,tourism,and
+,,,,economic growth in the province.,,,,,,,,,

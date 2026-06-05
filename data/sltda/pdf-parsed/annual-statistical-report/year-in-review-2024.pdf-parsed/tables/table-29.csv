@@ -1,7 +1,11 @@
-0,1,2,3,4,5,6
-T,"he distribution of classified hotel rooms shows that Colombo, Galle, and Kalutara have the",,,,,
-"highest room inventory, while Vavuniya district has the lowest. This variation is likely due to",,,,,,
-the  higher  tourist  demand  and  developed  infrastructure  in  coastal  and  urban  areas  like,,,,,,
-"Colombo and Galle, which are popular destinations. In contrast, Vavuniya, being more rural",,,,,,
-and,less,frequented  by,international,"tourists,  experiences",lower  demand,for  hotel
-"accommodations, leading to fewer rooms being available.",,,,,,
+0,1,2
+T,able 10: Number of rooms by star category - 2024,
+S,Number of,Number of
+tar category,,
+,establishments,rooms
+One,41,"1,852"
+Two,40,"2,431"
+Three,26,"2,462"
+Four,31,"3,834"
+Five,31,"6,603"
+Total,169,"17,182"

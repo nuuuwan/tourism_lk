@@ -1,14 +1,32 @@
-0
-I2.7 Arrivals by Carrier
-"n 2023, a total of 32 airlines, including the national carrier Sri Lankan Airlines, operated flights"
-"to  Sri  Lanka.  During  the  winter  season,  these  airlines  collectively  operated  409  flights  per"
-"week,  while  in  the  summer,  this  number  increased  to  473  flights  per  week.  The  top  three"
-"airlines responsible for transporting 801,017 tourists to Sri Lanka were Sri Lankan Airlines,"
-"Qatar Airways, and Emirates."
-This data highlights the critical role that these airlines play in facilitating tourism to Sri Lanka.
-The increase in flights during the summer suggests a higher demand for travel to the country
-"during this period, possibly due to favorable weather or peak tourist season. The dominance"
-"of  Sri  Lankan  Airlines,  Qatar  Airways,  and  Emirates  in  bringing  in  the  majority  of  tourists"
-"underscores their strong connectivity and influence in the region, making them key players in"
-Sri Lanka's tourism industry.
-Table V: Distribution by Air Line
+0,1
+hart 14: Distribution of Tourists by Sex and Region (Percentage) – 2023,
+"38,935",
+OCEANIA,
+"36,700",
+,"258,685"
+SOUTH ASIA,
+"125,763",
+"16,691",
+SOUTH EAST ASIA,
+"19,369",
+"46,877",
+NORTH EAST  ASIA,
+"53,913",
+"4,896",
+AFRICA,
+"5,054",
+"15,358",
+MIDDLE EAST,
+"12,472",
+"156,970",
+CEN /EAST/SOUTH/ MEDI  EUROPE,
+"201,575",
+"109,967",
+WESTERN EUROPE,
+"123,330",
+"83,921",
+NORTHERN EUROPE,
+"81,564",
+"49,141",
+AMERICA,
+"46,122",

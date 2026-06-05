@@ -1,8 +1,15 @@
-0,1
-2.2		Seasonality	of	Arrivals,
-"Table	4,	5	in	the	Statistical	Appendix	shows	the	monthly","July,	February,	August	and	March.	In	all	other	months	the"
-variation	in	tourist	arrivals	received	from	various	countries.,index	was	below	100.	The	highest	number	of	arrivals	were
-,recorded	in	the	month	of	December	with	a	seasonal	index
-"During	 the	 year	 2017,	 the	 high	 season	 was	 spread	 over",of	 139.	 The	 coefficient	 of	 seasonal	 variation	 in	 2017	 was
-a	 period	 of	 six	 months.	 The	index	 of	 arrivals	 reached,22	(Table	4).	The	lowest	number	of	arrivals	was	recorded
-"above	 100	 during	 the	 months	 of	 December,	 January,",in	May.
+0,1,2,3,4
+,2016,,,2017
+Source Market,,,Source Market,
+,Total Arrivals,% Distribution,,Total Arrivals
+India,"356,729",17.39,India,"384,628"
+China,"271,577",13.24,China,"268,952"
+United	Kingdom,"188,159",9.17,United	Kingdom,"201,879"
+Germany,"133,275",6.50,Germany,"130,227"
+France,"96,440",4.70,France,"97,	282"
+Maldives,"95,167",4.64,Australia,"81,281"
+Australia,"74,496",3.63,Maldives,"79,371"
+Russia,"58,176",2.84,Russia,"59,191"
+USA,"54,254",2.65,USA,"57,479"
+Canada,"44,122",2.15,Netherlands,"51,148"
+Total,"1,372,395",66.92,Total,"1,411,438"

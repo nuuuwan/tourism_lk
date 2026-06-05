@@ -1,7 +1,11 @@
-0,1
-Enhancing Skills of Sri Lankan Tour Guides,Study Report
-a randomly selected sample of surveys completed.  Map checks verified the sampling process,
-"and respondent authenticity for interviews with location data.  Finally, time checks ensured",
-"enumerators dedicated appropriate time to each study completed. Together, these steps form a",
-comprehensive  system  to  maintain  high  data  quality  and  reliability  throughout  the  data,
-collection.,
+0,1,2,3,4
+report.,,,,
+,,Table 2: Quantitative research sample,,
+,Number of surveys,Data,collection,Sampling technique
+,,methods,,
+TGs,300,CAPI F-F,,Stratified Random sampling
+Tour Operators,32,CAPI/CATI,,Purposive Sampling
+Hoteliers,100,CAPI/CATI,,Purposive Sampling
+MSMEs,312,CAPI F-F,,Stratified Random Sampling
+Tourists,302,CAPI F-F,,Convenience Sampling
+Total,1046,,,

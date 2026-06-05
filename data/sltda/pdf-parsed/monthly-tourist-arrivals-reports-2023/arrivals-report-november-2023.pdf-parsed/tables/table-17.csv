@@ -1,75 +1,41 @@
-0,1,2,3,4,5,6,7
-,,International tourist arrivals by country of residence,,,,,
-40.00,,,,,,,
-,,,,,Total,Total,%
-,,November 2023,,%,,,
-,,,,,Tourist,Tourist,Change
-"1624,8643433.911847342   86.9071. 353",,,,,,,
-,,,Tourist,Change,Arrivals,Arrivals,up to
-,,Tourist Arrivals,Arrivals,Nov,up to,up to,Nov
-,,,Nov,(23/22),November,Nov,(23/22)
-,,By Air By Sea Total,2022,2023,2023,2022,
-,AMERICAS,"6,698 750 7,448","4,291",73.57,"82,858","44,819",84.87
-,,"6,320 739 7,059","4,116",71.50,"79,249",,83.92
-,North America,,,,,"43,089",
-,,"2,578 100 2,678","1,994",,"40,304","24,227",
-,Canada,,,,,,
-,,,,34.30,,,66.36
-,,69 13 82,33,,645,270,
-,Mexico,,,148.48,,,138.89
-,,"3,673 626 4,299","2,089",,"38,300","18,592",
-,United States,,,,,,
-,,,,105.79,,,106.00
-,Carribean &,,,,,,
-,,7          3          7,2,,,,131.80
-,Central,3 0,6,180.77,605,261,
-,America,,,,,,
-,,06 0 06,3,100.00,52,34,
-,Costa Rica,,,,,,
-,,,,,,,52.94
-,,05 0 05,0,-,47,11,
-,Jamaica,,,,,,
-,,,,,,,327.27
-,,59 3 62,23,169.57,506,216,
-,Others,,,,,,
-,,,,,,,134.26
-,South America,8   308  316,149,112.08,"3,004","1,469",-
-,,53 3 56,40,,620,213,
-,Argentina,,,40.00,,,191.08
-,,117 0 117,51,,"1,101",572,
-,Brazil,,,,,,
-,,,,129.41,,,92.48
-,Chile,31 0 31,23,,353,159,
-,,,,34.78,,,122.01
-,,53 3 56,17,,460,277,
-,Colombia,,,,,,
-,,,,229.41,,,66.06
-,Others,54 2 56,18,,470,248,
-,,,,211.11,,,89.52
-,AFRICA,834 26 860,376,128.72,"7,919","3,962",99.87
-,North Africa,283 0 283,108,162.04,"2,286","1,631",40.16
-,,64 0 64,42,,655,390,
-,Morocco,,,,,,
-,,,,52.38,,,67.95
-,,147 0 147,32,,769,773,
-,Sudan,,,359.38,,,(0.52)
-,,72 0 72,34,,862,468,
-,Others,,,,,,
-,,,,111.76,,,84.19
-,Sub-Saharan,,,,,,
-,,2577,268,115.30,"5,633","2,331",141.66
-,,6 551,,,,,
-,Africa,,,,,,
-,,30 0 30,29,,487,188,
-,Kenya,,,,,,
-,,,,3.45,,,159.04
-,,40 0 40,17,,277,89,
-,Mauritius,,,135.29,,,211.24
-,,13 0 13,1,,87,21,
-,Nigeria,,,,,,
-,,,,-,,,314.29
-,,248 26 274,125,,"2,543","1,244",
-,South Africa,,,119.20,,,104.42
-,,220 0 220,96,,"2,239",789,
-,Others,,,,,,
-,,,,129.17,,,183.78
+0,1
+,Monthly Tourist Arrivals Report – November  2023
+,Domestic  Tourism
+,"To  estimate the  domestic tourism expenditure,  data  was obtained  from  Sri Lanka  Tourism  Expenditure  Survey"
+,"(SLTES),  conducted  by Department  of  Census  and  Statistics (DCS)  for  the year  2017-18  (Oct 2017  to Aug"
+,"2018).  The  domestic tourism  expenditure  was  collected at fairly  disaggregated  level.  Hence,  the TSA  Table  2"
+,on  Domestic Tourism  Expenditure  could be  prepared  directly from  the survey  findings.
+,The  key findings  are  as follows:
+,"Total  domestic tourism  expenditure  is estimated at LKR  38,255  million."
+,"Of  the total domestic tourism expenditure,  the highest, at 37.2  percent,  is spent on  country -specific  goods."
+,Land  passenger  transport  is the popular  mode  of transport  among  both  inbound  and  domestic tourists . Food
+,and  beverage  account  for  17.9  percent  and  all other  products  and  services  account  for  only 13.7  percent  of  total
+,domestic expenditure.
+,"The  average  per-tourist  expenditure  is estimated  at LKR  5475.  Among  the different  purposes  for  travel,  the"
+,"highest  per-tourist  expenditure  is recorded  for  a holiday/leisure  trip, at LKR 8837.  On  the other  hand,  a  health"
+,"trip turns  out to be the least expensive,  at LKR 4242."
+,Outbound  Tourism
+,"In  the case of  Sri Lanka,  there  is no  data on  outbound  tourism  expenditure.  Hence  this part  of  the tourism"
+,expenditure  cannot  be  presented  in the experimental  TSA.
+,Total Internal Tourism  Expenditure
+,The  summation  of Inbound  and  Domestic  Tourism  Expenditure  is the Total  Internal  Tourism  Expenditure  for  Sri
+,Lanka.  This  table shows  that:
+,"The  Sri Lankan  tourism  economy is driven  by inbound  tourism, which  contributes  as much as 96 percent  to total"
+,tourism expenditure.
+,Inbound  tourism accounts for  more  than  90 percent  of  expenditure  on almost all the tourism  related  products
+,"and  services,  except water  transport  services,  country-specific  goods, and  other  consumer  goods  and  services,"
+,"for  which  domestic tourism  makes up for  21  percent,  and  11.6  percent  each respectively."
+,The  per-tourist  expenditure  incurred  in the case of  inbound  trip in Sri Lanka  is over  72  times more  than that of  a
+,domestic trip.
+,Supply Side data
+,The  supply side data  for  tourism  specific industries  was obtained  from  Sri Lanka’s  Supply and  Use  Table  (SUT)
+,for  2018  prepared  by Department  of  Census  and  Statistics (DCS)  Sri Lanka. These  data  are  presented  in TSA
+,"Table  5. In  the core  TSA Table,  that is, Table  6, the demand  side data  and  supply side were  brought  together,"
+,as per  the recommended  guideline.
+,Tourism  Satellite Account
+,"Tourism  Direct Gross  Value  Added  (TDGVA)  is estimated to be  LKR 467,975  million  for  2018,  or  3.34 percent"
+,"of  national  GVA (LKR  14,014,197  million)."
+,"In  terms of  GDP, Tourism  Direct GDP  (TDGDP)  is estimated at LKR  512,645  million. The  total Gross  Domestic"
+,"Product  for  2018  was  LKR 15,351,933  million. Hence,  the contribution  of  TDGDP  to national  GDP  is also"
+,estimated  at 3.34  percent.
+,"This  refers  to the direct share  of  tourism to Sri Lanka  economy,  as per  the country’s first experimental  TSA."

@@ -1,19 +1,16 @@
-0,1,2,3
-"Table 3. Top ten markets to Sri Lanka, January to December  2021 & 2022",,,
-,,Tourist Arrivals,Tourist Arrivals
-,Country of,,
-Rank,,(Jan ~ December,(Jan ~ December
-,Residence,,
-,,2022),2021)
-1,India,"123,004","56,268"
-2,Russian Federation,"91,272","16,894"
-3,United Kingdom,"85,187","16,646"
-4,Germany,"55,542","12,442"
-5,France,"35,482","6,549"
-6,Australia,"30,924","4,421"
-7,Canada,"26,845","5,079"
-8,United States,"22,230","6,124"
-9,Maldives,"18,880","6,272"
-10,Poland,"18,107","15,195"
-11,Others,"212,505","48,605"
-Total,,"719,978","194,495"
+0,1,2,3,4,5
+"Table 2. Top ten source markets to Sri Lanka, December  2022",,,,,
+,,,Tourist Arrivals (December 2022),,Tourist Arrivals
+,Country of,,,,
+Rank,,,,,
+,Residence,By Air,By Sea,Total,(December 2021)
+1,Russian Federation,"19,958",5,"19,963","10,793"
+2,India,"17,339",11,"17,350","23,566"
+3,United Kingdom,"7,568",311,"7,879","8,493"
+4,Australia,"5,093",65,"5,158","3,129"
+5,Germany,"4,935",49,"4,984","5,875"
+6,United States,"3,375",263,"3,638","2,884"
+7,Maldives,"3,444",-,"3,444","2,896"
+8,France,"2,660",5,"2,665","3,021"
+9,Canada,"2,593",25,"2,618","1,705"
+10,Israel,"1,456",1,"1,457",684

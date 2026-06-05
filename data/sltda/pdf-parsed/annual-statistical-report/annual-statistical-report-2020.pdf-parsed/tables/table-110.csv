@@ -1,17 +1,27 @@
-0,1,2,3
-Table 18,,,
-,Room Distribution by District wise and Provincial wise,,
-District,No of Rooms,District,No of Rooms
-Colombo,"8,396",Ampara,720
-Galle,"6,370",Polonnaruwa,678
-Gampaha,"3,956",Trincomalee,671
-Kandy,"3,482",Ratnapura,605
-Kalutara,"3,465",Moneragala,544
-Matale,"1,942",Jaffna,522
-Hambantota,"1,863",Kurunegala,454
-Nuwara Eliya,"1,850",Kegalle,365
-Matara,"1,717",Vavuniya,81
-Badulla,"1,484",Kilinochchi,63
-Anuradhapura,"1,301",Mullaitivu,50
-Puttalam,"1,185",Mannar,37
-Batticaloa,949,Total,"42,750"
+0,1,2,3,4,5,6
+Table 15(Contd.),,,,,,
+,,,,,,Percentage of
+,,,Seating,,Number of,
+,,,,Average Seats,,Total Seating
+No,Air Lines,Type of Aircraft,Capacity,,Flights per,
+,,,,per Week,,Capacity by
+,,,,,Week,
+,,,(AVG),,,
+,,,,,,Carrier
+14,Gulf Air,A320N(12C/138Y),155,775,5,0.5
+15,Indigo Airlines,A320(180Y),180,"5,040",28,3.5
+16,Korean Air,"A332(30C188Y), A333(24C/252Y)",247,741,3,0.5
+17,Kuwait Airways,A332(17J/195Y),212,"1,484",7,1.0
+18,Lot Polish Airlines,B787-900(24C/21P/249Y),294,882,3,0.6
+19,Malaysia Airlines,B738(16J/150Y OR 16J/144Y),163,"1,141",7,0.8
+20,Malindo Air,B737-900(12J/160Y),172,"1,204",7,0.8
+21,Oman Air,"B738(12J/150Y), B739(12J/171Y)",173,"2,422",14,1.7
+,Qatar Airways,"A380-800, A330-300, A330-200, A319-133,",314,"10,990",35,7.7
+,,"A321-200, A320-200, A350-900, A350,",,,,
+22,,"B777-300, B777-200, B787-800(254)",,,,
+23,Rossiya Airlines,B777-300(373 OR 457),415,"2,075",5,1.4
+24,Salam Air,A320-251N(180Y),180,720,4,0.5
+25,Saudi Arabian Airlines,"77W, 77H",359,"1,436",4,1.0
+26,Silk Air,B738(12J/150Y),162,648,4,0.5
+27,Singapore Airlines,A359(40J/263Y),303,"2,121",7,1.5
+28,Spicejet,"Q400(78Y), B737-800",132,924,7,0.6

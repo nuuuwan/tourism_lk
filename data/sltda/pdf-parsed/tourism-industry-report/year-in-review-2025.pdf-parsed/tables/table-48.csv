@@ -1,20 +1,32 @@
-0
-"Year in review, January to June 2025"
-The visitor arrivals and income generated from national parks in Sri Lanka from January to June 2025 offers a comprehensive
-"picture of tourism activity within the country’s wildlife sector. A total of 1,115,297 visitors were recorded across the parks and"
-"wildlife attractions, with 596,701 being local visitors and 518,596 being foreign visitors. This relatively balanced mix shows"
-the importance of catering to both domestic and international markets when planning park services and infrastructure.
-"The total income generated amounts to Rs. 3.08 billion, of which the vast majority Rs. 3.03 billion comes from visitor entry"
-"fees. An additional Rs. 46.3 million was collected through vehicle fees and Rs. 5.9 million through boat services. Interestingly,"
-"foreign visitors accounted for more than 90% of the total visitor income (Rs. 2.88 billion), while local visitors contributed only"
-Rs. 81.9 million.
-"Among the individual parks, Yala National Park emerged as the highest income generator, bringing in more than Rs. 1.6"
-"billion, supported by high visitor numbers and substantial vehicle fee income. Horton Plains and Udawalawe also performed"
-"strongly,  generating  Rs.  214  million  and  Rs.  746  million  respectively.  Pigeon  Island,  despite  receiving  just  over  30,000"
-"visitors,  earned  over  Rs.  24  million,  demonstrating  its  popularity  among  high-paying  foreign  tourists.  Meanwhile,  Mirissa"
-"Whale Watching and Hikkaduwa stand out as key coastal experiences, drawing significant foreign interest and contributing"
-sizable income Rs. 98.1 million and Rs. 21.6 million respectively.
-"On the other end of the spectrum, several parks such as Lahugala, Maduruoya, Angammedilla, and Horagolla reported both"
-"low visitation and limited income. These parks may be underutilized due to factors such as remoteness, limited infrastructure,"
-"low wildlife visibility, or a lack of effective marketing. Strategic efforts are needed to unlock their potential and improve visitor"
-numbers.
+0,1,2,3,4,5,6,7,8
+,"Table:15 Visitors to major national parks, January to June 2025",,,,,,,
+,,Local tickets,,Foreign tickets,,,Total,Total revenue
+,,,,,Vehicle,Boat,number,(including the
+Parks,Local,Local income,Foreign,Foreign income,,,,
+,,,,,income (Rs),income (Rs),of,vehicle and boat
+,visitors,( Rs ),visitors,(Rs),,,,
+,,,,,,,visitors,income)
+Yala,"171,948","26,056,690.00","217,093","1,581,471,517.26","22,384,800.00",0.00,"389,041","1,629,913,007.31"
+Horton Plains,"125,168","18,205,510.00","26,181","190,106,734.00","5,754,550.00",0.00,"151,349","214,066,794.00"
+Udawalawa,"78,558","11,673,900.00","99,842","723,308,013.24","11,442,450.00",0.00,"178,400","746,424,363.24"
+Wasgomuwa,"6,164","353,550.00","2,061","7,205,127.84","425,100.00",0.00,"8,225","7,983,777.84"
+Minneriya,"4,914","722,100.00","1,289","9,423,842.50","356,400.00",0.00,"6,203","10,502,342.50"
+Bundala,"4,897","291,060.00","5,690","19,665,758.38","694,900.00",0.00,"10,587","20,651,718.38"
+Horagolla,"4,824","180,260.00",34,"47,732.60",0.00,0.00,"4,858","227,992.60"
+Kaudulla,"4,951","753,000.00","1,872","13,397,256.00","365,600.00",0.00,"6,823","14,515,856.00"
+Galoya,"3,377","199,290.00","3,627","12,720,622.00","153,000.00","4,528,000.00","7,004","17,600,912.00"
+Kumana,"9,765","586,140.00","2,845","10,226,952.00","785,850.00",0.00,"12,610","11,598,942.00"
+Angammedilla,"3,496","333,510.00",472,"2,404,081.18","204,250.00",0.00,"3,968","2,946,473.18"
+Galways Land,"5,035","574,330.00",343,"1,266,098.00","3,600. 00",0.00,"5,378","1,844,028.00"
+Wilpattu,"36,237","14,385,750.00","29,635","168,701,085.14","3,637,900.00",0.00,"65,872","186,724,735.14"
+Maduruoya,"1,052","59,730.00",179,"627,312.00","65,700.00",0.00,"1,231","752,742.00"
+Lahugala,372,"24,510.00",45,"176,112.00","43,250.00",0.00,417,"243,872.00"
+Pigeon Island,"27,718","4,003,750.00","2,659","19,237,560.00",0.00,"768,150.00","30,377","24,009,460.00"
+Hikkaduwa,"22,660","1,705,490.00","2,809","15,230,299.00",0.00,"675,600.00","25,469","17,611,389.00"
+Eth Athuru,,,,,,,,
+Sevana,"59,892",0.00,"55,792",0.00,0.00,0.00,"115,684","67,660,616.00"
+Kalawewa,385,0.00,88,0.00,"20,100.00","7,150.00",473,"172,188.69"
+Bareef - Kalpitiya,"6,466","133,570.00","2,605","6,125,969.00",0.00,600.00,"9,071","6,260,139.00"
+Mirissa,"15,257","1,496,950.00","61,532","96,669,534.00",0.00,0.00,"76,789","98,166,484.00"
+Girithale,"3,565","173,000.00","1,903","5,470,362.00",0.00,0.00,"5,468","5,643,362.00"
+TOTAL,"596,701","81,912,090.00","518,596","2,883,481,968.14","46,337,450.00","5,979,500.00","1,115,297","3,085,521,194.88"

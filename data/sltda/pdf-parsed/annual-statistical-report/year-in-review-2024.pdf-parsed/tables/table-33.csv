@@ -1,24 +1,27 @@
-0,1
-AIR CONNECTIVITY,
-Direct air connectivity to and from Sri Lanka to main destinations,
-,"Dubai, Doha, and Chennai are"
-,key departure points for
-,"tourists  heading  to  Sri  Lanka,"
-,accounting  for  31.05%  of  total
-,arrivals. This highlights the
-,critical  role  these  airports  play
-,in connecting international
-,travelers to  Sri  Lanka.  Their
-,"strategic locations, high"
-,"connectivity, and frequent"
-,flights  make them  essential
-,"gateways,  efficiently  funneling"
-,a large number of tourists to the
-,island. The prominence of
-,these  airports  is  likely  due  to
-,their  status  as  major  hubs  in
-,the  Middle  East  and  South
-,"Asia, offering convenient travel"
-,options for visitors from a range
-,of global destinations.
-Table 13: Main final departure airports to Sri Lanka,
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+District Ampara,Hotel Boutique −,Vilas Boutique 10,Hotels Classified −,Hotels Tourist 85,Bungalows 48,Camping Site −,Eco Lodge −,Guest Houses 527,Heritage Bungalows −,Hotels Heritage −,Heritage Home Stays −,Hostels 10,Units Home Stay 147,Rented Apartments −,Homes Rented 4,Tourist Apartment −,Hotels Themed,Accommodat,ion −,Grand Total 831
+Anuradhapura,21,10,475,142,201,24,−,770,−,−,−,−,141,−,−,−,,,−,"1,784"
+Badulla,14,−,,241,301,3,−,751,−,−,−,−,742,3,−,−,,,−,"2,055"
+Batticaloa,57,−,177,417,77,−,−,237,−,−,−,−,26,−,−,−,,,−,991
+Colombo,10,6,"6,503","1,641",330,−,−,"1,892",−,158,1,80,282,193,14,−,,,−,"11,110"
+Galle,292,135,"2,537","1,343","1,118",−,−,"2,905",−,−,−,19,459,41,11,25,,,−,"8,885"
+Gampaha,17,7,905,947,229,−,−,"2,242",−,−,1,−,220,31,7,−,,,−,"4,606"
+Hambantota,163,27,691,508,228,11,−,831,−,−,−,−,97,−,−,−,,,−,"2,556"
+Jaffna,−,−,155,49,63,−,−,435,−,−,−,−,8,−,2,−,,,−,712
+Kalutara,47,14,"1,679","1,082",302,6,−,834,−,−,−,−,89,−,−,−,,,−,"4,053"
+Kandy,10,43,"1,105",684,498,10,,"1,175",9,−,−,8,470,20,6,−,,,−,"4,038"
+Kegalle,−,7,−,13,81,5,−,531,−,−,−,−,49,−,−,−,,,−,686
+Kilinochchi,−,−,−,−,18,−,−,90,−,−,−,−,,−,−,−,,,−,108
+Kurunegala,−,−,43,14,27,−,−,474,−,−,−,−,11,−,−,−,,,11,580
+Mannar,−,−,−,−,−,−,−,42,−,−,−,−,3,,−,−,,,−,45
+Matale,95,23,809,574,146,−,−,551,−,−,−,−,198,8,−,−,,,−,"2,404"
+Matara,62,7,235,227,372,−,20,"1,505",−,−,−,38,193,19,3,−,,,−,"2,681"
+Moneragala,−,−,108,166,48,77,,395,−,−,−,−,20,−,−,−,,,−,814
+Mullaitivu,−,−,−,−,2,−,−,58,−,−,−,−,3,−,−,−,,,−,63
+Nuwara Eliya,52,44,787,174,302,−,−,966,4,154,−,−,67,3,−,−,,,−,"2,553"
+Polonnaruwa,10,,161,156,37,−,−,239,−,−,−,−,37,−,−,−,,,−,640
+Puttalam,27,11,442,241,144,6,,653,6,−,−,−,25,3,−,−,,,−,"1,558"
+Rathnapura,−,−,176,20,70,8,−,460,−,−,−,−,35,−,−,−,,,−,769
+Trincomalee,−,−,174,145,42,−,−,433,−,−,−,−,−,4,−,−,,,−,798
+Vavuniya,−,−,20,−,7,−,−,108,−,−,−,−,−,−,−,−,,,−,135
+Grand Total,877,344,"17,182","8,869","4,691",150,20,"19,104",19,312,2,155,"3,322",325,47,25,,,11,"55,455"

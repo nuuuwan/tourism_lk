@@ -1,43 +1,29 @@
-0,1,2,3
-Table 12,,,
-Average Duration of Stay and Guest Nights by Country of Residence- 2020,,,
-,,Average,
-Country of Residence,Arrivals,Duration of,Guest Nights
-,,stay,
-,"31,843",8.2,
-,,,
-AMERICAS,,,"268,636"
-North America,"29,627",8.4,"251,643"
-Canada,"12,436",10,"124,360"
-Mexico,349,7.6,"2,652"
-United States,"16,842",7.4,"124,631"
-Caribbean & Central America                 226,,8.1,"1,831"
-Costa Rica,33,8.3,274
-Jamaica,25,8.7,218
-Others,168,7.2,"1,210"
-South America,"1,990",8.1,"16,119"
-Argentina,416,8.8,"3,661"
-Brazil,875,6.6,"5,775"
-Chile,271,9.5,"2,575"
-Colombia,201,7.4,"1,487"
-Others,227,7.9,"1,793"
-,,,
-AFRICA,"2,880",7.1,"19,328"
-North Africa,689,7.7,"5,305"
-Morocco,311,7.6,"2,364"
-Sudan,143,6.3,901
-Others,235,9.1,"2,139"
-Sub-Saharan Africa,"2,191",6.4,"14,022"
-Kenya,110,6.4,704
-Mauritius,170,6.9,"1,173"
-Nigeria,25,4.4,110
-South Africa,"1,364",7.3,"9,957"
-Others,522,6.9,"3,602"
-,,,
-ASIA & PACIFIC,"181,154",6.7,"1,092,789"
-North East Asia,"37,320",6.4,"233,054"
-China,"26,147",6.4,"167,341"
-Japan,"6,644",5.2,"34,549"
-South Korea,"2,499",6.4,"15,994"
-Taiwan,"1,985",7.5,"14,888"
-Others,45,6.3,284
+0,1,2,3,4,5,6,7,8,9,10,11,12,13
+Country of,,,,,,,,,,,,,
+,Arrivals,Vacation Pleasure/,VISITING,AND FRIENDS RELATIVES,Business,MICE,Health /,Ayurveda,Sports,Education,Official,Religious,Others
+Residence,,,,,,,,,,,,,
+,"2,880","2,484",,179,138,57,,7,14,0,0,1,0
+AFRICA,,,,,,,,,,,,,
+North Africa,689,626,,23,25,8,,5,2,0,0,0,0
+,311,280,,12,12,4,,3,0,0,0,0,0
+Morocco,,,,,,,,,,,,,
+,143,122,,6,8,3,,2,2,0,0,0,0
+Sudan,,,,,,,,,,,,,
+,235,224,,5,5,1,,0,0,0,0,0,0
+Others,,,,,,,,,,,,,
+,"2,191","1,858",,156,113,49,,2,12,0,0,1,0
+Sub-Saharan Africa,,,,,,,,,,,,,
+,110,80,,16,6,4,,1,2,0,0,1,0
+Kenya,,,,,,,,,,,,,
+Mauritius,170,138,,15,16,1,,0,0,0,0,0,0
+Nigeria,25,9,,1,13,2,,0,0,0,0,0,0
+South Africa,"1,364","1,221",,66,52,20,,0,5,0,0,0,0
+Others,522,410,,58,26,22,,1,5,0,0,0,0
+ASIA &,"181,154","151,360",,"13,804","10,842","4,173",,194,612,67,40,43,19
+PACIFIC,,,,,,,,,,,,,
+North East Asia,"37,320","33,595",,"1,253","1,726",554,,131,53,3,2,2,1
+China,"26,147","24,052",,731,910,392,,22,36,1,2,0,1
+Japan,"6,644","5,480",,327,606,114,,108,8,1,0,0,0
+South Korea,"2,499","2,136",,160,161,35,,1,4,0,0,2,0
+Taiwan,"1,985","1,890",,31,48,12,,0,3,1,0,0,0
+Others,45,37,,4,1,1,,0,2,0,0,0,0

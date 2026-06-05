@@ -1,31 +1,26 @@
-0,1,2,3,4,5,6,7
-,"able:14: Main final departure airports to Sri lanka, January to June 2025",,,,,,
-,,Number,,,,Number,
-Rank,inal port,of,,Rank,inal port,of,
-,,tourists,,,,tourists,
-1,Dubai,"141,631",12.1,21,Paris,"12,344",1.1
-2,Doha,"118,478",10.1,22,Dhaka,"11,755",1.0
-3,Chennai,"95,391",8.2,23,Chengdu,"11,150",1.0
-4,Abu Dhabi,"91,316",7.8,24,Frankfurt,"9,558",0.8
-5,Mumbai,"57,666",4.9,25,Sydney,"8,730",0.7
-6,Bangalore,"48,901",4.2,26,Narita,"7,793",0.7
-7,Singapore,"45,073",3.9,27,Don Mueang,"7,689",0.7
-8,Delhi,"43,242",,28,Tolmachevo,"7,267",
-,,,3.7,,,,0.6
-,,,,,Novosibirsk,,
-9,Sharja,"36,711",3.1,29,Domodedovo,"6,867",0.6
-10,London,"36,577",3.1,30,Almaty,"6,717",0.6
-11,Kuala Lumpur,"36,528",3.1,31,Kunming,"6,354",0.5
-12,Moscow,"35,030",3.0,32,Warsaw,"6,048",0.5
-13,Istanbul,"29,560",2.5,33,Kuwait,"5,287",0.5
-14,Hyderabad,"25,216",2.2,34,Sochi,"4,738",0.4
-15,Shanghai,"23,137",2.0,35,Kochi,"4,595",0.4
-16,Male,"22,602",1.9,36,Tiruchchirappalli,"4,514",0.4
-17,Bangkok,"22,047",1.9,37,"Koltsovo, Russia","4,100",0.4
-18,Dubai/Male,,,,K,,
-,,"16,388",1.4,38,"azan, Russia","4,085",0.3
-,(Connectivity),,,,,,
-19,Hong Kong,"14,363",1.2,39,Guangzhou,"3,736",0.3
-20,Melbourne,"13,125",1.1,40,Tyumen,"3,710",0.3
-,,,,,Others,"78,025",6.7
-,,,,,Total,"1,168,044",
+0,1,2,3
+"Table 13: Contribution of Airlines on tourist arrivals to Sri lanka, January to June 2025",,,
+Rank,Airline,Number of,% Share
+,,passengers,
+1,Sri Lankan Airlines,"276,976",23.71
+2,Indigo,"122,239",10.47
+3,Qatar Airways,"116,638",9.99
+4,Emirates,"110,961",9.50
+5,Etihad Airways,"80,844",6.92
+6,Air India,"59,767",5.12
+7,Fly Dubai,"39,264",3.36
+8,Red Wings Air Lines,"36,544",3.13
+9,Air Arabia,"36,374",3.11
+10,Turkish Airline,"30,278",2.59
+11,China Eastern Airlines,"30,120",2.58
+12,Singapore Airlines,"25,052",2.14
+13,Aeroflot,"22,940",1.96
+14,Air Asia,"18,208",1.56
+15,Fits Air,"17,229",1.48
+16,Cathay Pacific,"14,434",1.24
+17,Azur Air,"14,088",1.21
+18,Air China,"11,253",0.96
+19,Thai Air Asia,"10,376",0.89
+20,Air Arabia Abu Dhabi,"8,945",0.77
+,Others,"85,514",7.32
+,Total,"1,168,044",100.00
